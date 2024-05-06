@@ -1,0 +1,922 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>100% RPP-ireland</title>
+    <link rel="shortcut icon" type="image" href="./image/logo.png">
+    <link rel="stylesheet" href="style.css">
+    <!-- bootstrap links -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <!-- bootstrap links -->
+    <!-- fonts links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Uchen&display=swap" rel="stylesheet">
+    <!-- fonts links -->
+    <!-- icons links -->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <!-- icons links -->
+    <!-- animation links -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- animation links -->
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.all-content{
+    background: #f6f5f4;
+}
+/* navbar */
+#navbar{
+    background-color: #fff;
+    padding-left: 80px;
+    font-weight: bold;
+   
+}
+#logo{
+    font-size: 23px;
+    color: white;
+}
+#logo img{
+    margin-bottom: 15px;
+    font-size: 80px;
+    font-weight: 400;
+}
+.navbar-nav{
+    margin-left: 10px;
+}
+.nav-link{
+    color: white;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px black;
+    margin-left: 15px;
+    transition: 0.5s ease;
+}
+.nav-link:hover{
+    background-color: rgb(30, 141, 36);
+    color: white;
+    border-radius: 5px;
+}
+.icons{
+    margin-left: 30px;
+}
+.icons img{
+    margin-left: 10px;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+.icons img:hover{
+    transform: translateY(-5px);
+}
+@media screen and (max-width:330px){
+    #logo{
+        font-size: 15px;
+    }
+}
+/* navbar end */
+/* home section */
+
+.header .header-2{
+    background:var(--green);
+}
+
+.header .header-2 .navbar{
+    text-align:center;
+}
+
+
+.header .header-2 .navbar a{
+    color:#fff;
+    display: inline-block;
+    padding:1.2rem;
+    font-size: 1.7rem;
+}
+
+.header .header-2 .navbar a:hover{
+    background:var(--dark-color);
+}
+
+.header .header-2.active{
+    position:fixed;
+    top:0; left:0; right:0;
+    z-index: 1000;
+
+}
+
+ 
+  .nav-links li a:hover{
+    background: #3A3B3C;
+  }
+  .nav-links .mobile-item{
+    display: none;
+  }
+  .nav-links .drop-menu{
+    position: absolute;
+    background: #242526;
+    width: 200px;
+    line-height: 45px;
+    top: 85px;
+    opacity: 0;
+    visibility: hidden;
+    box-shadow: 0 6px 10px rgba(0,0,0,0.15);
+  }
+  .nav-links li:hover .drop-menu,
+  .nav-links li:hover .mega-box{
+    transition: all 0.3s ease;
+    top: 70px;
+    opacity: 1;
+    visibility: visible;
+  }
+  .drop-menu li a{
+    width: 100%;
+    display: block;
+    padding: 0 0 0 15px;
+    font-weight: 400;
+    border-radius: 0px;
+  }
+  .mega-box{
+    position: absolute;
+    left: 0;
+    width: 100%;
+    padding: 0 30px;
+    top: 85px;
+    opacity: 0;
+    visibility: hidden;
+  }
+  .mega-box .content{
+    background: #242526;
+    padding: 25px 20px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    box-shadow: 0 6px 10px rgba(0,0,0,0.15);
+  }
+  .mega-box .content .row{
+    width: calc(25% - 30px);
+    line-height: 45px;
+  }
+  .content .row img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .content .row header{
+    color: #f2f2f2;
+    font-size: 20px;
+    font-weight: 500;
+  }
+  .content .row .mega-links{
+    margin-left: -40px;
+    border-left: 1px solid rgba(255,255,255,0.09);
+  }
+  .row .mega-links li{
+    padding: 0 20px;
+  }
+  .row .mega-links li a{
+    padding: 0px;
+    padding: 0 20px;
+    color: #d9d9d9;
+    font-size: 17px;
+    display: block;
+  }
+  .row .mega-links li a:hover{
+    color: #f2f2f2;
+  }
+  .wrapper .btn{
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    display: none;
+  }
+  .wrapper .btn.close-btn{
+    position: absolute;
+    right: 30px;
+    top: 10px;
+  }
+  @media screen and (max-width: 970px) {
+    .wrapper .btn{
+      display: block;
+    }
+    .wrapper .nav-links{
+      position: fixed;
+      height: 100vh;
+      width: 100%;
+      max-width: 350px;
+      top: 0;
+      left: -100%;
+      background: #169038;
+      display: block;
+      padding: 50px 10px;
+      line-height: 50px;
+      overflow-y: auto;
+      box-shadow: 0px 15px 15px rgba(0,0,0,0.18);
+      transition: all 0.3s ease;
+    }
+   
+    #menu-btn:checked ~ .nav-links{
+      left: 0%;
+    }
+    #menu-btn:checked ~ .btn.menu-btn{
+      display: none;
+    }
+    #close-btn:checked ~ .btn.menu-btn{
+      display: block;
+    }
+    .nav-links li{
+      margin: 15px 10px;
+    }
+    .nav-links li a{
+      
+      display: block;
+      font-size: 20px;
+    }
+    .nav-links .drop-menu{
+      position: static;
+      opacity: 1;
+      top: 65px;
+      visibility: visible;
+      padding-left: 20px;
+      width: 100%;
+      max-height: 0px;
+      overflow: hidden;
+      box-shadow: none;
+      transition: all 0.3s ease;
+    }
+    #showDrop:checked ~ .drop-menu,
+    #showMega:checked ~ .mega-box{
+      max-height: 100%;
+    }
+    .nav-links .desktop-item{
+      display: none;
+    }
+    .nav-links .mobile-item{
+      display: block;
+      color: #f2f2f2;
+      font-size: 20px;
+      font-weight: 500;
+      padding-left: 20px;
+      cursor: pointer;
+      border-radius: 5px;
+      transition: all 0.3s ease;
+    }
+    .nav-links .mobile-item:hover{
+      background: #3A3B3C;
+    }
+    .drop-menu li{
+      margin: 0;
+    }
+    .drop-menu li a{
+      border-radius: 5px;
+      font-size: 18px;
+    }
+    .mega-box{
+      position: static;
+      top: 65px;
+      opacity: 1;
+      visibility: visible;
+      padding: 0 20px;
+      max-height: 0px;
+      overflow: hidden;
+      transition: all 0.3s ease;
+    }
+    .mega-box .content{
+      box-shadow: none;
+      flex-direction: column;
+      padding: 20px 20px 0 20px;
+    }
+    .mega-box .content .row{
+      width: 100%;
+      margin-bottom: 15px;
+      border-top: 1px solid rgba(255,255,255,0.08);
+    }
+    .mega-box .content .row:nth-child(1),
+    .mega-box .content .row:nth-child(2){
+      border-top: 0px;
+    }
+    .content .row .mega-links{
+      border-left: 0px;
+      padding-left: 15px;
+    }
+    .row .mega-links li{
+      margin: 0;
+    }
+    .content .row header{
+      font-size: 19px;
+    }
+  }
+  nav input{
+    display: none;
+  }
+  
+
+
+
+
+nav{
+    position:sticky;
+    z-index: 99;
+    width: 100%;
+   background: #1d9738;
+  }
+  nav .wrapper{
+    position: sticky;
+    max-width: 1300px;
+    padding: 0px 30px;
+    height: 70px;
+    line-height: 70px;
+    margin: auto;
+    display: flex;
+    align-items: self-start;
+    justify-content: space-between;
+  }
+  
+  .wrapper .nav-links{
+    display: inline-flex;
+  }
+  .nav-links li{
+    list-style: none;
+  }
+  .nav-links li a{
+    color: #f2f2f2;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 9px 15px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+  }
+  nav input{
+    display: none;
+  }
+
+.logo h3{
+    font-size: 30px;
+    font-weight: bold;
+   
+}
+@media screen and (max-width:420px){
+    .logo h3{
+        font-size: 20px;
+        
+    }
+}
+    
+.home{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(./image/earth.jpg);
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 0;
+}
+.home .img{
+    flex: 1 1 400px;
+}
+.home .img img{
+    width: 120%;
+}
+.home .content{
+    flex: 1 1 400px;
+    margin-left: 60px;
+}
+.content h3{
+    color: white;
+    font-size: 60px;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px black;
+}
+.content h2{
+    font-size: 60px;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    font-weight: bold;
+}
+.changecontent::after{
+    content: ' ';
+    color: rgb(17, 92, 12);
+    animation: changetext 10s infinite linear;
+    font-weight: bold;
+}
+@keyframes changetext{
+    0%{content: "Discover";}
+    10%{content: "The";}
+    20%{content: "Versatility";}
+    50%{content: "And";}
+    60%{content: "Strength ";}
+    80%{content: "Of";}
+    90%{content: "Our";}
+    100%{content: "100% RPP Bags,";}
+    
+}
+.content p{
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px black;
+}
+.content .btn{
+    width: 110px;
+    height: 38px;
+    background-color: rgb(17, 92, 12);
+    color: white;
+}
+@media screen and (max-width:800px){
+    .content h3{
+        font-size: 50px;
+    }
+}
+@media screen and (max-width:860px){
+    .home{
+        height: 120vh;
+    }
+}
+@media screen and (max-width:560px){
+    .home{
+        height: 100vh;
+    }
+}
+@media screen and (max-width:330px){
+    .content h2{
+        font-size: 30px;
+    }
+    .content h3{
+        font-size: 30px;
+    }
+}
+/* home section end */
+
+
+/* about */
+#about{
+    margin-top: 50px;
+}
+#about h1{
+    text-align: center;
+    font-weight: bold;
+    margin-top: 50px;
+    color: rgb(14, 161, 43);
+    text-shadow: 1px 1px 1px black;
+    border-bottom: 2px solid rgb(19, 152, 30);
+}
+#about .card{
+    background-color: rgb(14, 161, 14);
+    box-shadow: 0px 0px 5px black;
+}
+#about p{
+    color: rgb(33, 23, 3);
+   
+    font-weight:bold;
+}
+#bt button{
+    width: 150px;
+    height: 32px;
+    letter-spacing: 3px;
+    background-color: rgb(12, 136, 41);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+@media screen and (max-width:1000px){
+    #about p{
+        font-size: 10px;
+    }
+}
+@media screen and (max-width:760px){
+    #about p{
+        font-size: 20px;
+    }
+}
+/* about */
+
+/* contact */
+#contact{
+    margin-top: 100px;
+}
+#contact h1{
+    text-align: center;
+    font-weight: bold;
+    margin-top: 50px;
+    color: rgb(12, 136, 41);
+    text-shadow: 1px 1px 1px black;
+    border-bottom: 2px solid rgb(12, 136, 41);
+}
+#contact input{
+    background-color: rgb(230, 226, 219);
+}
+#contact input::placeholder{
+    color: rgb(0, 6, 2);
+}
+#contact textarea{
+    background-color: rgb(13, 101, 37);
+}
+#contact textarea::placeholder{
+    color: white;
+}
+#messagebtn{
+    text-align: center;
+}
+#messagebtn button{
+    width: 200px;
+    height: 30px;
+    letter-spacing: 3px;
+    font-weight: bold;
+    background: transparent;
+    border: 2px solid rgb(46, 11, 11);
+    color: rgb(19, 1, 1);
+    transition: 0.5s;
+    cursor: pointer;
+}
+#messagebtn button:hover{
+    background-color: rgb(37, 137, 67);
+}
+/* contact */
+
+/* footer */
+#footer{
+    width: 100%;    
+    background-color: rgb(12, 93, 33);
+    box-shadow: 0px 0px 5px black;
+    margin-top: 100px;
+}
+#footer h1{
+    color: white;
+    padding-top: 30px;
+}
+#footer p{
+    color: white;
+}
+.icons i{
+    background-color: white;
+    color: #1b891d;
+    border-radius: 50px;
+    padding: 6px;
+    font-size: 30px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.icons i:hover{
+    background-color: rgb(22, 132, 57);
+    color: white;
+}
+.copyright{
+    color: white;
+    margin-top: 20px;
+}
+.credite{
+    color: white;
+}
+/* footer */
+html{
+    scroll-behavior: smooth;
+}
+.arrow{
+    position: fixed;
+    background-color: rgb(19, 148, 32);
+    border-radius: 50px;
+    height: 50px;
+    bottom: 40px;
+    right: 50px;
+    text-decoration: none;
+    text-align: center;
+    line-height: 50px;
+}
+    </style>
+</head>
+<body>
+    <div class="all-content">
+        <!-- navbar -->
+        <nav class="navbar navbar-expand-md" id="navbar">
+            <!-- Brand -->
+            <a class="navbar-brand" href="#" id="logo"><img src="images/RDA BULK PACKAGING.jpg" alt="" width="180px"></a>
+          
+           
+            </nav>
+        <!-- navbar end -->
+      
+
+
+        <div class="header-2">
+        
+            <nav>
+                <div class="wrapper">
+                 
+                    <input type="radio" name="slider" id="menu-btn">
+                    <input type="radio" name="slider" id="close-btn">
+                    <ul class="nav-links">
+                      <label for="close-btn" class="btn close-btn"><i class="fas fa-times"></i></label>
+                      <li><a href="#">Home</a></li>
+                      <li>
+                          <a href="about.html" class="desktop-item">About</a>
+                          <input type="checkbox" id="showDrop">
+                          <label for="showDrop" class="mobile-item">Dropdown Menu</label>
+                         
+                       <ul class="drop-menu">
+                                    <li><a href="about.html">About Company</a></li>
+                                    <li><a href="RPP.html">100% RPP</a></li>
+                                    <li><a href="sustainability.html">Sustainability</a></li>
+                                    <li><a href="circular.html">Circular Economy</a></li>
+                                  </ul>
+                             
+                        </li>
+                        <li><a href="Shop page.html">Shop</a></li>
+                      
+                     <li>
+                      <li>
+                        <a href="Industries.html" class="desktop-item">Industries</a>
+                        <input type="checkbox" id="showMega">
+                        <label for="showMega" class="mobile-item">Mega Menu</label>
+                        <div class="mega-box">
+                          <div class="content">
+                            <div class="row">
+                              <img src="image/cc.png" alt="">
+                            </div>
+                            <div class="row">
+                            
+                              <ul class="mega-links">
+                                <li><a href="food grade bags.html">Food Grade</a></li>
+                                <li><a href="Feed Grade.html">Feed Grade</a></li>
+                                <li><a href="Skip Industry.html">Skip Industry</a></li>
+                                <li><a href="Pharma industry.html">Pharma Grade</a></li>
+                              </ul>
+                            </div>
+                            <div class="row">
+                              
+                              <ul class="mega-links">
+                                  <li><a href="Chemical.html">Chemical Industry</a></li>
+                                  <li><a href="rindustry.html">Recycling Industry</a></li>
+                                  <li><a href="land industry.html">Landscaping & Horti</a></li>
+                                  <li><a href="Agriculture.html">Agriculture & seeds</a></li>
+                               
+                              </ul>
+                            </div>
+                            <div class="row">
+                             <ul class="mega-links">
+                                <li><a href="Mining and Quarrying.html">Mining and quarrying</a></li>
+                                <li><a href="Building & Construction.html">Building and Construction</a></li>
+                                <li><a href="Forestry and Timber.html">Forestry and Timber</a></li>
+                                <li><a href="Industries.html">And Many More..</a></li>
+                              </ul>
+                            </div>
+                            </div>
+                        </div>
+                        </li>
+                        <li>
+                        <a href="#" class="desktop-item">All Products</a>
+                        <input type="checkbox" id="showMega">
+                        <label for="showMega" class="mobile-item">Mega Menu</label>
+                        <div class="mega-box">
+                          <div class="content">
+                            <div class="row">
+                              <img src="image/Agricutural.png" alt="">
+                            </div>
+                            <div class="row">
+                              <header>Bulk Bags</header>
+                              <ul class="mega-links">
+                                <li><a href="Fertilizer bags.html">FERTILIZER BAGS</a></li>
+                                <li><a href="Standard bulk bags.html"> STANDARD BULK BAG</a></li>
+                                <li><a href="tunnel lift bulk bags.html">TUNNEL LIFT BULK BAGS</a></li>
+                                <li><a href="Top attachement.html">TOP ATTACHMENTS</a></li>
+                                <li><a href="bottom attachement.html">BOTTOM ATTACHMENTS</a></li>
+                                </ul>
+                            </div>
+                            <div class="row">
+                              <header>SPECIAL BULK BAGS</header>
+                              <ul class="mega-links">
+                                <li><a href="Food Garde baffle bags.html">BAFFLE BAGS</a></li>
+                                <li><a href="type D bulk bags.html">TYPE D BAGS</a></li>
+                                <li><a href="type c bulk bags.html">TYPE C BAGS</a></li>
+                                <li><a href="Asbestos bags.html">ASBESTOS BAGS</a></li>
+                                <li><a href="Un approved bags.html">UN APPROVED BAGS</a></li>
+                          </ul>
+                            </div>
+                            <div class="row">
+                              <header>SACKS AND SMALL BAGS</header>
+                              <ul class="mega-links">
+                                <li><a href="top hemmed bulk bags.html">PPWOVEN SACKS</a></li>
+                                <li><a href="Bopp Bulk Bags.html">BOPP BAGS</a></li>
+                                <li><a href="Borrow Bulk Bags.html">BORROW BAGS</a></li>
+                                <li><a href="AD star bags.html">AD STAR BAGS </a></li>
+                                <li><a href="mesh  Leno Bulk Bags.html"> LENO MESH BULK BAGS</a></li>
+                             </ul>
+                            </div>
+                        
+                      </li>
+                      
+                      <li><a href="contact us.html">Contact Us</a></li>
+                    </ul>
+                    <label for="menu-btn" class="btn menu-btn"><i class="fas fa-bars"></i></label>
+                  </div>
+                </nav>
+              </div>
+          
+          </header>
+          
+          <!-- header section ends -->
+
+        <!-- home section -->
+        <div class="home">
+            <div class="content" data-aos="zoom-out-right">
+                <h3>100% RPP- At RDA Bulk Packaging Ireland Ltd
+                </h3>
+                <h2> <span class="changecontent"></span></h2>
+                <br>
+                <br>
+                <br>
+                <p>At RDA Bulk Packaging Ltd, we are proud to introduce a groundbreaking line of products – the 100% rPP bags. These bags are a testament to our dedication to sustainability and reducing the environmental impact of packaging materials. 100% rPP stands for 100% recycled polypropylene, a material that is derived from post-consumer and post-industrial waste. By harnessing the power of recycling, we have crafted a range of bags that not only serve their purpose effectively but also contribute significantly to a circular economy.
+
+
+                </p>
+              
+            </div>
+            <div class="img"  data-aos="zoom-out-left">
+                <img src="./image/Fill top & skirt top bags  (1).png" alt="">
+            </div>
+        </div>
+        <!-- home section end -->
+         <!-- about -->
+      <div class="container" id="about"    data-aos="fade-up"
+      data-aos-duration="1500">
+        <h1>All about 100% rPP</h1>
+        <br>
+        <br>
+        <div class="row">
+            <div class="col-md-6 py-3 py-md-0">
+           
+                <div class="card">
+                    <img src="./image/cdc.jpg" alt="">
+                </div>
+          </div>
+        <div class="col-md-6 py-3 py-md-0">
+                    <p>
+
+                
+                        
+                        Beyond their diverse design options and sizes, our 100% rPP bulk bags offer a myriad of sustainability-driven advantages that resonate with environmentally conscious businesses:
+                       <br> 1. Reduced Carbon Footprint: By utilizing recycled polypropylene, we significantly reduce the carbon footprint associated with traditional plastic production. Choosing 100% rPP bulk bags demonstrates your commitment to combatting climate change.
+                       <br>2. Waste Minimization: The use of recycled materials helps divert plastic waste from landfills and oceans, contributing to a cleaner environment and healthier ecosystems.
+                       <br> 3. Enhanced Circular Economy: Embrace the circular economy by opting for packaging made from recycled materials. Each 100% rPP bulk bag you use supports the recycling loop, reducing the need for new plastic production.
+                       <br> 4. Regulatory Compliance and Safety: Our bulk bags adhere to stringent industry standards and regulations, ensuring that your materials are packaged safely and in compliance with relevant guidelines.
+                        
+                         </p>                
+
+                <div id="bt"><button>Read More...</button></divr>
+            </div>
+        </div>
+      </div>
+      <!-- about -->
+<br>
+<br>
+<br>
+
+
+     <br>
+     <br>
+     <br>
+      <!-- about -->
+      <div class="container" id="about"    data-aos="fade-up"
+      data-aos-duration="1500">
+        <h1>ABOUT 100% RPP</h1>
+        <br>
+        <br>
+        
+                
+                    
+                
+                <div class="row">
+                    <div class="col-md-6 py-3 py-md-0">
+                      
+                
+                   
+<video width="520" height="540"  controls>
+   
+    <source src="image/Logo-100- -rrp.mp4" type="video/mp4">
+    
+ autoplay loop muted plays-inline
+</video>
+
+            </div>
+            <div class="col-md-6 py-3 py-md-0">
+                    <p>
+
+                        Embrace the future of sustainable packaging with our 100% rPP bags and unlock a plethora of benefits that extend beyond traditional packaging solutions:
+                       <br> 1. Environmental Impact and Circular Economy: By utilizing recycled polypropylene, we reduce the demand for virgin plastic production, divert waste from landfills, and contribute to a circular economy. This virtuous cycle conserves valuable resources, minimizes energy consumption, and lowers greenhouse gas emissions, all while extending the lifecycle of plastic materials.
+                        
+                       <br> 2. Energy Savings and Reduced Carbon Footprint: The production of recycled polypropylene requires significantly less energy compared to manufacturing new plastic from raw materials. This translates to a reduced carbon footprint, helping combat climate change and supporting your sustainability goals.
+                        
+                        <br>3. Waste Reduction and Ocean Protection: Every 100% rPP bag you choose contributes to reducing plastic waste and the risk of marine pollution. By preventing plastic from entering our oceans, you play a vital role in safeguarding marine ecosystems and preserving the beauty of our planet for future generations.
+                        
+                        <br>4. Enhanced Brand Reputation: Position your brand as a responsible and environmentally conscious entity by adopting 100% rPP bags. Communicate your commitment to sustainability to consumers, partners, and stakeholders, reinforcing your brand's values and fostering trust.
+                        
+                        <br>5. Regulatory Compliance and Industry Standards: Our 100% rPP bags adhere to stringent quality standards and regulations, ensuring that your packaging not only meets but exceeds industry expectations. Count on us for packaging solutions that prioritize safety, performance, and sustainability.
+                        
+                        
+                    </div>
+                        
+                        
+                        
+                        
+                        
+                        Sustainability-Driven Advantages of 100% rPP Bulk Bags:
+                        
+                        Beyond their diverse design options and sizes, our 100% rPP bulk bags offer a myriad of sustainability-driven advantages that resonate with environmentally conscious businesses:
+                        <br>1. Reduced Carbon Footprint: By utilizing recycled polypropylene, we significantly reduce the carbon footprint associated with traditional plastic production. Choosing 100% rPP bulk bags demonstrates your commitment to combatting climate change.
+                        <br>2. Waste Minimization: The use of recycled materials helps divert plastic waste from landfills and oceans, contributing to a cleaner environment and healthier ecosystems.
+                        <br>3. Enhanced Circular Economy: Embrace the circular economy by opting for packaging made from recycled materials. Each 100% rPP bulk bag you use supports the recycling loop, reducing the need for new plastic production.
+                        <br>4. Regulatory Compliance and Safety: Our bulk bags adhere to stringent industry standards and regulations, ensuring that your materials are packaged safely and in compliance with relevant guidelines.
+                        <br>5. Versatility and Cost-Efficiency: From construction sites to agricultural fields, our bulk bags are versatile and cost-effective solutions that cater to a wide range of industries and budgets.
+                        
+                        <br>Unlock Sustainability with RDA Bulk Packaging:
+                        When you choose RDA Bulk Packaging's 100% rPP bulk bags, you're not just opting for efficient and reliable packaging – you're making a powerful statement about your commitment to sustainability. Join us in creating a greener future, one bulk bag at a time.
+                        
+                        Contact Us and Take the Next Step:
+                        Ready to embrace sustainable packaging solutions that align with your operational needs? Reach out to our dedicated team today. We're here to guide you through our range of 100% rPP bulk bags, help you choose the right sizes and designs, and provide you with a packaging solution that is both environmentally responsible and operationally efficient.
+                         </p>                
+
+                <div id="bt"><button>Read More...</button></divr>
+            </div>
+        </div>
+      </div>
+      <!-- about -->
+        
+     <br>
+     <br>
+     <br>
+
+      <!-- contact  -->
+      <div class="container" id="contact"    data-aos="fade-up"
+      data-aos-duration="1500">
+        <h1>CONTACT US</h1>
+        <div class="row">
+            <div class="col-md-4 py-1 py-md-0">
+                <div class="form-group">
+                    <input type="text" class="form-control" id="usr" placeholder="Name">
+                </div>
+            </div>
+            <div class="col-md-4 py-1 py-md-0">
+                <div class="form-group">
+                    <input type="email" class="form-control" id="eml" placeholder="Email">
+                </div>
+            </div>
+            <div class="col-md-4 py-1 py-md-0">
+                <div class="form-group">
+                    <input type="number" class="form-control" id="phn" placeholder="Phone">
+                </div>
+            </div>
+            
+        </div>
+        <div class="form-group">
+            <textarea class="form-control" rows="5" id="comment" placeholder="Message"></textarea>
+        </div>
+        <div id="messagebtn"><button>Send Message</button></div>
+      </div>
+      <!-- contact end -->
+
+
+      <!-- footer -->
+      <footer id="footer"    data-aos="fade-up"
+      data-aos-duration="1500">
+        <h1 class="text-center">100% RPP-Ireland</h1>
+        <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, accusantium.</p>
+        <div class="icons text-center">
+            <i class="bx bxl-linkedin"></i>
+            <i class="bx bxl-twitter"></i>
+            <i class="bx bxl-facebook"></i>
+            <i class="bx bxl-instagram"></i>
+        </div>
+        <div class="copyright text-center">
+            &copy; Copyright <strong>Industries</strong> .All Rights Reserved
+        </div>
+        <div class="credite text-center">
+            Designed By <a href="#"><span>RDA Bulk packaging Ireland Ltd</span></a>
+        </div>
+      </footer>
+      <!-- footer -->
+
+      <a href="#" class="arrow"><i><img src="./image/up-arrow.png" alt="" width="50px"></i></a>
+
+
+
+    </div>
+
+
+
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
+</body>
+</html>

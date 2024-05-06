@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+    <style>
+        *{
+  margin: 0;
+  padding: 0;
+  font-family: "montserrat",sans-serif;
+  box-sizing: border-box;
+  
+}
+
+
+
+.header .header-0{
+    background:#fff;
+    padding:1.5rem 9%;
+    display: flex;
+    align-items:end;
+   justify-content:space-between;
+
+}
+.header .header-0 .logo{
+    align-items:start;
+    justify-content:space-between;
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color:var(--black);
+}
+
+.header .header-0 .logo a{
+    align-items:start;
+    justify-content:left;
+    color:var(--green);
+}
+
+.header .header-1{
+    background:#ffffff;
+    padding:1.5rem 9%;
+    display: flex;
+    align-items:end;
+
+}
+
+
+.header .header-1 .search-form input{
+    font-size: 1.6rem;
+    padding:0 2.2rem;
+    height:50%;
+    width:100%;
+    text-transform: none;
+    color:var(--black);
+}
+
+
+
+nav{
+    position:sticky;
+    z-index: 99;
+    width: 100%;
+   background: #1d9738;
+  }
+  nav .wrapper{
+    position: sticky;
+    max-width: 1300px;
+    padding: 0px 30px;
+    height: 70px;
+    line-height: 70px;
+    margin: auto;
+    display: flex;
+    align-items: self-start;
+    justify-content: space-between;
+  }
+  
+  .wrapper .nav-links{
+    display: inline-flex;
+  }
+  .nav-links li{
+    list-style: none;
+  }
+  .nav-links li a{
+    color: #f2f2f2;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 9px 15px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+  }
+  nav input{
+    display: none;
+  }
+
+.logo h3{
+    font-size: 30px;
+    font-weight: bold;
+   
+}
+@media screen and (max-width:420px){
+    .logo h3{
+        font-size: 20px;
+        
+    }
+}
+
+
+
+
+
+.services-section{
+  background: url(bg.jpg);
+  background-size: cover;
+  padding: 60px 0;
+  opacity: 2221;
+}
+.inner-width{
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+  overflow: hidden;
+}
+.section-title{
+  text-align: center;
+  color: #0fa60a;
+  text-transform: uppercase;
+  font-size: 30px;
+}
+.border{
+  width: 160px;
+  height: 2px;
+  background: #0fa60a;
+  margin: 40px auto;
+}
+.services-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.service-box{
+  max-width: 33.33%;
+  padding: 10px;
+  text-align: center;
+  color: #ebf1eb;
+  cursor: pointer;
+}
+
+.service-icon{
+  display: inline-block;
+  width: 70px;
+  height: 70px;
+  border: #0fa60a;
+  color:#0fa60a;
+  transform: rotate(45deg);
+  margin-bottom: 30px;
+  margin-top: 16px;
+  transition: 0.3s linear;
+}
+.service-icon i{
+  line-height: 70px;
+  transform: rotate(-45deg);
+  font-size: 26px;
+}
+.service-box:hover .service-icon{
+  background: #0fa60a;
+  color: #ddd;
+}
+.service-title{
+  font-size: 18px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.service-desc{
+  font-size: 14px;
+}
+
+@media screen and (max-width:960px) {
+  .service-box{
+    max-width: 45%;
+  }
+}
+
+@media screen and (max-width:768px) {
+  .service-box{
+    max-width: 50%;
+  }
+}
+
+@media screen and (max-width:480px) {
+  .service-box{
+    max-width: 100%;
+  }
+}
+
+.footer .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap:1.5rem;
+}
+
+.footer .box-container .box h3{
+    font-size: 2.2rem;
+    color:#0d0d0d;
+    padding:1rem 0;
+}
+
+.footer .box-container .box a{
+    display: block;
+    font-size: 1.2rem;
+    color:#0fa60a;
+    padding:0.5rem;
+}
+
+.footer .box-container .box a i{
+    color:var(--green);
+    padding-right: 2.5rem;
+}
+
+.footer .box-container .box a:hover i{
+    padding-right: 2rem;
+}
+
+.footer .box-container .box .map{
+    width:100%;
+}
+
+.footer .share{
+    padding:1rem 0;
+    text-align: center;
+}
+
+.footer .share a{
+    height: 5rem;
+    width: 5rem;
+    line-height: 5rem;
+    font-size: 2rem;
+    color:#fff;
+    background:var(--green);
+    margin:0 .3rem;
+    border-radius: 50%; 
+}
+
+.footer .share a:hover{
+    background:var(--green);
+}
+
+.footer .credit{
+    border-top: var(--border);
+    margin-top: 2rem;
+  
+    padding-top: 2.5rem;
+    font-size: 2rem;
+    color:#0fa60a;
+    text-align: center;
+}
+
+.footer .credit span{
+    color:#5c5959;
+}
+
+
+
+    </style>
+  </head>
+  <body>
+
+ <!-- header section starts  -->
+
+ <header class="header">
+
+  <div class="header-0">
+     
+      <a href="#" class="logo"><img src="images/rda logo.png" alt=""></a>
+      <div class="header-1">
+      <form action="" class="search-form">
+          <input type="search" name="" placeholder="search here..." id="search-box">
+         </form>
+
+     
+  </div>
+</div>
+
+ <div class="header-2">
+      
+  <nav>
+      <div class="wrapper">
+       
+        <input type="radio" name="slider" id="menu-btn">
+        <input type="radio" name="slider" id="close-btn">
+        <ul class="nav-links">
+        
+          <li><a href="index.html">Home</a></li>
+          <li>
+              <a href="about.html" class="desktop-item">About</a>
+          </li>
+          <li>
+            <a href="services.html" class="desktop-item">Services</a>
+           </li>
+          <li>
+            <a href="Industries.html" class="desktop-item">Industries</a>
+           
+           </li>
+            <li><a href="#" class="desktop-item">All Products</a></li>
+           
+            <li><a href="contact us.html">Contact Us</a></li>
+     
+       
+      </div>
+    </nav>
+</header>
+
+<!-- header section ends -->
+    <div class="services-section">
+      <div class="inner-width">
+        <h1 class="section-title">Our Services</h1>
+        <div class="border"></div>
+        <div class="services-container">
+
+
+          
+
+
+          <div class="service-box">
+            <div class="service-icon">
+              <i class="fas fa-hotel"></i>
+            </div>
+            <div class="service-title">Manufacturing</div>
+            <div class="service-desc">
+              RDA utilise a number of manufacturing facilities in India. Each of which holds a valid certificate for the manufacture of bulk bags from the Indian Institute of Packaging,
+                     Cotecna in India, Labordata in Germany and several other internationally recognised test houses.
+            </div>
+          </div>
+
+          <div class="service-box">
+            <div class="service-icon">
+              <i class="fas fa-cubes"></i>
+            </div>
+            <div class="service-title">Distribution</div>
+            <div class="service-desc">
+              RDA utilise a number of manufacturing facilities in India. Each of which holds a valid certificate for the manufacture of bulk bags from the Indian
+                     Institute of Packaging, Cotecna in India, Labordata in Germany and several other internationally recognised test houses.
+            </div>
+          </div>
+
+          <div class="service-box">
+            <div class="service-icon">
+              <i class="fas fa-handshake"></i>
+            </div>
+            <div class="service-title">Partner Company</div>
+            <div class="service-desc">
+              RDA utilise a number of manufacturing facilities in India. Each of which holds a valid certificate for the manufacture of bulk bags from 
+              the Indian Institute of Packaging, Cotecna in India, Labordata in Germany and several other internationally recognised test houses.
+            </div>
+          </div>
+
+          <div class="service-box">
+            <div class="service-icon">
+              <i class="fas fa-globe-asia"></i>
+            </div>
+            <div class="service-title">Around The World</div>
+            <div class="service-desc">
+              With our flexible system and excellent supply chain we are able to cater the packaging requirements across the globe  
+            </div>
+          </div>
+
+          <div class="service-box">
+            <div class="service-icon">
+              <i class="fas fa-truck"></i>
+            </div>
+            <div class="service-title">Fastest Delivery</div>
+            <div class="service-desc">
+              With our chain of Network at various location for warehousing we supply you goods in fastest way compared to what is available in the market. 
+            </div>
+          </div>
+
+          <div class="service-box">
+            <div class="service-icon">
+              <i class="fas fa-sitemap"></i>
+            </div>
+            <div class="service-title">R and D</div>
+            <div class="service-desc">
+              RDA operates from warehousing facilities based in Co.
+                     Meath, Republic of Ireland.It involves activities such as transportation, warehousing, logistics, and retailing
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+<br>
+<br>
+
+    
+<!-- footer section starts  -->
+
+<section class="footer">
+
+  <div class="box-container">
+
+     
+
+      <div class="box">
+          <h3>quick links</h3>
+          <a href="#"> <i class="fas fa-arrow-right"></i>home</a>
+          <a href="#"> <i class="fas fa-arrow-right"></i>about</a>
+          <a href="#"> <i class="fas fa-arrow-right"></i>services</a>
+          <a href="#"> <i class="fas fa-arrow-right"></i>products</a>
+          <a href="#"> <i class="fas fa-arrow-right"></i>contact</a>
+      </div>
+
+      <div class="box">
+          <h3>extra links</h3>
+         
+          <a href="#"> <i class="fas fa-arrow-right"></i>privacy policy</a>
+         
+          <a href="#"> <i class="fas fa-arrow-right"></i> our serivces </a>
+ 
+      </div>
+          <div class="box">
+          <h3>contact info</h3>
+          <a href="#"> <i class="fas fa-phone"></i> +123-456-7890 </a>
+          <a href="#"> <i class="fas fa-phone"></i> +111-222-3333 </a>
+          <a href="#"> <i class="fas fa-envelope"></i>info@rda-ireland.ie</a>
+          
+      
+  </div>
+
+  <div class="share">
+      <a href="https://www.facebook.com/RDABulkPackagingIrelandLtd" class="fab fa-facebook-f"></a>
+      <a href="https://twitter.com/home" class="fab fa-twitter"></a>
+      <a href="https://l.instagram.com/?u=http%3A%2F%2Frda-ireland.ie%2F&e=AT2SZzFvFHXNN4SdjpMH1cQmy5M96xv3xvvZqL-jGaNUOIgULUNDN3-SkPDcuzH-wAyhZAJOSywjo64SUc_alnsQ8XWAs85iAraRvXs" class="fab fa-instagram"></a>
+      <a href="https://www.linkedin.com/company/90670731/admin/feed/posts/" class="fab fa-linkedin"></a>
+      <a href="#" class="fab fa-pinterest"></a>
+  </div>
+
+  <div class="credit"> Created by <span> <br>2023 RDA Bulk Packaging Ireland Private Limited all rights reserved! </div>
+
+</section>
+
+<!-- footer section ends -->
+  </body>
+</html>

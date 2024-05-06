@@ -1,0 +1,28 @@
+public class palindromecheck{
+    public static void main (string [] args) {
+        string str = "naman";
+        if (ispalindrome(str)){
+            System.out.println(str + " is a palindrome.");
+
+        } else {
+            system.out.println(str +"is not a palindrome.");
+
+        }
+    }
+
+    public static boolean ispalindrome(string str){
+        str = str.toLowerCase();
+        int left =0;
+        int right = str.length() -1;
+
+        while (left <right){
+           if(str.charAt(left) != str.charAt (right)){
+            retun false;
+           }
+        left++;
+        right--;
+
+    }
+    return true
+}
+}
