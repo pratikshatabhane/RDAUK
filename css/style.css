@@ -403,8 +403,8 @@ section{
 
 .home{
     width: 100%;
-    height: 110vh;
-    background: url(../images/Main\ BG.png)no-repeat;
+    height: 140vh;
+    background: url(../images/parent5.jpg)no-repeat;
     background-size: cover;
     opacity:222222;
     
@@ -440,7 +440,7 @@ section{
 }
 
 .home .row .content h3{
-    color:#fff;
+    color:#0f3160;
    
     font-size: 6.2rem;
     font-weight:bolder;
@@ -458,14 +458,14 @@ section{
 }
 
 .Hcard {
-   background-color:#429eb3ba;
+   background-color:#ffffff67;
     border-radius: 110px;
-    box-shadow: 0px 5px 15px rgba(35, 122, 148, 0.705);
+    box-shadow: 0px 5px 15px rgba(12, 12, 12, 0.118);
     justify-content: space-around; /* Adjust the spacing between cards */
     margin: 2px;
-    max-width: 530px;
+    max-width: 500px;
     padding: 50px;
-    text-align:start;
+    text-align:center;
     transition: transform 0.2s ease-in-out;
 }
 
@@ -1380,7 +1380,7 @@ nav{
 }
 
 .newsletter{
-    background:url(../image/Green\ landscape.jpg) no-repeat;
+    background:url(../images/parent6.jpg) no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
