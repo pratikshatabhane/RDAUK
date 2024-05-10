@@ -440,10 +440,10 @@ section{
 }
 
 .home .row .content h3{
-    color:#080bb9;
+    color:#1b2e7b;
    
-    font-size: 6.5rem;
-    font-weight:var(--dark-color);
+    font-size: 6.2rem;
+    font-weight:bolder;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     padding:2rem 0;
 }
