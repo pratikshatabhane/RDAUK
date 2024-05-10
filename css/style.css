@@ -853,7 +853,7 @@ nav{
   }
   
   .room__grid {
-    max-width: 1500px;
+    max-width: 150px;
     margin-inline: auto;
     margin-top: 4rem;
     display: grid;
