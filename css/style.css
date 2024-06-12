@@ -16,7 +16,7 @@
     box-sizing: border-box;
     outline: none; border:none;
     text-decoration: none;
-    text-transform: capitalize;
+  
     transition:all .2s linear;
     transition:width none;
 }
@@ -146,16 +146,18 @@ section{
 }
 
 .btn{
-    margin-top: 1rem;
-    display:inline-block;
-    padding:.9rem 3rem;
-    border-radius: 1.7rem;
-    color:#fff;
-    background:var(--green);
-    font-size: 1.7rem;
-    cursor: pointer;
-    font-weight: 500;
+  margin-top: 1rem;
+  display:inline-block;
+  padding:.9rem 3rem;
+  justify-content: space-between;
+  border-radius: 1.7rem;
+  color:#e2e832;
+  background:var(--green);
+  font-size: 2.5rem;
+  cursor: pointer;
+  font-weight: 500;
 }
+
 
 .btn:hover{
     background:var(--dark-color);
@@ -440,7 +442,7 @@ section{
 }
 
 .home .row .content h3{
-    color:#1b2e7b;
+    color:#18355e;
    
     font-size: 6.2rem;
     font-weight:bolder;
