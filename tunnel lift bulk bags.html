@@ -23,7 +23,7 @@
 			box-sizing: border-box;
 			outline: none; border:none;
 			text-decoration: none;
-			text-transform: capitalize;
+			text-transform:lowercase;
 			transition:all .2s linear;
 			transition:width none;
 		}
@@ -153,16 +153,17 @@
 		}
 		
 		.btn{
-			margin-top: 1rem;
-			display:inline-block;
-			padding:.9rem 3rem;
-			border-radius: 1.7rem;
-			color:#fff;
-			background:var(--green);
-			font-size: 1.7rem;
-			cursor: pointer;
-			font-weight: 500;
-		}
+  margin-top: 1rem;
+  display:inline-block;
+  padding:.9rem 3rem;
+  justify-content: space-between;
+  border-radius: 1.7rem;
+  color:#e2e832;
+  background:var(--green);
+  font-size: 2.5rem;
+  cursor: pointer;
+  font-weight: 500;
+}
 		
 		.btn:hover{
 			background:var(--dark-color);
@@ -1106,7 +1107,7 @@
 
     <div class="header-0">
        
-        <a href="#" class="logo"><img src="images/rda logo.png" alt=""></a>
+        <a href="index.html" class="logo"><img src="image/RDA New Logo.jpg" alt=""></a>
         <div class="header-1">
         <form action="" class="search-form">
             <input type="search" name="" placeholder="search here..." id="search-box">
@@ -1118,36 +1119,40 @@
 
             <div id="login-btn" class="fas fa-user"></div>
         </div>
+        </div>
+           <a href="Shop page.html"  class="btn"><i class="fa fa-shopping-basket" aria-hidden="true">OnlineShop</i></a>
+           
+        </div>
+        
     </div>
+    
 </div>
    <div class="header-2">
-        
-    <nav>
+        <nav>
         <div class="wrapper">
          
           <input type="radio" name="slider" id="menu-btn">
           <input type="radio" name="slider" id="close-btn">
           <ul class="nav-links">
             <label for="close-btn" class="btn close-btn"><i class="fas fa-times"></i></label>
-            <li><a href="#">Home</a></li>
+            <li><a href="index.html">Home</a></li>
             <li>
                 <a href="about.html" class="desktop-item">About</a>
                 <input type="checkbox" id="showDrop">
                 <label for="showDrop" class="mobile-item">Dropdown Menu</label>
-                <ul class="drop-menu">
-                
-                 
-                 
-                </ul>
-              </li>
-            <li>
-              <a href="services.html" class="desktop-item">Services</a>
-              <input type="checkbox" id="showDrop">
-              <label for="showDrop" class="mobile-item">Dropdown Menu</label>
-              <ul class="drop-menu">
                
-              </ul>
-            </li>
+             <ul class="drop-menu">
+                          <li><a href="about.html">About Company</a></li>
+                          <li><a href="SERVICES (2).html">Services</a></li>
+                          <li><a href="RPP.html">100% RPP</a></li>
+                          <li><a href="sustainability.html">Sustainability</a></li>
+                          <li><a href="circular.html">Circular Economy</a></li>
+                        </ul>
+                   
+              </li>
+            
+            
+           <li>
             <li>
               <a href="Industries.html" class="desktop-item">Industries</a>
               <input type="checkbox" id="showMega">
@@ -1177,19 +1182,18 @@
                     </ul>
                   </div>
                   <div class="row">
-                   
-                    <ul class="mega-links">
+                   <ul class="mega-links">
                       <li><a href="Mining and Quarrying.html">Mining and quarrying</a></li>
                       <li><a href="Building & Construction.html">Building and Construction</a></li>
                       <li><a href="Forestry and Timber.html">Forestry and Timber</a></li>
-                      <li><a href="#">And Many More..</a></li>
+                      <li><a href="Industries.html">And Many More..</a></li>
                     </ul>
                   </div>
                   </div>
               </div>
               </li>
               <li>
-              <a href="#" class="desktop-item">All Products</a>
+              <a href="All Products page.html" class="desktop-item">All Products</a>
               <input type="checkbox" id="showMega">
               <label for="showMega" class="mobile-item">Mega Menu</label>
               <div class="mega-box">
@@ -1200,26 +1204,22 @@
                   <div class="row">
                     <header>Bulk Bags</header>
                     <ul class="mega-links">
+                      <li><a href="Standard bulk bags.html">STANDARD BULK BAG</a></li>
                       <li><a href="Fertilizer bags.html">FERTILIZER BAGS</a></li>
-                      <li><a href="Standard bulk bags.html"> STANDARD BULK BAG</a></li>
                       <li><a href="tunnel lift bulk bags.html">TUNNEL LIFT BULK BAGS</a></li>
                       <li><a href="Top attachement.html">TOP ATTACHMENTS</a></li>
                       <li><a href="bottom attachement.html">BOTTOM ATTACHMENTS</a></li>
-                      <li><a href="One and two Loop bags.html">ONE LOOP & TWO LOOP</a></li>
-                      <li><a href="bags and baffle bags.html">BAFFLE BAG AND LINERS</a></li>
-                    </ul>
+                      </ul>
                   </div>
                   <div class="row">
                     <header>SPECIAL BULK BAGS</header>
                     <ul class="mega-links">
-                      <li><a href="Food Garde baffle bags.html"> FOOD GRADE BAFFLE BAGS</a></li>
+                      <li><a href="bags and baffle bags.html"> BAFFLE BAGS</a></li>
                       <li><a href="type D bulk bags.html">TYPE D BAGS</a></li>
                       <li><a href="type c bulk bags.html">TYPE C BAGS</a></li>
                       <li><a href="Asbestos bags.html">ASBESTOS BAGS</a></li>
                       <li><a href="Un approved bags.html">UN APPROVED BAGS</a></li>
-                      <li><a href="Remote Release Bags with D locks.html"> REMOTE D LOCKS</a></li>
-                      <li><a href="PopUp loop bulk bags.html">Pop-Up Loop Bags</a></li>
-                    </ul>
+                </ul>
                   </div>
                   <div class="row">
                     <header>SACKS AND SMALL BAGS</header>
@@ -1229,13 +1229,11 @@
                       <li><a href="Borrow Bulk Bags.html">BORROW BAGS</a></li>
                       <li><a href="AD star bags.html">AD STAR BAGS </a></li>
                       <li><a href="mesh  Leno Bulk Bags.html"> LENO MESH BULK BAGS</a></li>
-                      <li><a href="ultra sonic Hemmed bags.html">ULTRA SONIC HEM BAGS</a></li>
-                      <li><a href="Top heat cut bags.html">TOP HEAT CUT BAGS</a></li>
-                    </ul>
+                   </ul>
                   </div>
-              
-            </li>
-            
+               </li>
+          
+            <li><a href="#">Brochures</a></li>
             <li><a href="contact us.html">Contact Us</a></li>
           </ul>
           <label for="menu-btn" class="btn menu-btn"><i class="fas fa-bars"></i></label>
@@ -1314,8 +1312,13 @@
 		<h3>
 			Tunnel Lift Bulk Bags</h3>
         <p>
-			RDA Bulk Packaging Is Committed To Safety And Compliance, Tunnel Lifts For Bulk Bags, Also Known As Tunnel Lift Bulk Bags Or Tunnel Lift FIBCs (Flexible Intermediate Bulk Containers), Are Designed For Efficient Handling And Transportation Of Large Quantities Of Materials. These Bags Typically Feature Loops Or Sleeves (Tunnels) At Each Corner, Allowing Forklift Tines To Easily Slide Through And Lift The Bag. This Design Enhances Safety And Efficiency In Lifting, Moving, And Stacking Large Bags.</p>
+			RDA Bulk Packaging Is Committed To Safety And Compliance, Tunnel Lifts For Bulk Bags, Also Known As Tunnel 
+			Lift Bulk Bags Or Tunnel Lift FIBCs (Flexible Intermediate Bulk Containers), Are Designed For Efficient Handling And 
+			Transportation Of Large Quantities Of Materials. These Bags Typically Feature Loops Or Sleeves (Tunnels) At Each Corner,
+			 Allowing Forklift Tines To Easily Slide Through And Lift The Bag. This Design Enhances Safety And Efficiency In Lifting, 
+			 Moving, And Stacking Large Bags.</p>
         <a href="index.html" class="btn">More About Us</a>
+
     </div>
 </section>
 
@@ -1406,8 +1409,8 @@
                 <i class="fas fa-hotel"></i>
                 <div class="card-body">
                 <h3>manufacturing</h3>
-                <p>RDA utilise a number of manufacturing facilities in India. Each of which holds a
-                     valid certificate for the manufacture of bulk bags from the Indian Institute of Packaging..</p>
+                <p>RDA utilise a number of manufacturing facilities in UK. Each of which holds a
+                     valid certificate for the manufacture of bulk bags from the ISO.</p>
                
             </div>
 
@@ -1501,11 +1504,11 @@
   
 		<div class="box">
 			<h3>quick links</h3>
-			<a href="#"> <i class="fas fa-arrow-right"></i>home</a>
-			<a href="#"> <i class="fas fa-arrow-right"></i>about</a>
-			<a href="#"> <i class="fas fa-arrow-right"></i>services</a>
-			<a href="#"> <i class="fas fa-arrow-right"></i>products</a>
-			<a href="#"> <i class="fas fa-arrow-right"></i>contact</a>
+			<a href="index.html"> <i class="fas fa-arrow-right"></i>home</a>
+			<a href="about.html"> <i class="fas fa-arrow-right"></i>about</a>
+			<a href="SERVICES (2).html"> <i class="fas fa-arrow-right"></i>services</a>
+			<a href="All Products page.html"> <i class="fas fa-arrow-right"></i>products</a>
+			<a href="contact us.html"> <i class="fas fa-arrow-right"></i>contact</a>
 		</div>
   
 		<div class="box">
@@ -1537,33 +1540,11 @@
 	 
 	</div>
   </div>
-	<div class="credit"> created by <span> 2024 RDA Bulk Packaging Private Limited</span> | all rights reserved! </div>
+	<div class="credit"> Created by <span> 2024 RDA Bulk Packaging Private Limited</span> | all rights reserved! </div>
   
   </section>
   
   <!-- footer section ends -->
-
-<!-- loader  -->
-
-<div class="loader-container">
-    <img src="image/loader-img.gif" alt="">
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 
 <!-- custom js file link  -->
