@@ -8,7 +8,7 @@
 		@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
 	
 		:root{
-			--green:#18355e;
+			--green:#101111fc;
 			--dark-color:rgb(33, 145, 80)35
 			--black:#444;
 			--light-color:#666;
@@ -23,7 +23,7 @@
 			box-sizing: border-box;
 			outline: none; border:none;
 			text-decoration: none;
-			text-transform: lowercase;
+	
 			transition:all .2s linear;
 			transition:width none;
 		}
@@ -152,7 +152,8 @@
 			border:var(--border);
 		}
 		
-		.btn{
+		
+.btn{
   margin-top: 1rem;
   display:inline-block;
   padding:.9rem 3rem;
@@ -164,6 +165,7 @@
   cursor: pointer;
   font-weight: 500;
 }
+
 		
 		.btn:hover{
 			background:var(--dark-color);
@@ -179,7 +181,7 @@
 		
 		.navbar {
 			overflow: hidden;
-			background: #18355e;
+			background: #101111fc;
 		}
 		.navbar a {
 			float: left;
@@ -188,7 +190,7 @@
 			text-align: center;
 			padding: 10px 12px;
 			text-decoration:none;
-			text-transform: uppercase;
+		
 		}
 		.d {
 			float: left;
@@ -201,7 +203,7 @@
 			color: #fff;
 			padding: 10px 12px;
 			background: inherit;
-			text-transform: uppercase;
+		
 		}
 		.navbar a:hover, .d:hover .d-btn {
 			background: #5F5F5F;
@@ -349,7 +351,7 @@
 		
 		.login-form-container form h3{
 			font-size: 2.5rem;
-			text-transform: uppercase;
+		
 			color:var(--black);
 			text-align: center;
 		}
@@ -412,7 +414,7 @@
 		.home{
 			width: 100%;
 			height: 110vh;
-			background: url(img/baffle2.png)no-repeat;
+			background: url(image/baffle1.png)no-repeat;
 			background-size: cover;
 			opacity:222222;
 			
@@ -448,7 +450,7 @@
 		}
 		
 		.home .row .content h3{
-			color:#18355e;
+			color:#101111fc;
 		   
 			font-size: 6.2rem;
 			font-weight:bolder;
@@ -471,7 +473,7 @@
 			box-shadow: 0px 5px 15px rgba(12, 12, 12, 0.2);
 			justify-content: space-around; /* Adjust the spacing between cards */
 			margin: 2px;
-			max-width: 400px;
+			max-width: 550px;
 			padding: 50px;
 			text-align:center;
 			transition: transform 0.2s ease-in-out;
@@ -482,7 +484,7 @@
 			z-index: 99;
 			width: 100%;
 			
-			background: #18355e;
+			background: #101111fc;
 		  }
 		  nav .wrapper{
 			position: relative;
@@ -512,14 +514,14 @@
 			transition: all 0.3s ease;
 		  }
 		  .nav-links li a:hover{
-			background: #3A3B3C;
+			background: #3a3b3c50;
 		  }
 		  .nav-links .mobile-item{
 			display: none;
 		  }
 		  .nav-links .drop-menu{
 			position: absolute;
-			background: #242526;
+			background: #24242577;
 			width: 180px;
 			line-height: 45px;
 			top: 85px;
@@ -551,7 +553,7 @@
 			visibility: hidden;
 		  }
 		  .mega-box .content{
-			background: #242526;
+			background: #242526cd;
 			padding: 25px 20px;
 			display: flex;
 			width: 100%;
@@ -737,7 +739,7 @@
 		}
 		
 		.newsletter{
-			background:url(image/Green\ landscape.jpg) no-repeat;
+			background:url(images/mainbg.jpeg) no-repeat;
 			background-size: cover;
 			background-position: center;
 			background-attachment: fixed;
@@ -1107,20 +1109,23 @@
 
     <div class="header-0">
        
-        <a href="index.html" class="logo"><img src="image/RDA New Logo.jpg" alt=""></a>
-        <div class="header-1">
-        <form action="" class="search-form">
-            <input type="search" name="" placeholder="search here..." id="search-box">
-            <label for="search-box" class="fas fa-search"></label>
-        </form>
+      <a href="index.html" class="logo"><img src="images/conbag-header.png" alt=""; height="90"; width="280"></a>
+      
+     
+      <div class="header-1">
+            <a href="https://www.conbag.de/"  class="btn"><i class="fa fa-shopping-basket" aria-hidden="true">OnlineShop</i></a>
+         
+         
 
         <div class="icons">
-            <div id="search-btn" class="fas fa-search"></div>
+            <div id="search-btn" class="fas"></div>
 
             <div id="login-btn" class="fas fa-user"></div>
+           
         </div>
         </div>
-           <a href="Shop page.html"  class="btn"><i class="fa fa-shopping-basket" aria-hidden="true">OnlineShop</i></a>
+ 
+         
            
         </div>
         
@@ -1131,22 +1136,21 @@
         <nav>
         <div class="wrapper">
          
-          <input type="radio" name="slider" id="menu-btn">
-          <input type="radio" name="slider" id="close-btn">
+          
           <ul class="nav-links">
             <label for="close-btn" class="btn close-btn"><i class="fas fa-times"></i></label>
-            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html">Startseite</a></li>
             <li>
-                <a href="about.html" class="desktop-item">About</a>
+                <a href="about.html" class="desktop-item">Über uns</a>
                 <input type="checkbox" id="showDrop">
                 <label for="showDrop" class="mobile-item">Dropdown Menu</label>
                
              <ul class="drop-menu">
-                          <li><a href="about.html">About Company</a></li>
-                          <li><a href="SERVICES (2).html">Services</a></li>
+                          
+                          <li><a href="SERVICES (2).html">Dienstleistungen</a></li>
                           <li><a href="RPP.html">100% RPP</a></li>
-                          <li><a href="sustainability.html">Sustainability</a></li>
-                          <li><a href="circular.html">Circular Economy</a></li>
+                          <li><a href="sustainability.html">Nachhaltigkeit</a></li>
+                          <li><a href="circular.html"> Kreislaufwirtshaft</a></li>
                         </ul>
                    
               </li>
@@ -1154,87 +1158,95 @@
             
            <li>
             <li>
-              <a href="Industries.html" class="desktop-item">Industries</a>
+              <a href="Industries.html" class="desktop-item">Industrien</a>
               <input type="checkbox" id="showMega">
               <label for="showMega" class="mobile-item">Mega Menu</label>
               <div class="mega-box">
                 <div class="content">
                   <div class="row">
-                    <img src="image/cc.png" alt="">
+                    <img src="img/all indus.png" alt="">
                   </div>
                   <div class="row">
                   
                     <ul class="mega-links">
-                      <li><a href="food grade bags.html">Food Grade</a></li>
-                      <li><a href="Feed Grade.html">Feed Grade</a></li>
-                      <li><a href="Skip Industry.html">Skip Industry</a></li>
-                      <li><a href="Pharma industry.html">Pharma Grade</a></li>
+                      <li><a href="food grade bags.html">LebensmittelIndustrie</a></li>
+                      <li><a href="Feed Grade.html">FuttermittelIndustrie</a></li>
+                      <li><a href="Skip Industry.html">AbfallIindustrie</a></li>
+                      <li><a href="Pharma industry.html">Pharmaindustrie</a></li>
+                     
                     </ul>
                   </div>
                   <div class="row">
                     
                     <ul class="mega-links">
-                        <li><a href="Chemical.html">Chemical Industry</a></li>
-                        <li><a href="rindustry.html">Recycling Industry</a></li>
-                        <li><a href="land industry.html">Landscaping & Horti</a></li>
-                        <li><a href="Agriculture.html">Agriculture & seeds</a></li>
+                        <li><a href="Chemical.html">Chemieindustrie</a></li>
+                        <li><a href="rindustry.html">Kunststoffrecycling</a></li>
+                        <li><a href="land industry.html">Erde Sand</a></li>
+                        <li><a href="Agriculture.html">Landwirtschaft</a></li>
+                        
                      
                     </ul>
                   </div>
                   <div class="row">
                    <ul class="mega-links">
-                      <li><a href="Mining and Quarrying.html">Mining and quarrying</a></li>
-                      <li><a href="Building & Construction.html">Building and Construction</a></li>
-                      <li><a href="Forestry and Timber.html">Forestry and Timber</a></li>
-                      <li><a href="Industries.html">And Many More..</a></li>
+                      <li><a href="Mining and Quarrying.html">Bergbau/Untertage</a></li>
+                      <li><a href="Building & Construction.html">Bauwesen</a></li>
+                      <li><a href="Forestry and Timber.html">Forstwirtschaft und Holz</a></li>
+                      <li><a href="Ceramics & Glass.html">Keramik-/Glasindustrie</a></li>
+                      <li><a href="Industries.html">viele weitere..</a></li>
                     </ul>
                   </div>
                   </div>
               </div>
               </li>
               <li>
-              <a href="All Products page.html" class="desktop-item">All Products</a>
+              <a href="All Products page.html" class="desktop-item">Alle Produkte</a>
               <input type="checkbox" id="showMega">
               <label for="showMega" class="mobile-item">Mega Menu</label>
               <div class="mega-box">
                 <div class="content">
                   <div class="row">
-                    <img src="image/Agricutural.png" alt="">
+                    <img src="img/about1.jpg" alt="">
                   </div>
                   <div class="row">
-                    <header>Bulk Bags</header>
+                    <header>Big Bags</header>
                     <ul class="mega-links">
-                      <li><a href="Standard bulk bags.html">STANDARD BULK BAG</a></li>
-                      <li><a href="Fertilizer bags.html">FERTILIZER BAGS</a></li>
-                      <li><a href="tunnel lift bulk bags.html">TUNNEL LIFT BULK BAGS</a></li>
-                      <li><a href="Top attachement.html">TOP ATTACHMENTS</a></li>
-                      <li><a href="bottom attachement.html">BOTTOM ATTACHMENTS</a></li>
+                      <li><a href="Standard bulk bags.html">Standard Big Bags</a></li>
+                      <li><a href="Fertilizer bags.html">Düngemittelbags</a></li>
+                      <li><a href="tunnel lift bulk bags.html">Tunnel-loop Big Bags</a></li>
+                      <li><a href="Top attachement.html">Konstruktionen Oberseite</a></li>
+                      <li><a href="bottom attachement.html">Bodenkonstruktionen</a></li>
+                      <li><a href="Safty tools Page.html">Sicherheitswerkzeuge</a></li>
+                      <li><a href="Mineral wolle.html">Mineralwolle</a></li>
                       </ul>
                   </div>
                   <div class="row">
-                    <header>SPECIAL BULK BAGS</header>
+                    <header>besondere Big Bags</header>
                     <ul class="mega-links">
-                      <li><a href="bags and baffle bags.html"> BAFFLE BAGS</a></li>
-                      <li><a href="type D bulk bags.html">TYPE D BAGS</a></li>
-                      <li><a href="type c bulk bags.html">TYPE C BAGS</a></li>
-                      <li><a href="Asbestos bags.html">ASBESTOS BAGS</a></li>
-                      <li><a href="Un approved bags.html">UN APPROVED BAGS</a></li>
+                      <li><a href="bags and baffle bags.html">Formstabil Big Bags</a></li>
+                      <li><a href="type D bulk bags.html">Typ D Big Bags</a></li>
+                      <li><a href="type c bulk bags.html">Typ C Big Bags</a></li>
+                      <li><a href="Asbestos bags.html">Big Bags für Asbest</a></li>
+                      <li><a href="Un approved bags.html">UN zertifiziert Big Bags</a></li>
+                      <li><a href="tarpaulin page.html">Planenseite</a></li>
                 </ul>
                   </div>
                   <div class="row">
-                    <header>SACKS AND SMALL BAGS</header>
+                    <header>SmallBags/Containers</header>
                     <ul class="mega-links">
-                      <li><a href="top hemmed bulk bags.html">PPWOVEN SACKS</a></li>
-                      <li><a href="Bopp Bulk Bags.html">BOPP BAGS</a></li>
-                      <li><a href="Borrow Bulk Bags.html">BORROW BAGS</a></li>
-                      <li><a href="AD star bags.html">AD STAR BAGS </a></li>
-                      <li><a href="mesh  Leno Bulk Bags.html"> LENO MESH BULK BAGS</a></li>
+                        <li><a href="Containers Liners.html">Conatiners liners</a></li>
+                      <li><a href="top hemmed bulk bags.html">Flachsäcke</a></li>
+                      <li><a href="Bopp Bulk Bags.html">BOPP Big Bags</a></li>
+                      <li><a href="Borrow Bulk Bags.html"> Schüttgut Big Bags</a></li>
+                      <li><a href="mesh  Leno Bulk Bags.html">LENO Netzsäcke</a></li>
+                      <li><a href="Container Page.html">Containers</a></li>
                    </ul>
                   </div>
                </li>
           
-            <li><a href="#">Brochures</a></li>
-            <li><a href="contact us.html">Contact Us</a></li>
+            <li><a href="#">
+                Broschüren</a></li>
+            <li><a href="contact us.html">Kontaktiere uns</a></li>
           </ul>
           <label for="menu-btn" class="btn menu-btn"><i class="fas fa-bars"></i></label>
         </div>
@@ -1249,12 +1261,13 @@
 <!-- bottom navbar  -->
 
 <nav class="bottom-navbar">
-    <a href="#home" class="fas fa-home"></a>
-    <a href="#about" class="fas fa-list"></a>
-    <a href="#services" class="fas fa-list"></a>
-    <a href="#shop" class="fas fa-comments"></a>
-    <a href="#contact" class="fas fa-blog"></a>
+    <a href="index.html" class="fas fa-home"></a>
+    <a href="about.html" class="fas fa-list"></a>
+    <a href="services.html" class="fas fa-list"></a>
+    <a href="Shop page.html" class="fas fa-comments"></a>
+    <a href="contact us.html" class="fas fa-blog"></a>
 </nav>
+
 
 <!-- login form  -->
 
@@ -1263,18 +1276,18 @@
     <div id="close-login-btn" class="fas fa-times"></div>
 
     <form action="">
-        <h3>sign in</h3>
-        <span>username</span>
-        <input type="email" name="" class="box" placeholder="enter your email" id="">
-        <span>password</span>
-        <input type="password" name="" class="box" placeholder="enter your password" id="">
+        <h3>Anmelden</h3>
+        <span>Benutzername</span>
+        <input type="email" name="" class="box" placeholder="eben Sie Ihre E-Mail ein" id="">
+        <span>Passwort </span>
+        <input type="password" name="" class="box" placeholder="Geben Sie Ihr Passwort ein" id="">
         <div class="checkbox">
             <input type="checkbox" name="" id="remember-me">
-            <label for="remember-me"> remember me</label>
+            <label for="remember-me">erinnere dich an mich</label>
         </div>
-        <input type="submit" value="sign in" class="btn">
-        <p>forget password ? <a href="#">click here</a></p>
-        <p>don't have an account ? <a href="#">create one</a></p>
+        <input type="submit" value="Anmelden" class="btn">
+        <p>Passwort vergessen ? <a href="#">Klicken Sie hier</a></p>
+        <p>Sie Haben Noch Kein Konto? <a href="#">Erstellen Sie Eins </a></p>
     </form>
 
 </div>
@@ -1288,13 +1301,14 @@
         
         <div class="Hcard">
         <div class="content">
-        <h3>Baffle Bags And Liners</h3>
+        <h3>Formstabile Big Bags und Liner</h3>
                 
                  
-            <p>Your packaging partner committed to supplying 
-              
-                 you with the best</p>
-            <a href="#" class="btn">Explore</a>
+            <p>
+				Ihr Verpackungspartner, der sich verpflichtet hat, Ihnen das Beste zu liefern.
+			
+				</p>
+			<a href="All Products page.html" class="btn">	Erfahren Sie mehr</a>
         </div>
         </div>
      </div>   
@@ -1308,12 +1322,24 @@
 
     <div class="content">
        
-        <h1>RDA Bulk Packaging</h1>
-		<h3>
-			Baffle Bags And Liners</h3>
-        <p>
-			RDA Bulk Packaging Offers A Smart And Efficient Solution For Bulk Packaging With Our Baffle Bags And Baffle Liners. These Innovative Packaging Products Are Designed To Optimize Storage Space, Enhance Stability, And Improve Transportation Efficiency For A Wide Range Of Bulk Materials. Whether You Require Bulk Bags With Baffles Or Baffle Liners, Our Solutions Are Tailored To Meet Your Specific Needs..</p>
-        <a href="index.html" class="btn">More About Us</a>
+        <h1>Conbag International Packaging GmbH & Co. KG</h1>
+		<h3>Formstabile Big Bags und Liner</h3>
+        <p>Conbag International Packaging GmbH & Co. KG bietet mit unseren formstabilen-Bags und formstabilen-Inlinern eine
+			 intelligente und effektive Lösung. Diese innovativen Verpackungsprodukte sind darauf ausgelegt, Lagerraum zu optimieren,
+			  die Stabilität zu verbessern und die Transporteffizienz für eine breite Palette von Schüttgütern zu steigern. Ob Sie
+			   formstabile Bags benötigen: Unsere Lösungen sind auf Ihre spezifischen Anforderungen zugeschnitten. Wir beraten Sie 
+			   gerne.<br>
+			   <b>Formstabile Big Bags – immer in Top-Form</b>
+			   <br>So viel Abfall, der entsorgt werden muss – so viele Aspekte, die es zu beachten gilt. Wir sind Ihr ausgewiesener Spezialist, wenn es um Lagerung, Verpackung und Transport geht. Deshalb nehmen wir uns viel Zeit für eine individuelle Beratung, ganz ohne versteckte Kostenfalle. Unsere Kernprodukte sind Big Bags in zahllosen Varianten, sodass Sie die optimale Lösung für Ihren Bedarf bei uns finden können – aus einer Hand, vom zuverlässigen Experten, schnell lieferbar und auf persönliche Anforderungen zugeschnitten.
+			   Geht es um Big Bags denken viele zunächst an den Klassiker: Die Standard Big Bags mit flexibler, reißfester und fassungsvermögender Form, beschichtet, belüftet oder mit PE-Inliner versehen. Doch es gibt noch viel mehr in der Welt der Big Bags – zum Beispiel formstabile Bags, die insbesondere für längere Transporte oder Lagerungsvorhaben vorteilhaft sein können. Wir erklären Ihnen kurz die Hauptaspekte:
+			   Formstabile Big Bags wölben sich nicht beim Befüllen, was bedeutet, dass sie sich platzsparend lagern lassen. Das sorgt auch dafür, dass beispielsweise ihr Platzanspruch leichter kalkulierbar ist. Auch im Rahmen von Transporten kommt Ihnen die Stabilität zugute, da sie eine größere Platzauslastung ermöglichen. Die robuste Innenkonstruktion wurde speziell dafür entwickelt, dass die Big Bags bequem und vor allem stabil übereinandergestapelt werden können. Dank der minimalen Auswölbung bleiben Ihre formstabilen Big Bags genau da, wo sie bleiben sollen – innerhalb der Paletten Abmessungen.
+			   Aus wirtschaftlicher Perspektive hat diese Variante einen besonderen Vorteil: Weil Sie Ihre zur Verfügung stehende Lagerfläche noch effizienter auslasten können, können Sie durch die quadratisch oder rechteckig geformten Big Bags eine Kosteneinsparung von bis zu sage und schreibe 30% erzielen. Klingt super? Finden wir auch!
+			   Formstabile Big Bags – wieso und für wen?
+			   Auch die formstabilen Big Bags von Conbag lassen sich näher spezifizieren – beispielsweise können sie staubdicht konzipiert werden, es gibt verschiedene Füll-, und Entleerungsmechanismen, es gibt unterschiedliche Hebemöglichkeiten und verschiedene Volumina.
+			   Formstabile Big Bags kommen insbesondere im Lebensmittel-, und Tierfutterbereich zum Einsatz, ebenso in den Bereichen Pharmazeutik und Chemie. An vorderster Stelle stehen jedoch Pulver-, und Granulat Produkte, die sicher verpackt werden sollen.
+			   Sie möchten beraten werden? Wissen, worauf es bei formstabilen Big Bags ankommt und welches Produkt zu Ihnen passt? Eine unverbindliche Anfrage bei unserem Conbag-Team genügt. Wir sind Ihr Spezialist für Verpackung, Lagerung und Transport mit langjähriger Erfahrung und fundierter Expertise.
+			   </p>
+			<a href="index.html" class="btn">Mehr Über Un</a>
     </div>
 </section>
 
@@ -1324,18 +1350,18 @@
 
    
     <div class="content">
-        <h1>
-			Key Features</h1>
+        <h1>Hauptmerkmale</h1>
        
-        <p>• Baffle Design: OOur Baffle Bags Are Constructed With Unique Internal Baffles Or Panels That Form A Rectangle Shape Within The Bag. These Baffles Help Maintain The Bag’s Shape And Prevent It From Bulging Or Collapsing When Filled, Ensuring Maximum Stability During Transportation And Storage.
-			<br>• Enhanced Load Stability: The Incorporation Of Baffles In Our Bags Allows For Better Weight Distribution And Prevents The Material From Shifting During Handling And Transportation. This Added Stability Reduces The Risk Of Tipping And Ensures Safer And More Efficient Bulk Material Transportation
-			<br>• Optimized Storage Space: Baffle Bags Enable Efficient Use Of Storage Space. As The Baffles Keep The Bag’s Sides Straight, They Fit Closely Together When Stacked, Minimizing Wasted Space And Maximizing Storage Capacity In Warehouses And Shipping Containers.
-			<br>• Customization Options: We Offer Various Sizes, Lifting Options, And Discharge Features To Suit Your Specific Application Requirements. Our Baffle Bags Can Be Customized With Different Filling And Discharging Options, Making Material Handling Seamless And Efficient.
-       
+        <p>
+			•	design: Unsere FormstabilBag sind mit einzigartigen internen Formstabil-Bags oder Paneelen ausgestattet, die innerhalb des Bags eine rechteckige Form bilden. Diese Leitbleche helfen, die Form des Bags beizubehalten und verhindern, dass er sich beim Befüllen ausbeult oder zusammenfällt, wodurch maximale Stabilität während des Transports und der Lagerung gewährleistet wird.
+			<br>• Verbesserte Laststabilität: Die Integration von Leitblechen in unsere Bag ermöglicht eine bessere Gewichtsverteilung und verhindert, dass sich das Material Während der Handhabung und des Transports verschiebt. Diese zusätzliche Stabilität verringert das Risiko des Umkippens und gewährleistet einen sichereren und effizienteren Transport von Big Bags.
+			<br>• Optimierter Lagerraum: Formstabil-Bag ermöglichen eine effiziente Nutzung des Lagerraums. Da die Leitbleche die Seiten des Bags gerade halten, passen Sie beim Stapeln eng zusammen, wodurch Platzverschwendung minimiert und die Lagerkapazität in Lagerhäusern und Versandbehältern maximiert wird.
+			<br>• Anpassungsoptionen: Wir bieten verschiedene Größen, Hebeoptionen und Entladefunktionen an, um Ihren spezifischen Anwendungsanforderungen gerecht zu werden. Unsere Formstabil-Bag können mit verschiedenen Füll- und Entleerungsoptionen individuell angepasst werden, was die Materialhandhabung nahtlos und effizient macht.
+			</p>
     </div>
 
     <div class="image">
-        <img src="img/baffle1.webp" alt="">
+        <img src="img/Baffle Bags And Liners.jpg" alt="">
     </div>
 </section>
 
@@ -1345,30 +1371,31 @@
 
 <section class="deal">
 	<div class="image">
-        <img src="img/bafflebags.jpg" alt="">
+        <img src="img/Food Grade Baffle Bags.png" alt="">
     </div>
    
     <div class="content">
-        <h1>
-			Advantages</h1>
+        <h1>Vorteile</h1>
        
-        <p>• Increased Stability: Both Baffle Bags And Baffle Liners Provide Enhanced Stability During Transportation And Storage, Reducing The Risk Of Spills Or Accidents And Improving Overall Safety.
-			<br>• Space Optimization: These Products Enable Efficient Use Of Storage Space, Allowing For Higher Stacking And Maximizing The Capacity Of Containers Or Shipping Units.
-			<br>• Improved Material Flow: Baffle Liners Enhance The Flow Of Bulk Materials, Facilitating A More Efficient Unloading Process And Reducing Downtime During Material Handling.
-			<br>• Customized Solutions: We Offer A Range Of Customization Options To Meet Specific Requirements, Ensuring Our Baffle Bags And Baffle Liners Seamlessly Integrate Into Your Existing Operations.
-			<br>• Cost Savings: By Increasing The Efficiency Of Material Transportation, Both Baffle Bags And Baffle Liners Help Reduce Overall Operational Costs And Enhance Productivity.
-    </div>
+        <p>
+			• Erhöhte Stabilität: Sowohl Formstabil-Bags als auch Formstabil-Liner bieten verbesserte Stabilität während Transport und Lagerung, verringern das Risiko von Verschüttungen oder Unfällen und verbessern die allgemeine Sicherheit.
+			<br>• Platzoptimierung: Diese Produkte ermöglichen eine effektive Nutzung des Lagerraums, erlauben höhere Stapelung und maximieren die Kapazität von Behältern oder Versandeinheiten.
+			<br>• Verbesserter Materialfluss: Formstabile Liner verbessern den Fluss von Big Bags, ermöglichen einen effizienteren Entladevorgang und reduzieren Ausfallzeiten während der Materialhandhabung.
+			<br>• Maßgeschneiderte Lösungen: Wir bieten eine Reihe von Anpassungsoptionen zur Erfüllung spezifischer Anforderungen und stellen sicher, dass sich unsere Formstabil-Bags und Formstabil-Liner nahtlos in Ihre bestehenden Betriebsabläufe integrieren lassen.
+			<br>• Kosteneinsparungen: Durch die Steigerung der Effizienz des Materialtransports Tragen sowohl Formstabil Bags als auch Formstabil Liner zur Reduzierung der Gesamtbetriebskosten bei und 
+			</div>
 
 </section>
 
 <!-- deal section ends -->
+
 
 <!-- newsletter section starts -->
 
 <section class="newsletter">
 
     <form action="">
-        <h3>subscribe for latest updates</h3>
+        <h3>Abonnieren Sie die neuesten Updates</h3>
         <input type="email" name="" placeholder="enter your email" id="" class="box">
         <input type="submit" value="subscribe" class="btn">
         
@@ -1379,15 +1406,11 @@
 
 <!-- newsletter section ends -->
 
-
-
-
-
-<!-- reviews section starts  -->
+ <!-- reviews section starts  -->
 
 <section class="reviews" id="reviews">
 
-    <h1 class="heading"> <span>Facilities And Partnerships</span> </h1>
+    <h1 class="heading"> <span>Einrichtungen und Partnerschaften</span> </h1>
 
     <div class="swiper reviews-slider">
 
@@ -1397,9 +1420,9 @@
             <div class="card">
                 <i class="fas fa-hotel"></i>
                 <div class="card-body">
-                <h3>manufacturing</h3>
-                <p>RDA utilise a number of manufacturing facilities in UK. Each of which holds a
-                     valid certificate for the manufacture of bulk bags from the ISO.</p>
+                <h3>Herstellung</h3>
+                <p>Conbag International Packaging nutzt mehrere Produktionsstätten in Indien, die jeweils über ein gültiges Zertifikat für die Herstellung von Big Bags vom Indian Institute of Packaging, Cotecna in Indien, Labordata
+                     in Deutschland und mehreren anderen international anerkannten Prüfzentren verfügen.</p>
                
             </div>
 
@@ -1410,9 +1433,10 @@
                 <div class="card">
                     <i class="fas fa-cubes"></i>
                     <div class="card-body">
-                <h3>Distribution</h3>
-                <p>RDA operates from warehousing facilities based in Co.
-                     Meath, Republic of Europe .It involves activities such as transportation, warehousing, logistics, and retailing.</p>
+                <h3>Vertrieb und Lieferung</h3>
+                <p>Conbag International Packaging ist von Büros in Frankfurt, Deutschland, und Indore, Indien, 
+                    aus tätig und vertreibt über Lagerstätten in Dietzhölztal, Deutschland. Cotecna in Indien, Labordata
+                    in Deutschland und mehreren anderen international anerkannten Prüfzentren verfügen Big Bags vom of Packaging</p>
                 </div>
 
             </div>
@@ -1422,35 +1446,20 @@
                 <div class="card">
                     <i class="fas fa-handshake"></i>
                     <div class="card-body">
-                <h3>Partner Company</h3>
-                <p>RDA works closely with its freight forward companies to help maintain an excellent delivery service which allows us to offer deliveries across the Europe.</p>
+                <h3>Verbundene Partnerfirma</h3>
+                <p>Conbag International Packaging arbeitet eng mit seinen Spediteuren zusammen, um einen hervorragenden Lieferservice aufrechtzuerhalten, 
+                    der es uns ermöglicht, weltweit Lieferungen anzubieten,Big Bags vom of Packaging</p>
+				
                 </div>
 
             </div>
             </div>
+			</div>
+			</div>
+		
             
-                </div>
-
-            </div>
-            </div>
-
-            
-                </div>
-
-            </div>
-            </div>
-
-            
-            </div>
-
-        </div>
-
-    </div>
     
 </section>
-
-
-
 <!-- reviews section ends -->
 
 <!-- deal section starts  -->
@@ -1458,24 +1467,36 @@
 <section class="deal">
 
     <div class="content">
-       <h1>It's Application</h1>
-	   <h3>Baffle Bags And Baffle Liners Find Versatile Applications Across Various Industries, Including:</h3>
-        <p>• Agriculture: Seeds, Fertilizers, Grains
-			<br>• Chemicals: Powders, Granules, Pellets
-			<br>• Construction: Sand, Aggregates, Cement
-			<br>• Food And Beverage: Rice, Flour, Sugar
-			<br>• Pharmaceuticals: Raw Materials, Excipients
-			<br>• Recycling: Plastic Resins, Recycled Materials</p>
+       <h1>Anwendung</h1>
+	   <h3>Formstabile Bags und Liner finden in zahlreichen Branchen vielfältige Anwendungsmöglichkeiten, darunter:</h3>
+        <p><b>• Landwirtschaft:</b> Saatgut, Düngemittel, Getreide
+			<br><b>• Chemikalien:</b> Pulver, Granulate, Pellets
+			<br><b>• Bauwesen:</b> Sand, Zuschlagstoffe, Zement
+			<br><b>• Lebensmittel</b> und Getränke: Reis, Mehl, Zucker
+			<br><b>• Pharmazeutika:</b> Rohstoffe, Hilfsstoffe
+			<br><b>• Recycling:</b> Kunststoffharze, recycelte Materialien
+			
+		</p>
        
     </div>
 
     <div class="image">
-        <img src="images/Extrusion-Machine-1.jpg" alt="">
+        <img src="img/indus 2.jpg" alt="">
     </div>
 
 </section>
 
 <!-- deal section ends -->
+
+<section class="deal">
+
+    <div class="content">
+      <div class="image">
+        <img src="img/Conbag signature.png" alt="">
+    </div>
+     
+    </div>
+    </section>
 
 <!-- footer section starts  -->
 
@@ -1484,39 +1505,39 @@
 	<div class="box-container">
   
 		<div class="box">
-			<h3>our locations</h3>
-			<a href="#"> <i class="fas fa-map-marker-alt"></i>  RDA Bulk Packaging Ltd
-		Severn Business Park
-		Burma Road Sharpness Berkeley Gloucestershire GL13 9UQ, UK </a>
-		<a href="#"> <i class="fas fa-clock"></i>Working : Mon-Fri (08:30 - 17:00) </a>
+		  <a href="index.html" class="logo"><img src="images/conbag-header.png" alt=""; height="90"; width="280"></a>
+			<a href="#"> <i class="fas fa-map-marker-alt"></i>  Hauptstrasse 79, 35716 Dietzhölztal, Germany, Germany  </a>
+		<a href="#"> <i class="fas fa-clock"></i>Arbeitszeiten : 
+		  Montag- Donnerstag ( 08:00 - 16:30 ) Freitag (08:00 - 15:00) </a>
 		
 			
 		</div>
   
 		<div class="box">
-			<h3>quick links</h3>
-			<a href="index.html"> <i class="fas fa-arrow-right"></i>home</a>
-			<a href="about.html"> <i class="fas fa-arrow-right"></i>about</a>
-			<a href="SERVICES (2).html"> <i class="fas fa-arrow-right"></i>services</a>
-			<a href="All Products page.html"> <i class="fas fa-arrow-right"></i>products</a>
-			<a href="contact us.html"> <i class="fas fa-arrow-right"></i>contact</a>
+			<h3>Über uns Us</h3>
+			<a href="index.html"> <i class="fas fa-arrow-right"></i>Startseite</a>
+			<a href="about.html"> <i class="fas fa-arrow-right"></i>Über uns</a>
+			<a href="SERVICES (2).html"> <i class="fas fa-arrow-right"></i>Leistungen</a>
+			<a href="contact us.html"> <i class="fas fa-arrow-right"></i>Kontakt</a>
 		</div>
   
 		<div class="box">
-			<h3>extra links</h3>
+			<h3>Unternehmen</h3>
 		   
-			<a href="#"> <i class="fas fa-arrow-right"></i>privacy policy</a>
+			<a href="#"> <i class="fas fa-arrow-right"></i>Daten¬schutz¬erklärung</a>
+			<a href="#"> <i class="fas fa-arrow-right"></i>Cookie- richtlinie</a>
+			<a href="#"> <i class="fas fa-arrow-right"></i>Brochüren</a>
 		   
-			<a href="#"> <i class="fas fa-arrow-right"></i> our serivces </a>
+			<a href="https://www.conbag.de/faq/"> <i class="fas fa-arrow-right"></i> FAQ's </a>
    
   
   </div>
   <div class="box">
-			<h3>contact info</h3>
-			<a href="#"> <i class="fas fa-phone"></i> Tel: +44 (0) 1453 511222</a>
+			<h3>Kontaktiere Uns</h3>
+			<a href="contact us.html"> <i class="fas fa-phone"></i> Tel: +49(0)2774-92424-0</a>
 	  
-			<a href="#"> <i class="fas fa-envelope"></i>  Email: Info@Rdapackaging.Com</a>
-	  <a href="#">   Registered Number: 03836432</a>
+			<a href="contact us.html"> <i class="fas fa-envelope"></i> Email:   info@conbag.de</a>
+	  <a href="contact us.html">  Registernummer :  HRA 7771</a>
 			
 		
 	</div>
@@ -1524,24 +1545,23 @@
   
 	<div class="share">
 		   <a href="https://www.linkedin.com/company/69201484/admin/feed/posts/" class="fab fa-linkedin"></a>
-		<a href="https://www.facebook.com/RDABulkPackagingLtd/" class="fab fa-facebook-f"></a>
+		<a href="https://www.facebook.com/ConbagBulkPackagingLtd/" class="fab fa-facebook-f"></a>
 		<a href="https://twitter.com/RdaLtd" class="fab fa-twitter"></a>
 		<a href="https://www.instagram.com/rdabulkpackaging/?next=%2F" class="fab fa-instagram"></a>
   
 	 
 	</div>
   </div>
-	<div class="credit"> Created by <span> 2024 RDA Bulk Packaging Private Limited</span> | all rights reserved! </div>
+	<div class="credit"> Created by <span>  Erstellt von 2025 Conbag International Packaging GmbH & Co. aus Deutschland </span>| alle Rechte vorbehalten!</div>
   
   </section>
   
   <!-- footer section ends -->
 
-
 <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 
 <!-- custom js file link  -->
-<script src="js/script.js"></script>
+<script src="main.js/script.js"></script>
 
 </body>
 </html>

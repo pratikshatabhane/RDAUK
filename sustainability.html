@@ -25,717 +25,797 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- animation links -->
     <style>
-        *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+      *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
 }
 .all-content{
-    background: #f6f5f4;
+  background: #f6f5f4;
 }
 /* navbar */
 #navbar{
-    background-color: #fff;
-    padding-left: 80px;
-    font-weight: bold;
-   
+  background-color: #fff;
+  padding-left: 80px;
+  font-weight: bold;
+ 
 }
+
+.deal{
+    background:#f3f3f3;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap:1.5rem;
+}
+
+.deal .content{
+    flex:1 1 42rem;
+}
+
+.deal .image{
+    flex:1 1 42rem;
+}
+
+.deal .image img{
+    width: 100%;
+}
+
+.deal .content h3{
+    color:var(--green);
+    font-size: 2.5rem;
+    padding-bottom: .5rem;
+}
+
+.deal .content h1{
+    color:var(--black);
+    font-size: 4rem;
+}
+
+.deal .content p{
+    padding:1rem 0;
+    color:var(--light-color);
+    font-size: 1.4rem;
+    line-height: 2;
+}
+
 #logo{
-    font-size: 23px;
-    color: white;
+  font-size: 23px;
+  color: white;
 }
 #logo img{
-    margin-bottom: 15px;
-    font-size: 80px;
-    font-weight: 400;
+  margin-bottom: 15px;
+  font-size: 80px;
+  font-weight: 400;
 }
 .navbar-nav{
-    margin-left: 10px;
+  margin-left: 10px;
 }
 .nav-link{
-    color: white;
-    font-weight: bold;
-    text-shadow: 1px 1px 1px black;
-    margin-left: 15px;
-    transition: 0.5s ease;
+  color: white;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px black;
+  margin-left: 15px;
+  transition: 0.5s ease;
 }
 .nav-link:hover{
-    background-color: #18355e;
-    color: white;
-    border-radius: 5px;
+  background-color: #101111fc;
+  color: white;
+  border-radius: 5px;
 }
 .icons{
-    margin-left: 30px;
+  margin-left: 30px;
 }
 .icons img{
-    margin-left: 10px;
-    transition: 0.5s ease;
-    cursor: pointer;
+  margin-left: 10px;
+  transition: 0.5s ease;
+  cursor: pointer;
 }
 .icons img:hover{
-    transform: translateY(-5px);
+  transform: translateY(-5px);
 }
 @media screen and (max-width:330px){
-    #logo{
-        font-size: 15px;
-    }
+  #logo{
+      font-size: 15px;
+  }
 }
 /* navbar end */
 /* home section */
 
 .header .header-2{
-    background:var(--green);
+  background:#101111fc;
 }
 
 .header .header-2 .navbar{
-    text-align:center;
+  text-align:center;
 }
 
 
 .header .header-2 .navbar a{
-    color:#fff;
-    display: inline-block;
-    padding:1.2rem;
-    font-size: 1.7rem;
+  color:#fff;
+  display: inline-block;
+  padding:1.2rem;
+  font-size: 1.7rem;
 }
 
 .header .header-2 .navbar a:hover{
-    background:var(--dark-color);
+  background:var(--dark-color);
 }
 
 .header .header-2.active{
-    position:fixed;
-    top:0; left:0; right:0;
-    z-index: 1000;
+  position:fixed;
+  top:0; left:0; right:0;
+  z-index: 1000;
 
 }
 
- 
-  .nav-links li a:hover{
-    background: #3A3B3C;
+
+.nav-links li a:hover{
+  background: #3A3B3C;
+}
+.nav-links .mobile-item{
+  display: none;
+}
+.nav-links .drop-menu{
+  position: absolute;
+  background: #242526b9;
+  width: 200px;
+  line-height: 25px;
+  top: 85px;
+  opacity: 0;
+  visibility: hidden;
+  box-shadow: 0 6px 10px rgba(0,0,0,0.15);
+}
+.nav-links li:hover .drop-menu,
+.nav-links li:hover .mega-box{
+  transition: all 0.3s ease;
+  top: 70px;
+  opacity: 1;
+  visibility: visible;
+}
+.drop-menu li a{
+  width: 100%;
+  display: block;
+  padding: 0 0 0 15px;
+  font-weight: 400;
+  border-radius: 0px;
+}
+.mega-box{
+  position: absolute;
+  left: 0;
+  width: 100%;
+  padding: 0 30px;
+  top: 85px;
+  opacity: 0;
+  visibility: hidden;
+}
+.mega-box .content{
+  background: #242526b9;
+  padding: 25px 20px;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  box-shadow: 0 6px 10px rgba(0,0,0,0.15);
+}
+.mega-box .content .row{
+  width: calc(25% - 30px);
+  line-height: 45px;
+}
+.content .row img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.content .row header{
+  color: #f2f2f2;
+  font-size: 20px;
+  font-weight: 500;
+}
+.content .row .mega-links{
+  margin-left: -40px;
+  border-left: 1px solid rgba(255,255,255,0.09);
+}
+.row .mega-links li{
+  padding: 0 20px;
+}
+.row .mega-links li a{
+  padding: 0px;
+  padding: 0 20px;
+  color: #d9d9d9;
+  font-size: 17px;
+  display: block;
+}
+.row .mega-links li a:hover{
+  color: #f2f2f2;
+}
+.wrapper .btn{
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+  display: none;
+}
+.wrapper .btn.close-btn{
+  position: absolute;
+  right: 30px;
+  top: 10px;
+}
+@media screen and (max-width: 970px) {
+  .wrapper .btn{
+    display: block;
   }
-  .nav-links .mobile-item{
+  .wrapper .nav-links{
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    max-width: 350px;
+    top: 0;
+    left: -100%;
+    background: #101111fc;
+    display: block;
+    padding: 50px 10px;
+    line-height: 50px;
+    overflow-y: auto;
+    box-shadow: 0px 15px 15px rgba(0,0,0,0.18);
+    transition: all 0.3s ease;
+  }
+ 
+  #menu-btn:checked ~ .nav-links{
+    left: 0%;
+  }
+  #menu-btn:checked ~ .btn.menu-btn{
     display: none;
   }
-  .nav-links .drop-menu{
-    position: absolute;
-    background: #242526;
-    width: 200px;
-    line-height: 45px;
-    top: 85px;
-    opacity: 0;
-    visibility: hidden;
-    box-shadow: 0 6px 10px rgba(0,0,0,0.15);
-  }
-  .nav-links li:hover .drop-menu,
-  .nav-links li:hover .mega-box{
-    transition: all 0.3s ease;
-    top: 70px;
-    opacity: 1;
-    visibility: visible;
-  }
-  .drop-menu li a{
-    width: 100%;
+  #close-btn:checked ~ .btn.menu-btn{
     display: block;
-    padding: 0 0 0 15px;
-    font-weight: 400;
-    border-radius: 0px;
   }
-  .mega-box{
-    position: absolute;
-    left: 0;
+  .nav-links li{
+    margin: 15px 10px;
+  }
+  .nav-links li a{
+    
+    display: block;
+    font-size: 20px;
+  }
+  .nav-links .drop-menu{
+    position: static;
+    opacity: 1;
+    top: 65px;
+    visibility: visible;
+    padding-left: 20px;
     width: 100%;
-    padding: 0 30px;
-    top: 85px;
-    opacity: 0;
-    visibility: hidden;
+    max-height: 0px;
+    overflow: hidden;
+    box-shadow: none;
+    transition: all 0.3s ease;
   }
-  .mega-box .content{
-    background: #242526;
-    padding: 25px 20px;
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    box-shadow: 0 6px 10px rgba(0,0,0,0.15);
+  #showDrop:checked ~ .drop-menu,
+  #showMega:checked ~ .mega-box{
+    max-height: 100%;
   }
-  .mega-box .content .row{
-    width: calc(25% - 30px);
-    line-height: 45px;
+  .nav-links .desktop-item{
+    display: none;
   }
-  .content .row img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-  .content .row header{
+  .nav-links .mobile-item{
+    display: block;
     color: #f2f2f2;
     font-size: 20px;
     font-weight: 500;
-  }
-  .content .row .mega-links{
-    margin-left: -40px;
-    border-left: 1px solid rgba(255,255,255,0.09);
-  }
-  .row .mega-links li{
-    padding: 0 20px;
-  }
-  .row .mega-links li a{
-    padding: 0px;
-    padding: 0 20px;
-    color: #d9d9d9;
-    font-size: 17px;
-    display: block;
-  }
-  .row .mega-links li a:hover{
-    color: #f2f2f2;
-  }
-  .wrapper .btn{
-    color: #fff;
-    font-size: 20px;
+    padding-left: 20px;
     cursor: pointer;
-    display: none;
-  }
-  .wrapper .btn.close-btn{
-    position: absolute;
-    right: 30px;
-    top: 10px;
-  }
-  @media screen and (max-width: 970px) {
-    .wrapper .btn{
-      display: block;
-    }
-    .wrapper .nav-links{
-      position: fixed;
-      height: 100vh;
-      width: 100%;
-      max-width: 350px;
-      top: 0;
-      left: -100%;
-      background: #18355e;
-      display: block;
-      padding: 50px 10px;
-      line-height: 50px;
-      overflow-y: auto;
-      box-shadow: 0px 15px 15px rgba(0,0,0,0.18);
-      transition: all 0.3s ease;
-    }
-   
-    #menu-btn:checked ~ .nav-links{
-      left: 0%;
-    }
-    #menu-btn:checked ~ .btn.menu-btn{
-      display: none;
-    }
-    #close-btn:checked ~ .btn.menu-btn{
-      display: block;
-    }
-    .nav-links li{
-      margin: 15px 10px;
-    }
-    .nav-links li a{
-      
-      display: block;
-      font-size: 20px;
-    }
-    .nav-links .drop-menu{
-      position: static;
-      opacity: 1;
-      top: 65px;
-      visibility: visible;
-      padding-left: 20px;
-      width: 100%;
-      max-height: 0px;
-      overflow: hidden;
-      box-shadow: none;
-      transition: all 0.3s ease;
-    }
-    #showDrop:checked ~ .drop-menu,
-    #showMega:checked ~ .mega-box{
-      max-height: 100%;
-    }
-    .nav-links .desktop-item{
-      display: none;
-    }
-    .nav-links .mobile-item{
-      display: block;
-      color: #f2f2f2;
-      font-size: 20px;
-      font-weight: 500;
-      padding-left: 20px;
-      cursor: pointer;
-      border-radius: 5px;
-      transition: all 0.3s ease;
-    }
-    .nav-links .mobile-item:hover{
-      background: #3A3B3C;
-    }
-    .drop-menu li{
-      margin: 0;
-    }
-    .drop-menu li a{
-      border-radius: 5px;
-      font-size: 18px;
-    }
-    .mega-box{
-      position: static;
-      top: 65px;
-      opacity: 1;
-      visibility: visible;
-      padding: 0 20px;
-      max-height: 0px;
-      overflow: hidden;
-      transition: all 0.3s ease;
-    }
-    .mega-box .content{
-      box-shadow: none;
-      flex-direction: column;
-      padding: 20px 20px 0 20px;
-    }
-    .mega-box .content .row{
-      width: 100%;
-      margin-bottom: 15px;
-      border-top: 1px solid rgba(255,255,255,0.08);
-    }
-    .mega-box .content .row:nth-child(1),
-    .mega-box .content .row:nth-child(2){
-      border-top: 0px;
-    }
-    .content .row .mega-links{
-      border-left: 0px;
-      padding-left: 15px;
-    }
-    .row .mega-links li{
-      margin: 0;
-    }
-    .content .row header{
-      font-size: 19px;
-    }
-  }
-  nav input{
-    display: none;
-  }
-  
-
-
-
-
-nav{
-    position:sticky;
-    z-index: 99;
-    width: 100%;
-   background: #18355e;
-  }
-  nav .wrapper{
-    position: sticky;
-    max-width: 1300px;
-    padding: 0px 30px;
-    height: 70px;
-    line-height: 70px;
-    margin: auto;
-    display: flex;
-    align-items: self-start;
-    justify-content: space-between;
-  }
-  
-  .wrapper .nav-links{
-    display: inline-flex;
-  }
-  .nav-links li{
-    list-style: none;
-  }
-  .nav-links li a{
-    color: #f2f2f2;
-    text-decoration: none;
-    font-size: 18px;
-    font-weight: bold;
-    padding: 9px 15px;
     border-radius: 5px;
     transition: all 0.3s ease;
   }
-  nav input{
-    display: none;
+  .nav-links .mobile-item:hover{
+    background: #3A3B3C;
   }
+  .drop-menu li{
+    margin: 0;
+  }
+  .drop-menu li a{
+    border-radius: 5px;
+    font-size: 18px;
+  }
+  .mega-box{
+    position: static;
+    top: 65px;
+    opacity: 1;
+    visibility: visible;
+    padding: 0 20px;
+    max-height: 0px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+  }
+  .mega-box .content{
+    box-shadow: none;
+    flex-direction: column;
+    padding: 20px 20px 0 20px;
+  }
+  .mega-box .content .row{
+    width: 100%;
+    margin-bottom: 15px;
+    border-top: 1px solid rgba(255,255,255,0.08);
+  }
+  .mega-box .content .row:nth-child(1),
+  .mega-box .content .row:nth-child(2){
+    border-top: 0px;
+  }
+  .content .row .mega-links{
+    border-left: 0px;
+    padding-left: 15px;
+  }
+  .row .mega-links li{
+    margin: 0;
+  }
+  .content .row header{
+    font-size: 19px;
+  }
+}
+nav input{
+  display: none;
+}
+
+nav{
+  position:sticky;
+  z-index: 99;
+  width: 100%;
+ background: #101111fc;
+}
+nav .wrapper{
+  position: sticky;
+  max-width: 1300px;
+  padding: 0px 30px;
+  height: 70px;
+  line-height: 70px;
+  margin: auto;
+  display: flex;
+  align-items: self-start;
+  justify-content: space-between;
+}
+
+.wrapper .nav-links{
+  display: inline-flex;
+}
+.nav-links li{
+  list-style: none;
+}
+.nav-links li a{
+  color: #f2f2f2;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 9px 15px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+nav input{
+  display: none;
+}
 
 .logo h3{
-    font-size: 30px;
-    font-weight: bold;
-   
+  font-size: 30px;
+  font-weight: bold;
+ 
 }
 @media screen and (max-width:420px){
-    .logo h3{
-        font-size: 20px;
-        
-    }
+  .logo h3{
+      font-size: 20px;
+      
+  }
 }
-    
+  
 .home{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(./image/susstanh.jpg);
-    background-size: cover;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    position: relative;
-    z-index: 0;
+  width: 100%;
+  height: 150%;
+  display: flex;
+  background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(./img/sustainability.jpg);
+  background-size: cover;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  position: relative;
+  z-index: 0;
 }
 .home .img{
-    flex: 1 1 700px;
-    height: 100%;
+  flex: 1 1 400px;
 }
 .home .img img{
-    width: 110%;
-    
+  width: 120%;
 }
 .home .content{
-    flex: 1 1 400px;
-    margin-left: 60px;
+  flex: 1 1 400px;
+  margin-left: 60px;
 }
 .content h3{
-    color: white;
-    font-size: 50px;
-    font-weight: bold;
-    text-shadow: 1px 1px 1px black;
+  color: white;
+  font-size: 60px;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px black;
 }
-
-
+.content h2{
+  font-size: 60px;
+  color: white;
+  text-shadow: 1px 1px 1px black;
+  font-weight: bold;
+}
 .changecontent::after{
-    content: ' ';
-    color: rgb(17, 92, 12);
-    animation: changetext 10s infinite linear;
-    font-weight: bold;
+  content: ' ';
+  color: rgb(235, 238, 235);
+  animation: changetext 10s infinite linear;
+  font-weight: bold;
 }
 @keyframes changetext{
-    0%{content: "Discover";}
-    10%{content: "The";}
-    20%{content: "Versatility";}
-    50%{content: "And";}
-    60%{content: "Strength ";}
-    80%{content: "Of";}
-    90%{content: "Our";}
-    100%{content: "100% RPP Bags,";}
-    
+  0%{content: "Discover";}
+  10%{content: "The";}
+  20%{content: "Versatility";}
+  50%{content: "And";}
+  60%{content: "Strength ";}
+  80%{content: "Of";}
+  90%{content: "Our";}
+  100%{content: "100% RPP Bags,";}
+  
 }
 .content p{
-    color: white;
-    font-weight: bold;
-    text-shadow: 1px 1px 1px black;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px black;
 }
 .content .btn{
-    width: 110px;
-    height: 38px;
-    background-color: #18355e;
-    color: white;
+  width: 110px;
+  height: 38px;
+  background-color: #101111fc;
+  color: white;
 }
 @media screen and (max-width:800px){
-    .content h3{
-        font-size: 50px;
-    }
+  .content h3{
+      font-size: 50px;
+  }
 }
 @media screen and (max-width:860px){
-    .home{
-        height: 120vh;
-    }
+  .home{
+      height: 120vh;
+  }
 }
 @media screen and (max-width:560px){
-    .home{
-        height: 100vh;
-    }
+  .home{
+      height: 100vh;
+  }
 }
 @media screen and (max-width:330px){
-    .content h2{
-        font-size: 30px;
-    }
-    .content h3{
-        font-size: 30px;
-    }
+  .content h2{
+      font-size: 30px;
+  }
+  .content h3{
+      font-size: 30px;
+  }
 }
 /* home section end */
 
 
 /* about */
 #about{
-    margin-top: 50px;
+  margin-top: 50px;
 }
 #about h1{
-    text-align: center;
-    font-weight: bold;
-    margin-top: 50px;
-    color: #18355e;
-    text-shadow: 1px 1px 1px black;
-    border-bottom: #18355e;
+  text-align: center;
+  font-weight: bold;
+  margin-top: 50px;
+  color: #101111fc;
+  text-shadow: 1px 1px 1px black;
+  border-bottom: 2px solid #101111fc;
 }
 #about .card{
-    background-color: #18355e;
-    box-shadow: 0px 0px 5px black;
+  background-color: #101111fc;
+  box-shadow: 0px 0px 5px black;
 }
 #about p{
-    color: rgb(33, 23, 3);
-   font-size: 20px;
+  color: rgb(33, 23, 3);
+ 
+  font-weight:300;
 }
 #bt button{
-    width: 150px;
-    height: 32px;
-    letter-spacing: 3px;
-    background-color: #18355e;
-    color: white;
-    border: none;
-    cursor: pointer;
+  width: 150px;
+  height: 32px;
+  letter-spacing: 3px;
+  background-color: #101111fc;
+  color: white;
+  border: none;
+  cursor: pointer;
 }
 @media screen and (max-width:1000px){
-    #about p{
-        font-size: 10px;
-    }
+  #about p{
+      font-size: 10px;
+  }
 }
 @media screen and (max-width:760px){
-    #about p{
-        font-size: 20px;
-    }
+  #about p{
+      font-size: 20px;
+  }
 }
 /* about */
 
 /* contact */
 #contact{
-    margin-top: 100px;
+  margin-top: 100px;
 }
 #contact h1{
-    text-align: center;
-    font-weight: bold;
-    margin-top: 50px;
-    color: #18355e;
-    text-shadow: 1px 1px 1px black;
-    border-bottom: #18355e;
+  text-align: center;
+  font-weight: bold;
+  margin-top: 50px;
+  color: #101111fc;
+  text-shadow: 1px 1px 1px black;
+  border-bottom: #101111fc;
 }
 #contact input{
-    background-color: rgb(230, 226, 219);
+  background-color: rgb(230, 226, 219);
 }
 #contact input::placeholder{
-    color: rgb(0, 6, 2);
+  color: rgb(0, 6, 2);
 }
 #contact textarea{
-    background-color: #18355e;
+  background-color: #101111fc;
 }
 #contact textarea::placeholder{
-    color: white;
+  color: white;
 }
 #messagebtn{
-    text-align: center;
+  text-align: center;
 }
 #messagebtn button{
-    width: 200px;
-    height: 30px;
-    letter-spacing: 3px;
-    font-weight: bold;
-    background: transparent;
-    border: 2px solid rgb(46, 11, 11);
-    color: rgb(19, 1, 1);
-    transition: 0.5s;
-    cursor: pointer;
+  width: 200px;
+  height: 30px;
+  letter-spacing: 3px;
+  font-weight: bold;
+  background: transparent;
+  border: 2px solid rgb(46, 11, 11);
+  color: rgb(19, 1, 1);
+  transition: 0.5s;
+  cursor: pointer;
 }
 #messagebtn button:hover{
-    background-color: #18355e;
+  background-color: #101111fc;
 }
 /* contact */
 
 /* footer */
 #footer{
-    width: 100%;    
-    background-color: #18355e;
-    box-shadow: 0px 0px 5px black;
-    margin-top: 100px;
+  width: 100%;    
+  background-color: #101111fc;
+  box-shadow: 0px 0px 5px black;
+  margin-top: 100px;
 }
 #footer h1{
-    color: white;
-    padding-top: 30px;
+  color: white;
+  padding-top: 30px;
 }
 #footer p{
-    color: white;
+  color: white;
 }
 .icons i{
-    background-color: white;
-    color: #18355e;
-    border-radius: 50px;
-    padding: 6px;
-    font-size: 30px;
-    transition: 0.5s;
-    cursor: pointer;
+  background-color: white;
+  color: #101111fc;
+  border-radius: 50px;
+  padding: 6px;
+  font-size: 30px;
+  transition: 0.5s;
+  cursor: pointer;
 }
 .icons i:hover{
-    background-color:#18355e;
-    color: white;
+  background-color:#101111fc;
+  color: white;
 }
 .copyright{
-    color: white;
-    margin-top: 20px;
+  color: white;
+  margin-top: 20px;
 }
 .credite{
-    color: white;
+  color: white;
 }
 /* footer */
 html{
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 .arrow{
-    position: fixed;
-    background-color: #18355e;
-    border-radius: 50px;
-    height: 50px;
-    bottom: 40px;
-    right: 50px;
-    text-decoration: none;
-    text-align: center;
-    line-height: 50px;
+  position: fixed;
+  background-color: #e2e832;
+  border-radius: 50px;
+  height: 50px;
+  bottom: 40px;
+  right: 50px;
+  text-decoration: none;
+  text-align: center;
+  line-height: 50px;
 }
-    </style>
+  </style>
 </head>
 <body>
-    <div class="all-content">
-        <!-- navbar -->
-        <nav class="navbar navbar-expand-md" id="navbar">
-            <!-- Brand -->
-            <a class="navbar-brand" href="#" id="logo"><img src="images/RDA BULK PACKAGING.jpg" alt="" width="280px"></a>
-          
-           
-            </nav>
-        <!-- navbar end -->
+  <div class="all-content">
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-md" id="navbar">
+        <!-- Brand -->
+        <a class="navbar-brand" href="index.html" id="logo"><img src="images/conbag-header.png" alt="" width="280px"></a>
       
-        <div class="header-2">
-          <nav>
-          <div class="wrapper">
-           
-            <input type="radio" name="slider" id="menu-btn">
-            <input type="radio" name="slider" id="close-btn">
-            <ul class="nav-links">
-              <label for="close-btn" class="btn close-btn"><i class="fas fa-times"></i></label>
-              <li><a href="#">Home</a></li>
-              <li>
-                  <a href="about.html" class="desktop-item">About</a>
-                  <input type="checkbox" id="showDrop">
-                  <label for="showDrop" class="mobile-item">Dropdown Menu</label>
+       
+        </nav>
+    <!-- navbar end -->
+  
+
+
+    <div class="header-2">
+      <nav>
+      <div class="wrapper">
+       
+        <input type="radio" name="slider" id="menu-btn">
+        <input type="radio" name="slider" id="close-btn">
+         
+        <ul class="nav-links">
+          <label for="close-btn" class="btn close-btn"><i class="fas fa-times"></i></label>
+          <li><a href="index.html">Startseite</a></li>
+          <li>
+              <a href="about.html" class="desktop-item">Über uns</a>
+              <input type="checkbox" id="showDrop">
+              <label for="showDrop" class="mobile-item">Dropdown Menu</label>
+             
+           <ul class="drop-menu">
+                        
+                        <li><a href="SERVICES (2).html">Dienstleistungen</a></li>
+                        <li><a href="RPP.html">100% RPP</a></li>
+                        <li><a href="sustainability.html">Nachhaltigkeit</a></li>
+                        <li><a href="circular.html"> Kreislaufwirtshaft</a></li>
+                      </ul>
                  
-               <ul class="drop-menu">
-                            <li><a href="about.html">About Company</a></li>
-                            <li><a href="SERVICES (2).html">Services</a></li>
-                            <li><a href="RPP.html">100% RPP</a></li>
-                            <li><a href="sustainability.html">Sustainability</a></li>
-                            <li><a href="circular.html">Circular Economy</a></li>
-                          </ul>
-                     
-                </li>
-     
-              
-             <li>
-              <li>
-                <a href="Industries.html" class="desktop-item">Industries</a>
-                <input type="checkbox" id="showMega">
-                <label for="showMega" class="mobile-item">Mega Menu</label>
-                <div class="mega-box">
-                  <div class="content">
-                    <div class="row">
-                      <img src="image/cc.png" alt="">
-                    </div>
-                    <div class="row">
-                    
-                      <ul class="mega-links">
-                        <li><a href="food grade bags.html">Food Grade</a></li>
-                        <li><a href="Feed Grade.html">Feed Grade</a></li>
-                        <li><a href="Skip Industry.html">Skip Industry</a></li>
-                        <li><a href="Pharma industry.html">Pharma Grade</a></li>
-                      </ul>
-                    </div>
-                    <div class="row">
-                      
-                      <ul class="mega-links">
-                          <li><a href="Chemical.html">Chemical Industry</a></li>
-                          <li><a href="rindustry.html">Recycling Industry</a></li>
-                          <li><a href="land industry.html">Landscaping & Horti</a></li>
-                          <li><a href="Agriculture.html">Agriculture & seeds</a></li>
-                       
-                      </ul>
-                    </div>
-                    <div class="row">
-                     <ul class="mega-links">
-                        <li><a href="Mining and Quarrying.html">Mining and quarrying</a></li>
-                        <li><a href="Building & Construction.html">Building and Construction</a></li>
-                        <li><a href="Forestry and Timber.html">Forestry and Timber</a></li>
-                        <li><a href="Industries.html">And Many More..</a></li>
-                      </ul>
-                    </div>
-                    </div>
+            </li>
+          
+          
+         <li>
+          <li>
+            <a href="Industries.html" class="desktop-item">Industrien</a>
+            <input type="checkbox" id="showMega">
+            <label for="showMega" class="mobile-item">Mega Menu</label>
+            <div class="mega-box">
+              <div class="content">
+                <div class="row">
+                  <img src="img/all indus.png" alt="">
                 </div>
-                </li>
-                <li>
-                <a href="All Products page.html" class="desktop-item">All Products</a>
-                <input type="checkbox" id="showMega">
-                <label for="showMega" class="mobile-item">Mega Menu</label>
-                <div class="mega-box">
-                  <div class="content">
-                    <div class="row">
-                      <img src="image/Agricutural.png" alt="">
-                    </div>
-                    <div class="row">
-                      <header>Bulk Bags</header>
-                      <ul class="mega-links">
-                        <li><a href="Standard bulk bags.html"> STANDARD BULK BAG</a></li>
-                        <li><a href="Fertilizer bags.html">FERTILIZER BAGS</a></li>
-                        <li><a href="tunnel lift bulk bags.html">TUNNEL LIFT BULK BAGS</a></li>
-                        <li><a href="Top attachement.html">TOP ATTACHMENTS</a></li>
-                        <li><a href="bottom attachement.html">BOTTOM ATTACHMENTS</a></li>
-                        </ul>
-                    </div>
-                    <div class="row">
-                      <header>SPECIAL BULK BAGS</header>
-                      <ul class="mega-links">
-                        <li><a href="bags and baffle bags.html"> BAFFLE BAGS</a></li>
-                        <li><a href="type D bulk bags.html">TYPE D BAGS</a></li>
-                        <li><a href="type c bulk bags.html">TYPE C BAGS</a></li>
-                        <li><a href="Asbestos bags.html">ASBESTOS BAGS</a></li>
-                        <li><a href="Un approved bags.html">UN APPROVED BAGS</a></li>
+                <div class="row">
+                
+                  <ul class="mega-links">
+                    <li><a href="food grade bags.html">Lebensmittelindustrie</a></li>
+                    <li><a href="Feed Grade.html">Futtermittelindustrie</a></li>
+                    <li><a href="Skip Industry.html">AbfallIindustrie</a></li>
+                    <li><a href="Pharma industry.html">Pharmaindustrie</a></li>
+                   
                   </ul>
-                    </div>
-                    <div class="row">
-                      <header>SACKS AND SMALL BAGS</header>
+                </div>
+                <div class="row">
+                  
+                  <ul class="mega-links">
+                      <li><a href="Chemical.html">Chemieindustrie</a></li>
+                      <li><a href="rindustry.html">Kunststoffrecycling</a></li>
+                      <li><a href="land industry.html">Erde Sand</a></li>
+                      <li><a href="Agriculture.html">Landwirtschaft</a></li>
+                      
+                   
+                  </ul>
+                </div>
+                <div class="row">
+                 <ul class="mega-links">
+                    <li><a href="Mining and Quarrying.html">Bergbau/Untertage</a></li>
+                    <li><a href="Building & Construction.html">Bauwesen</a></li>
+                    <li><a href="Forestry and Timber.html">Forstwirtschaft und Holz</a></li>
+                    <li><a href="Ceramics & Glass.html">Keramik-/Glasindustrie</a></li>
+                    <li><a href="Industries.html">viele weitere..</a></li>
+                  </ul>
+                </div>
+                </div>
+            </div>
+            </li>
+            <li>
+           
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+             <li>
+              <a href="All Products page.html" class="desktop-item">Unterkategorie</a>
+              <input type="checkbox" id="showMega">
+              <label for="showMega" class="mobile-item">Mega Menu</label>
+              <div class="mega-box">
+                <div class="content">
+                  <div class="row">
+                    <img src="img/drop down.jpg" alt="">
+                  </div>
+                 
+                  <div class="row">
+                    <header><a href="https://www.conbag.de/big-bags/">Big Bags</a></header>
+                    <ul class="mega-links">
+                      <li><a href="type D bulk bags.html">Typ D Bags</a></li>
+                      <li><a href="type c bulk bags.html">Typ C Bags</a></li>
+                      <li><a href="Asbestentsorgung.html">Asbestentsorgung</a></li>
+                      <li><a href="Mineral wolle.html">Mineralwollentsorgung</a></li>
+                      <li><a href="https://www.conbag.de/big-bags/">Read More...</a></li>
+                 
+                      </ul>
+                  </div>
+                  <div class="row">
+                    <header><a href="https://www.conbag.de/container/">Container</a></header>
+                    <ul class="mega-links">
+                      <li><a href="Container Page.html">Absetzcontainer</a></li>
+                      <li><a href="Abrollcontainer.html">Abrollcontainer</a></li>
+                      <li><a href="tarpaulin page.html">Planen und Netze</a></li>
+                      <li><a href="Containerleasing.html">Containerleasing</a></li>
+                      <li><a href="https://www.conbag.de/container/">Read More...</a></li>
+                     
+                </ul>
+                  </div>
+                  <div class="row">
+                    <header><a href="https://www.conbag.de/arbeitsschutz/">Safety Tools</a></header>
+                    <ul class="mega-links">
+                        <li><a href="Arbeitshandschuhe.html">Arbeitshandschuhe</a></li>
+                      <li><a href="Einwegschutz.html">Einwegschutz</a></li>
+                      <li><a href="Masken.html">Masken</a></li>
+                      <li><a href="Overalls.html">Overalls</a></li>
+                      <li><a href="https://www.conbag.de/arbeitsschutz/">Read More...</a></li>
+                     
+                   </ul>
+                  </div>
+                  <div class="row">
+                      <header><a href="https://www.conbag.de/verpackungsmaterial/">Packaging Materials</a></header>
                       <ul class="mega-links">
-                        <li><a href="top hemmed bulk bags.html">PPWOVEN SACKS</a></li>
-                        <li><a href="Bopp Bulk Bags.html">BOPP BAGS</a></li>
-                        <li><a href="Borrow Bulk Bags.html">BORROW BAGS</a></li>
-                        <li><a href="AD star bags.html">AD STAR BAGS </a></li>
-                        <li><a href="mesh  Leno Bulk Bags.html"> LENO MESH BULK BAGS</a></li>
+                          <li><a href="Folien, Beutel und Säcke.html">Folien, Beutel und Säcke</a></li>
+                        <li><a href="Füll-und Polstermaterialien.html">Füll-und Polstermaterialien</a></li>
+                        <li><a href="Kartonagen.html">Kartonagen</a></li>
+                        <li><a href="Klebebänder,Waren- und Transportkennzeichnung.html">Klebebänder,Waren- und Transportkennzeichnung</a></li>
+                        <li><a href="https://www.conbag.de/verpackungsmaterial/">Read More...</a></li>
                      </ul>
                     </div>
-                
+               </li>
               </li>
-            
-              <li><a href="contact us.html">Brochers</a></li>
-              <li><a href="contact us.html">Contact Us</a></li>
-            </ul>
-            <label for="menu-btn" class="btn menu-btn"><i class="fas fa-bars"></i></label>
-          </div>
-        </nav>
+        
+          <li><a href="#">
+              Broschüren</a></li>
+          <li><a href="contact us.html">Kontaktiere uns</a></li>
+        </ul>
+        <label for="menu-btn" class="btn menu-btn"><i class="fas fa-bars"></i></label>
       </div>
+    </nav>
+  </div>
+
   
-      
-  </header>
-  
-  <!-- header section ends -->
+</header>
+
+<!-- header section ends -->
 
 
         <!-- home section -->
         <div class="home">
             <div class="content" data-aos="zoom-out-right">
-                <h3>Sustainability
+                <h3>Nachhaltigkeit
                 </h3>
                 <br>
                 <br>
-                <p>Welcome to RDA Bulk Packaging, your trusted partner in innovative and sustainable packaging solutions. With a commitment to excellence and a focus on environmental responsibility, RDA Bulk Packaging has emerged as a leader in the packaging industry. Our mission is to provide businesses with high-quality packaging solutions that meet their operational needs and contribute to a greener and more sustainable future.
-
-                </p>
+                <p>Willkommen bei Conbag International Packaging Gmbh & Co.KG, Ihrem zuverlässigen Partner für innovative und
+                   nachhaltige Verpackungslösungen. Mit seinem Engagement für Spitzenleistungen und einem Fokus auf Umweltverantwortung
+                    hat sich Conbag International Packaging GmbH & Co.KG zu einem führenden Unternehmen in der Verpackungsbranche entwickelt. 
+                    Unsere Mission ist es, Unternehmen hochwertige Verpackungslösungen anzubieten,
+                   die ihren betrieblichen Anforderungen entsprechen und zu einer grüneren und nachhaltigeren Zukunft beitragen.
+                   </p>
               
             </div>
             <div class="img"  data-aos="zoom-out-left">
-                <img src="./image/susstanh.jpg" alt="">
+                <img src="./img/sustainability.jpg" alt="">
             </div>
         </div>
         <!-- home section end -->
@@ -743,14 +823,14 @@ html{
          <!-- about -->
       <div class="container" id="about"    data-aos="fade-up"
       data-aos-duration="1500">
-        <h1>Key features Sustainability</h1>
+        <h1>Hauptmerkmale Nachhaltigkeit</h1>
         <br>
         <br>
         <div class="row">
             <div class="col-md-6 py-3 py-md-0">
            
                 <div class="card">
-                    <img src="./image/ssss.jpg" alt="">
+                    <img src="./img/resources.jpg" alt="">
                 </div>
           </div>
         <div class="col-md-6 py-3 py-md-0">
@@ -758,15 +838,14 @@ html{
 
                 
                         
-                        Beyond their diverse design options and sizes, our 100% rPP bulk bags offer a myriad of sustainability-driven advantages that resonate with environmentally conscious businesses:
-                       <br> 1. Reduced Carbon Footprint: By utilizing recycled polypropylene, we significantly reduce the carbon footprint associated with traditional plastic production. Choosing 100% rPP bulk bags demonstrates your commitment to combatting climate change.
-                       <br>2. Waste Minimization: The use of recycled materials helps divert plastic waste from landfills and oceans, contributing to a cleaner environment and healthier ecosystems.
-                       <br> 3. Enhanced Circular Economy: Embrace the circular economy by opting for packaging made from recycled materials. Each 100% rPP bulk bag you use supports the recycling loop, reducing the need for new plastic production.
-                       <br> 4. Regulatory Compliance and Safety: Our bulk bags adhere to stringent industry standards and regulations, ensuring that your materials are packaged safely and in compliance with relevant guidelines.
-                        
-                         </p>                
+                      Neben ihren vielfältigen Designoptionen und Maße bieten unsere Großgebinde aus 100 % rPP eine Vielzahl von Nachhaltigkeitsvorteilen, die bei umweltbewussten Unternehmen Anklang finden:
+                     <br> 1. Reduzierter CO2-Fußabdruck: Durch die Verwendung von recyceltem Polypropylen reduzieren wir den CO2-Fußabdruck der herkömmlichen Kunststoffproduktion erheblich. Die Entscheidung für 100 % rPP Big Bags zeigt Ihr Engagement im Kampf gegen den Klimawandel.
+                     <br> 2. Abfallminimierung: Die Verwendung von recycelten Materialien trägt dazu bei, Kunststoffabfälle von Mülldeponien und aus den Ozeanen fernzuhalten und trägt zu einer saubereren Umwelt und gesünderen Ökosystemen bei.
+                     <br> 3. Verbesserte Kreislaufwirtschaft: Machen Sie sich die Kreislaufwirtschaft zu eigen, indem Sie sich für Verpackungen aus recycelten Materialien entscheiden. Jeder von Ihnen verwendete 100 % rPP Big Bags unterstützt den Recyclingkreislauf und reduziert den Bedarf an neuer Kunststoffproduktion.
+                     <br> 4. Einhaltung gesetzlicher Vorschriften und Sicherheit: Unsere Big Bags entsprechen strengen Industriestandards und -vorschriften und gewährleisten, dass Ihre Materialien sicher und in Übereinstimmung mit den relevanten Richtlinien verpackt werden.
+ </p>                
 
-                <div id="bt"><button>Read More...</button></divr>
+                <div id="bt"><button>mehr Lesen...</button></divr>
             </div>
         </div>
       </div>
@@ -775,7 +854,7 @@ html{
       <!-- about -->
       <div class="container" id="about"    data-aos="fade-up"
       data-aos-duration="1500">
-        <h1>ABOUT US</h1>
+        <h1>Über Uns</h1>
         <br>
         <br>
         <div class="row">
@@ -786,54 +865,25 @@ html{
             </div>
             <div class="col-md-6 py-3 py-md-0">
                 
-                    <p>
-
-                        Sustainability refers to the practice of meeting the needs of the present without compromising the ability of future generations to meet their own needs. It encompasses a holistic and responsible approach to environmental, social, and economic considerations. In the context of various industries, including packaging and e-commerce, sustainability aims to minimize adverse impacts on the environment, promote ethical practices, and create long-term value for both businesses and society.
-
-                        <br>Key components of sustainability include:
-                        
-                       <br> Environmental Responsibility:
-                        
-                        Resource Conservation: Efficient use of natural resources to minimize waste and environmental degradation.
-                        
-                   Renewable Energy: Adoption of renewable energy sources to reduce reliance on finite, non-renewable resources.
-                        
-                       <br> Social Equity:
-                        
-                        Fair Labor Practices: Ensuring fair wages, safe working conditions, and respect for human rights in all aspects of operations.
-                        
-                        Community Engagement: Involving and benefiting local communities, considering social impacts, and fostering positive relationships.
-                        
+                    <p>Zu den wichtigsten Komponenten der Nachhaltigkeit gehören:-
+                      Umweltverantwortung: Ressourcenschonung: Effiziente Nutzung natürlicher Ressourcen, um Abfall und Umweltschäden zu minimieren. 
+                      Erneuerbare Energien: Einführung erneuerbarer Energiequellen, um die Abhängigkeit von endlichen, nicht erneuerbaren Ressourcen zu verringern.
+                      Soziale Gerechtigkeit: Faire Arbeitspraktiken: Gewährleistung fairer Löhne, sicherer Arbeitsbedingungen und Achtung der Menschenrechte in allen Aspekten des Betriebs. 
+                      Engagement in der Gemeinschaft: Einbeziehung und Förderung lokaler Gemeinschaften, Berücksichtigung sozialer Auswirkungen und Förderung positiver Beziehungen.
+                      Wirtschaftliche Tragfähigkeit: Langfristige Rentabilität: Ausbalancieren von Wirtschaftswachstum mit ökologischer und sozialer Verantwortung, um nachhaltige Geschäftspraktiken sicherzustellen. Kreislaufwirtschaft: Einführung zirkulärer Wirtschaftsmodelle, bei denen Recycling, Wiederverwendung und Abfallreduzierung im Vordergrund stehen.
+                      
                     </div>
                     <br>
                     <br>
                     
-                     Economic Viability:
-                        
-                        Long-Term Profitability: Balancing economic growth with environmental and social responsibilities to ensure sustainable business practices.
-                        
-                        Circular Economy: Embracing circular economic models that prioritize recycling, reuse, and reduced waste.
-                        
-                        <br> Innovation and Efficiency:
-                        
-                        Technological Advancements: Incorporating innovative technologies to improve efficiency and reduce environmental impact.
-                        
-                        Continuous Improvement: Regularly assessing and enhancing practices to align with evolving sustainability standards.
-                        
-                        <br> Transparency and Accountability:
-                        
-                        Open Communication: Providing clear and honest information about sustainability efforts to consumers, stakeholders, and the public.
-                        
-                        Accountability: Taking responsibility for the environmental and social consequences of business activities.
-                        
-                        <br> Lifecycle Assessment:
-                        
-                        Holistic Approach: Considering the entire lifecycle of products or services, from raw material extraction and production to distribution, use, and disposal.
-                        
-                        Reducing Environmental Footprint: Striving to minimize the overall environmental footprint of products and processes.
-                         </p>                
+                    Innovation und Effizienz: Technologischer Fortschritt: Einbeziehung innovativer Technologien zur Verbesserung der Effizienz und Verringerung der Umweltbelastung. 
+Kontinuierliche Verbesserung: Regelmäßige Bewertung und Verbesserung von Praktiken, um sie an sich entwickelnde Nachhaltigkeitsstandards anzupassen.
+Transparenz und Rechenschaftspflicht: Offene Kommunikation: Bereitstellung klarer und ehrlicher Informationen über Nachhaltigkeitsbemühungen für Verbraucher, Interessengruppen und die Öffentlichkeit. Rechenschaftspflicht: Verantwortung für die ökologischen und sozialen Folgen geschäftlicher Aktivitäten übernehmen.
+Lebenszyklusanalyse: Ganzheitlicher Ansatz: Berücksichtigung des gesamten Lebenszyklus von Produkten oder Dienstleistungen, von der Rohstoffgewinnung und Produktion bis hin zu Vertrieb, Nutzung und Entsorgung. 
+Reduzierung des ökologischen Fußabdrucks: Streben nach Minimierung des gesamten ökologischen Fußabdrucks von Produkten und Prozessen.
+</p>                
 
-                <div id="bt"><button>Read More...</button></divr>
+                <div id="bt"><button>mehr Lesen</button></divr>
             </div>
         </div>
       </div>
@@ -846,7 +896,7 @@ html{
       <!-- contact  -->
       <div class="container" id="contact"    data-aos="fade-up"
       data-aos-duration="1500">
-        <h1>CONTACT US</h1>
+        <h1>mehr Lesen</h1>
         <div class="row">
             <div class="col-md-4 py-1 py-md-0">
                 <div class="form-group">
@@ -866,18 +916,26 @@ html{
             
         </div>
         <div class="form-group">
-            <textarea class="form-control" rows="5" id="comment" placeholder="Message"></textarea>
+            <textarea class="form-control" rows="5" id="comment" placeholder="Nachricht"></textarea>
         </div>
-        <div id="messagebtn"><button>Send Message</button></div>
+        <div id="messagebtn"><button>Nachricht senden</button></div>
       </div>
       <!-- contact end -->
 
+      <section class="deal">
 
+        <div class="content">
+          <div class="image">
+            <img src="img/Conbag signature.png" alt="">
+        </div>
+         
+        </div>
+        </section>
       <!-- footer -->
       <footer id="footer"    data-aos="fade-up"
       data-aos-duration="1500">
-        <h1 class="text-center">Sustainability</h1>
-        <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, accusantium.</p>
+        <h1 class="text-center">Nachhaltigkeit</h1>
+        <p class="text-center">With Conbag International Packaging GmbH & Co.KG</p>
         <div class="icons text-center">
             <i class="bx bxl-linkedin"></i>
             <i class="bx bxl-twitter"></i>
@@ -888,7 +946,7 @@ html{
             &copy; Copyright <strong>Industries</strong> .All Rights Reserved
         </div>
         <div class="credite text-center">
-            Designed By <a href="#"><span>RDA Bulk packaging Ireland Ltd</span></a>
+            Designed By <a href="#"><span>Conbags International Packaging GmbH & Co.KG </span></a>
         </div>
       </footer>
       <!-- footer -->
