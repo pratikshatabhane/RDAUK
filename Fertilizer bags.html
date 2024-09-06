@@ -8,7 +8,7 @@
 		@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
 	
 		:root{
-			--green:#101111fc;
+			--green:#18355e;
 			--dark-color:rgb(33, 145, 80)35
 			--black:#444;
 			--light-color:#666;
@@ -23,7 +23,7 @@
 			box-sizing: border-box;
 			outline: none; border:none;
 			text-decoration: none;
-		
+			text-transform: lowercase;
 			transition:all .2s linear;
 			transition:width none;
 		}
@@ -152,8 +152,7 @@
 			border:var(--border);
 		}
 		
-		
-.btn{
+		.btn{
   margin-top: 1rem;
   display:inline-block;
   padding:.9rem 3rem;
@@ -165,7 +164,6 @@
   cursor: pointer;
   font-weight: 500;
 }
-
 		
 		.btn:hover{
 			background:var(--dark-color);
@@ -181,7 +179,7 @@
 		
 		.navbar {
 			overflow: hidden;
-			background: #101111fc;
+			background: #18355e;
 		}
 		.navbar a {
 			float: left;
@@ -190,7 +188,7 @@
 			text-align: center;
 			padding: 10px 12px;
 			text-decoration:none;
-	
+			text-transform: uppercase;
 		}
 		.d {
 			float: left;
@@ -203,7 +201,7 @@
 			color: #fff;
 			padding: 10px 12px;
 			background: inherit;
-	
+			text-transform: uppercase;
 		}
 		.navbar a:hover, .d:hover .d-btn {
 			background: #5F5F5F;
@@ -351,7 +349,7 @@
 		
 		.login-form-container form h3{
 			font-size: 2.5rem;
-			
+			text-transform: uppercase;
 			color:var(--black);
 			text-align: center;
 		}
@@ -414,7 +412,7 @@
 		.home{
 			width: 100%;
 			height: 110vh;
-			background: url(img/17.jpg)no-repeat;
+			background: url(img/ferti1.webp)no-repeat;
 			background-size: cover;
 			opacity:222222;
 			
@@ -450,7 +448,7 @@
 		}
 		
 		.home .row .content h3{
-			color:#101111fc;
+			color:#fff;
 		   
 			font-size: 6.2rem;
 			font-weight:bolder;
@@ -473,9 +471,9 @@
 			box-shadow: 0px 5px 15px rgba(12, 12, 12, 0.2);
 			justify-content: space-around; /* Adjust the spacing between cards */
 			margin: 2px;
-			max-width: 450px;
+			max-width: 350px;
 			padding: 50px;
-			text-align:center;
+			text-align:start;
 			transition: transform 0.2s ease-in-out;
 		}
 		
@@ -483,8 +481,7 @@
 			position:sticky;
 			z-index: 99;
 			width: 100%;
-			
-			background: #101111fc;
+			background: #18355e;
 		  }
 		  nav .wrapper{
 			position: relative;
@@ -514,14 +511,14 @@
 			transition: all 0.3s ease;
 		  }
 		  .nav-links li a:hover{
-			background: #3a3b3c50;
+			background: #3A3B3C;
 		  }
 		  .nav-links .mobile-item{
 			display: none;
 		  }
 		  .nav-links .drop-menu{
 			position: absolute;
-			background: #24242577;
+			background: #242526;
 			width: 180px;
 			line-height: 45px;
 			top: 85px;
@@ -553,7 +550,7 @@
 			visibility: hidden;
 		  }
 		  .mega-box .content{
-			background: #242526cd;
+			background: #242526;
 			padding: 25px 20px;
 			display: flex;
 			width: 100%;
@@ -739,7 +736,7 @@
 		}
 		
 		.newsletter{
-			background:url(images/mainbg.jpeg) no-repeat;
+			background:url(image/Green\ landscape.jpg) no-repeat;
 			background-size: cover;
 			background-position: center;
 			background-attachment: fixed;
@@ -1108,23 +1105,20 @@
 
     <div class="header-0">
        
-      <a href="index.html" class="logo"><img src="images/conbag-header.png" alt=""; height="90"; width="280"></a>
-      
-     
-      <div class="header-1">
-            <a href="https://www.conbag.de/"  class="btn"><i class="fa fa-shopping-basket" aria-hidden="true">OnlineShop</i></a>
-         
-         
+        <a href="index.html" class="logo"><img src="image/RDA New Logo.jpg" alt=""></a>
+        <div class="header-1">
+        <form action="" class="search-form">
+            <input type="search" name="" placeholder="search here..." id="search-box">
+            <label for="search-box" class="fas fa-search"></label>
+        </form>
 
         <div class="icons">
-            <div id="search-btn" class="fas"></div>
+            <div id="search-btn" class="fas fa-search"></div>
 
             <div id="login-btn" class="fas fa-user"></div>
-           
         </div>
         </div>
- 
-         
+           <a href="Shop page.html"  class="btn"><i class="fa fa-shopping-basket" aria-hidden="true">OnlineShop</i></a>
            
         </div>
         
@@ -1135,21 +1129,22 @@
         <nav>
         <div class="wrapper">
          
-          
+          <input type="radio" name="slider" id="menu-btn">
+          <input type="radio" name="slider" id="close-btn">
           <ul class="nav-links">
             <label for="close-btn" class="btn close-btn"><i class="fas fa-times"></i></label>
-            <li><a href="index.html">Startseite</a></li>
+            <li><a href="index.html">Home</a></li>
             <li>
-                <a href="about.html" class="desktop-item">Über uns</a>
+                <a href="about.html" class="desktop-item">About</a>
                 <input type="checkbox" id="showDrop">
                 <label for="showDrop" class="mobile-item">Dropdown Menu</label>
                
              <ul class="drop-menu">
-                          
-                          <li><a href="SERVICES (2).html">Dienstleistungen</a></li>
+                          <li><a href="about.html">About Company</a></li>
+                          <li><a href="SERVICES (2).html">Services</a></li>
                           <li><a href="RPP.html">100% RPP</a></li>
-                          <li><a href="sustainability.html">Nachhaltigkeit</a></li>
-                          <li><a href="circular.html"> Kreislaufwirtshaft</a></li>
+                          <li><a href="sustainability.html">Sustainability</a></li>
+                          <li><a href="circular.html">Circular Economy</a></li>
                         </ul>
                    
               </li>
@@ -1157,95 +1152,87 @@
             
            <li>
             <li>
-              <a href="Industries.html" class="desktop-item">Industrien</a>
+              <a href="Industries.html" class="desktop-item">Industries</a>
               <input type="checkbox" id="showMega">
               <label for="showMega" class="mobile-item">Mega Menu</label>
               <div class="mega-box">
                 <div class="content">
                   <div class="row">
-                    <img src="img/all indus.png" alt="">
+                    <img src="image/cc.png" alt="">
                   </div>
                   <div class="row">
                   
                     <ul class="mega-links">
-                      <li><a href="food grade bags.html">LebensmittelIndustrie</a></li>
-                      <li><a href="Feed Grade.html">FuttermittelIndustrie</a></li>
-                      <li><a href="Skip Industry.html">AbfallIindustrie</a></li>
-                      <li><a href="Pharma industry.html">Pharmaindustrie</a></li>
-                     
+                      <li><a href="food grade bags.html">Food Grade</a></li>
+                      <li><a href="Feed Grade.html">Feed Grade</a></li>
+                      <li><a href="Skip Industry.html">Skip Industry</a></li>
+                      <li><a href="Pharma industry.html">Pharma Grade</a></li>
                     </ul>
                   </div>
                   <div class="row">
                     
                     <ul class="mega-links">
-                        <li><a href="Chemical.html">Chemieindustrie</a></li>
-                        <li><a href="rindustry.html">Kunststoffrecycling</a></li>
-                        <li><a href="land industry.html">Erde Sand</a></li>
-                        <li><a href="Agriculture.html">Landwirtschaft</a></li>
-                        
+                        <li><a href="Chemical.html">Chemical Industry</a></li>
+                        <li><a href="rindustry.html">Recycling Industry</a></li>
+                        <li><a href="land industry.html">Landscaping & Horti</a></li>
+                        <li><a href="Agriculture.html">Agriculture & seeds</a></li>
                      
                     </ul>
                   </div>
                   <div class="row">
                    <ul class="mega-links">
-                      <li><a href="Mining and Quarrying.html">Bergbau/Untertage</a></li>
-                      <li><a href="Building & Construction.html">Bauwesen</a></li>
-                      <li><a href="Forestry and Timber.html">Forstwirtschaft und Holz</a></li>
-                      <li><a href="Ceramics & Glass.html">Keramik-/Glasindustrie</a></li>
-                      <li><a href="Industries.html">viele weitere..</a></li>
+                      <li><a href="Mining and Quarrying.html">Mining and quarrying</a></li>
+                      <li><a href="Building & Construction.html">Building and Construction</a></li>
+                      <li><a href="Forestry and Timber.html">Forestry and Timber</a></li>
+                      <li><a href="Industries.html">And Many More..</a></li>
                     </ul>
                   </div>
                   </div>
               </div>
               </li>
               <li>
-              <a href="All Products page.html" class="desktop-item">Alle Produkte</a>
+              <a href="All Products page.html" class="desktop-item">All Products</a>
               <input type="checkbox" id="showMega">
               <label for="showMega" class="mobile-item">Mega Menu</label>
               <div class="mega-box">
                 <div class="content">
                   <div class="row">
-                    <img src="img/about1.jpg" alt="">
+                    <img src="image/Agricutural.png" alt="">
                   </div>
                   <div class="row">
-                    <header>Big Bags</header>
+                    <header>Bulk Bags</header>
                     <ul class="mega-links">
-                      <li><a href="Standard bulk bags.html">Standard Big Bags</a></li>
-                      <li><a href="Fertilizer bags.html">Düngemittelbags</a></li>
-                      <li><a href="tunnel lift bulk bags.html">Tunnel-loop Big Bags</a></li>
-                      <li><a href="Top attachement.html">Konstruktionen Oberseite</a></li>
-                      <li><a href="bottom attachement.html">Bodenkonstruktionen</a></li>
-                      <li><a href="Safty tools Page.html">Sicherheitswerkzeuge</a></li>
-                      <li><a href="Mineral wolle.html">Mineralwolle</a></li>
+                      <li><a href="Standard bulk bags.html">STANDARD BULK BAG</a></li>
+                      <li><a href="Fertilizer bags.html">FERTILIZER BAGS</a></li>
+                      <li><a href="tunnel lift bulk bags.html">TUNNEL LIFT BULK BAGS</a></li>
+                      <li><a href="Top attachement.html">TOP ATTACHMENTS</a></li>
+                      <li><a href="bottom attachement.html">BOTTOM ATTACHMENTS</a></li>
                       </ul>
                   </div>
                   <div class="row">
-                    <header>besondere Big Bags</header>
+                    <header>SPECIAL BULK BAGS</header>
                     <ul class="mega-links">
-                      <li><a href="bags and baffle bags.html">Formstabil Big Bags</a></li>
-                      <li><a href="type D bulk bags.html">Typ D Big Bags</a></li>
-                      <li><a href="type c bulk bags.html">Typ C Big Bags</a></li>
-                      <li><a href="Asbestos bags.html">Big Bags für Asbest</a></li>
-                      <li><a href="Un approved bags.html">UN zertifiziert Big Bags</a></li>
-                      <li><a href="tarpaulin page.html">Planenseite</a></li>
+                      <li><a href="bags and baffle bags.html"> BAFFLE BAGS</a></li>
+                      <li><a href="type D bulk bags.html">TYPE D BAGS</a></li>
+                      <li><a href="type c bulk bags.html">TYPE C BAGS</a></li>
+                      <li><a href="Asbestos bags.html">ASBESTOS BAGS</a></li>
+                      <li><a href="Un approved bags.html">UN APPROVED BAGS</a></li>
                 </ul>
                   </div>
                   <div class="row">
-                    <header>SmallBags/Containers</header>
+                    <header>SACKS AND SMALL BAGS</header>
                     <ul class="mega-links">
-                        <li><a href="Containers Liners.html">Conatiners liners</a></li>
-                      <li><a href="top hemmed bulk bags.html">Flachsäcke</a></li>
-                      <li><a href="Bopp Bulk Bags.html">BOPP Big Bags</a></li>
-                      <li><a href="Borrow Bulk Bags.html"> Schüttgut Big Bags</a></li>
-                      <li><a href="mesh  Leno Bulk Bags.html">LENO Netzsäcke</a></li>
-                      <li><a href="Container Page.html">Containers</a></li>
+                      <li><a href="top hemmed bulk bags.html">PPWOVEN SACKS</a></li>
+                      <li><a href="Bopp Bulk Bags.html">BOPP BAGS</a></li>
+                      <li><a href="Borrow Bulk Bags.html">BORROW BAGS</a></li>
+                      <li><a href="AD star bags.html">AD STAR BAGS </a></li>
+                      <li><a href="mesh  Leno Bulk Bags.html"> LENO MESH BULK BAGS</a></li>
                    </ul>
                   </div>
                </li>
           
-            <li><a href="#">
-                Broschüren</a></li>
-            <li><a href="contact us.html">Kontaktiere uns</a></li>
+            <li><a href="#">Brochures</a></li>
+            <li><a href="contact us.html">Contact Us</a></li>
           </ul>
           <label for="menu-btn" class="btn menu-btn"><i class="fas fa-bars"></i></label>
         </div>
@@ -1260,13 +1247,12 @@
 <!-- bottom navbar  -->
 
 <nav class="bottom-navbar">
-    <a href="index.html" class="fas fa-home"></a>
-    <a href="about.html" class="fas fa-list"></a>
-    <a href="services.html" class="fas fa-list"></a>
-    <a href="Shop page.html" class="fas fa-comments"></a>
-    <a href="contact us.html" class="fas fa-blog"></a>
+    <a href="#home" class="fas fa-home"></a>
+    <a href="#about" class="fas fa-list"></a>
+    <a href="#services" class="fas fa-list"></a>
+    <a href="#shop" class="fas fa-comments"></a>
+    <a href="#contact" class="fas fa-blog"></a>
 </nav>
-
 
 <!-- login form  -->
 
@@ -1275,18 +1261,18 @@
     <div id="close-login-btn" class="fas fa-times"></div>
 
     <form action="">
-        <h3>Anmelden</h3>
-        <span>Benutzername</span>
-        <input type="email" name="" class="box" placeholder="eben Sie Ihre E-Mail ein" id="">
-        <span>Passwort </span>
-        <input type="password" name="" class="box" placeholder="Geben Sie Ihr Passwort ein" id="">
+        <h3>sign in</h3>
+        <span>username</span>
+        <input type="email" name="" class="box" placeholder="enter your email" id="">
+        <span>password</span>
+        <input type="password" name="" class="box" placeholder="enter your password" id="">
         <div class="checkbox">
             <input type="checkbox" name="" id="remember-me">
-            <label for="remember-me">erinnere dich an mich</label>
+            <label for="remember-me"> remember me</label>
         </div>
-        <input type="submit" value="Anmelden" class="btn">
-        <p>Passwort vergessen ? <a href="#">Klicken Sie hier</a></p>
-        <p>Sie Haben Noch Kein Konto? <a href="#">Erstellen Sie Eins </a></p>
+        <input type="submit" value="sign in" class="btn">
+        <p>forget password ? <a href="#">click here</a></p>
+        <p>don't have an account ? <a href="#">create one</a></p>
     </form>
 
 </div>
@@ -1300,13 +1286,13 @@
         
         <div class="Hcard">
         <div class="content">
-        <h3>Dünger Bags</h3>
+        <h3>Fertilizer Bags</h3>
                 
                  
-            <p>
-				Ihr Verpackungspartner, der sich Verpflichtet hat, Ihnen das Beste zu liefern
-				</p>
-				<a href="All Products page.html" class="btn">Erfahren Sie mehr</a>
+            <p>Your packaging partner committed to supplying 
+              
+                 you with the best</p>
+            <a href="#" class="btn">Explore</a>
         </div>
         </div>
      </div>   
@@ -1320,11 +1306,12 @@
 
     <div class="content">
        
-        <h1>Conbag International Packaging Gmbh & Co.KG </h1>
-		<h3>Dünger Bags</h3>
-        <p>Unsere NPK-Düngerbags, auch als Flexible Intermediate Bulk Containers (FIBCs) bekannt, sind speziell für die effiziente Lagerung und den Transport verschiedener Düngemittelarten konzipiert, insbesondere Stickstoff- (N), Phosphor- (P) und Kalium- (K)-Mischungen. Diese Bags sind für die Landwirtschaft unverzichtbar, da sie eine sichere Handhabung und Lagerung
-			 der Düngemittel in optimalem Zustand gewährleisten.</p>
-			<a href="index.html" class="btn">mehr über uns</a>
+        <h1>RDA Bulk Packaging</h1>
+		<h3>
+			Fertilizer Bags</h3>
+        <p>
+			Our Fertilizer Bags, Known As Flexible Intermediate Bulk Containers (FIBCs) Or Bulk Totes, Are Specifically Designed For The Efficient Storage And Transportation Of Various Types Of Fertilisers, Especially Nitrogen (N), Phosphorus (P), And Potassium (K) Blends. These Bags Are Essential For The Agricultural Industry, Ensuring That Fertilisers Are Safely Handled And Maintained In Optimal Condition.</p>
+        <a href="index.html" class="btn">More About Us</a>
     </div>
 </section>
 
@@ -1336,13 +1323,13 @@
    
     <div class="content">
         <h1>
-			Hauptmerkmale</h1>
+			Key Features</h1>
        
-        <p>• Material: Hergestellt aus hochwertigem gewebtem Polypropylen für Haltbarkeit, Flexibilität und Reißfestigkeit. Einige Bags enthalten auch spezielle Beschichtungen oder Liner für zusätzlichen Schutz vor Feuchtigkeit oder Verschmutzung.
-			<br>• Ausmaß und Fassungsvermögen: In mehreren Ausmaßen erhältlich, von einem halben Kubikmeter bis zu zwei Kubikmetern, mit Ladekapazitäten typischerweise zwischen 500 kg und 1500 kg, sodass große Mengen Dünger effizient transportiert werden können.
-			<br>• Hebeschlaufen: Ausgestattet mit einer oder zwei robusten Hebeschlaufen an der Oberseite für einfache Handhabung mit Gabelstaplern oder Kränen, was Sicherheit und Komfort während des Transports gewährleistet.
-			<br>• Einlauf- und Auslaufstutzen:  können mit Einfüllstutzen für optimiertes Befüllen und Entleerungsstutzen an dem Boden für kontrolliertes Entleeren ausgestattet werden, was effiziente Be- und Entladevorgänge erleichtert.
-			<br>• Sicherheitsbewertungen: Entwickelt mit einem bestimmten Sicherheitsfaktorverhältnis (z. B. 5:1 oder 6:1), das die Stärke und sichere Tragfähigkeit der Bags angibt.
+        <p>• Material: Crafted From High-Grade Woven Polypropylene For Durability, Flexibility, And Tear Resistance. Some Bags Also Include Special Coatings Or Liners For Additional Protection Against Moisture Or Contamination.
+			<br>• Size And Capacity: Available In Several Sizes, Ranging From Half A Cubic Meter To Two Cubic Meters, With Load Capacities Typically Between 500 Kg And 1500 Kg, Accommodating Large Quantities Of Fertiliser Efficiently.
+			<br>• Lifting Loops: Equipped With Robust One Lifting Loop Or Two Lifting Loop At The Top For Easy Handling With Forklifts Or Cranes, Ensuring Safety And Convenience During Transportation.
+			<br>• Fill And Discharge Spouts: Can Be Featured With Fill Spouts For Streamlined Filling And Discharge Spouts At The Bottom For Controlled Emptying, Facilitating Efficient Loading And Unloading Processes.
+			<br>• Safety Ratings: Designed With A Specific Safety Factor Ratio (E.G., 5:1 Or 6:1), Indicating The Strength And Safe Load Capacity Of The Bags.
 			</p>
        
     </div>
@@ -1363,16 +1350,16 @@
    
     <div class="content">
         <h1>
-			Vorteile</h1>
+			Advantages</h1>
        
-        <p>
-			• Kosteneffizienz: Diese Bags sind im Vergleich zu anderen Lageroptionen eine wirtschaftliche Lösung und bieten aufgrund ihres geringen Gewichts geringere Versandkosten.
-			<br>• Vielseitigkeit: Unsere Bags sind an verschiedene Branchenanforderungen anpassbar und für die Handhabung verschiedener Düngemittel ausgelegt.
-			<br>• Platzeffizienz: Wenn diese Bags nicht verwendet werden, können sie flach zusammengefasst werden, wodurch wertvoller Lagerraum gespart wird.
-			<br>• Haltbarkeit und Stärke: Unsere Bags werden aus robusten Materialien hergestellt und können schwere Lasten ohne Kompromisse transportieren.
-			<br>• Einfacher Transport und Handhabung: Mit Hebeschlaufen sind sie leicht zu bewegen, was die Betriebseffizienz verbessert.
-			<br>• Diese Bags sind leicht zu befüllen, zu entleeren und zu handhaben, rationalisieren Abläufe und reduzieren die Arbeitszeit. Reduziertes Kontaminationsrisiko: Das Design minimiert Kontaminationsrisiken, was für die Aufrechterhaltung der Düngemittelqualität unerlässlich ist. Diese Vorteile machen Big Bags zu einer äußerst effektiven Lösung für eine breite Palette von Materialhandhabungs- und Lagerungsanforderungen und bieten sowohl praktische als auch wirtschaftliche Vorteile.
+        <p>• Cost-Effectiveness: These Bags Are An Economical Solution Compared To Other Storage Options, Offering Reduced Shipping Costs Due To Their Lightweight Nature.
+			<br>• Versatility: Our Bags Are Adaptable To Different Industry Requirements And Are Designed To Handle Various Fertilisers.
+			<br>• Space Efficiency: When Not In Use, These Bags Can Be Folded Flat, Conserving Valuable Storage Space.
+			<br>• Durability And Strength: Made From Robust Materials, Our Bags Can Transport Heavy Loads Without Compromise
+			<br>• Ease Of Transportation And Handling: With Lifting Loops, They Are Easy To Move, Enhancing Operational Efficiency.
 			
+			<br>• Easy To Fill, Discharge, And Handle, These Bags Streamline Operations And Reduce Labour Time. Reduced Risk Of Contamination: The Design Minimises Contamination Risks, Which Is Essential For Maintaining Fertiliser Quality. These Advantages Make Bulk Bags A Highly Effective Solution For A Broad Range Of Material Handling And Storage Needs, Offering Both Practical And Economic Benefits.
+       
     </div>
 
 </section>
@@ -1384,7 +1371,7 @@
 <section class="newsletter">
 
     <form action="">
-        <h3>Abonnieren Sie die neuesten Updates</h3>
+        <h3>subscribe for latest updates</h3>
         <input type="email" name="" placeholder="enter your email" id="" class="box">
         <input type="submit" value="subscribe" class="btn">
         
@@ -1395,11 +1382,15 @@
 
 <!-- newsletter section ends -->
 
- <!-- reviews section starts  -->
+
+
+
+
+<!-- reviews section starts  -->
 
 <section class="reviews" id="reviews">
 
-    <h1 class="heading"> <span>Einrichtungen und Partnerschaften</span> </h1>
+    <h1 class="heading"> <span>Facilities And Partnerships</span> </h1>
 
     <div class="swiper reviews-slider">
 
@@ -1409,10 +1400,9 @@
             <div class="card">
                 <i class="fas fa-hotel"></i>
                 <div class="card-body">
-                <h3>Herstellung</h3>
-                <p>Conbag International Packaging nutzt mehrere Produktionsstätten in Indien, die jeweils 
-					über ein gültiges Zertifikat für die Herstellung von Big Bags vom Cotecna in Indien, Labordata
-                     in Deutschland und mehreren anderen international anerkannten Prüfzentren verfügen.</p>
+                <h3>manufacturing</h3>
+                <p>RDA utilise a number of manufacturing facilities in UK. Each of which holds a
+                     valid certificate for the manufacture of bulk bags from the ISO.</p>
                
             </div>
 
@@ -1423,10 +1413,9 @@
                 <div class="card">
                     <i class="fas fa-cubes"></i>
                     <div class="card-body">
-                <h3>Vertrieb und Lieferung</h3>
-                <p>Conbag International Packaging ist von Büros in Frankfurt, Deutschland, und Indore, Indien, 
-                    aus tätig und vertreibt über Lagerstätten in Dietzhölztal, Deutschland. Cotecna in Indien, Labordata
-                    in Deutschland und mehreren anderen international anerkannten Prüfzentren verfügen Big Bags vom of Packaging</p>
+                <h3>Distribution</h3>
+                <p>RDA operates from warehousing facilities based in Co.
+                     Meath, Republic of.It involves activities such as transportation, warehousing, logistics, and retailing.</p>
                 </div>
 
             </div>
@@ -1436,18 +1425,30 @@
                 <div class="card">
                     <i class="fas fa-handshake"></i>
                     <div class="card-body">
-                <h3>Verbundene Partnerfirma</h3>
-                <p>Conbag International Packaging arbeitet eng mit seinen Spediteuren zusammen, um einen hervorragenden Lieferservice aufrechtzuerhalten, 
-                    der es uns ermöglicht, weltweit Lieferungen anzubieten,Big Bags vom of Packaging</p>
-				
+                <h3>Partner Company</h3>
+                <p>RDA works closely with its freight forward companies to help maintain an excellent delivery service which allows us to offer deliveries across the Europe.</p>
                 </div>
 
             </div>
             </div>
-			</div>
-			</div>
-		
             
+                </div>
+
+            </div>
+            </div>
+
+            
+                </div>
+
+            </div>
+            </div>
+
+            
+            </div>
+
+        </div>
+
+    </div>
     
 </section>
 
@@ -1460,33 +1461,22 @@
 <section class="deal">
 
     <div class="content">
-		<h1>Es ist die Anwendung</h1>
-		<h3>Unsere NPK-Düngerbeutel sind auf die vielfältigen Anforderungen der Agrar- und Chemieindustrie zugeschnitten und bieten eine zuverlässige, effiziente und vielseitige Lösung für die Handhabung und Lagerung von Düngemitteln.</h3>
-		 <p>• Wird hauptsächlich zur Lagerung und zum Transport verschiedener Arten von Düngemitteln verwendet.
-			 <br>• Chemische Düngemittel werden in unterschiedlichen Formen gehandhabt.
-			 <br>• Perfekt für verschiedene Arten von NPK-Düngemitteln
-			 <br>• Geeignet für den Transport und die Lagerung chemischer Düngemittel.</p>
-		
-	 </div>
+       <h1>It's Application</h1>
+	   <h3>Our Fertilizer Bags Are Tailored To Meet The Diverse Needs Of The Agricultural And Chemical Industries, Providing A Reliable, Efficient, And Versatile Solution For Fertiliser Handling And Storage.</h3>
+        <p>• Primarily Used For Storing And Transporting Various Types Of Fertilisers.
+			<br>• Chemical-Based Fertilisers Are Handled In Different Forms.
+			<br>• Perfect For Different Types Of NPK Fertilisers
+			<br>• Suitable For Transporting And Storing Chemical Fertilisers.</p>
+       
+    </div>
+
     <div class="image">
-        <img src="img/indus 2.jpg" alt="">
+        <img src="images/Extrusion-Machine-1.jpg" alt="">
     </div>
 
 </section>
 
 <!-- deal section ends -->
-
-
-
-<section class="deal">
-
-    <div class="content">
-      <div class="image">
-        <img src="img/Conbag signature.png" alt="">
-    </div>
-     
-    </div>
-    </section>
 
 <!-- footer section starts  -->
 
@@ -1495,39 +1485,39 @@
 	<div class="box-container">
   
 		<div class="box">
-		  <a href="index.html" class="logo"><img src="images/conbag-header.png" alt=""; height="90"; width="280"></a>
-			<a href="#"> <i class="fas fa-map-marker-alt"></i>  Hauptstrasse 79, 35716 Dietzhölztal, Germany, Germany  </a>
-		<a href="#"> <i class="fas fa-clock"></i>Arbeitszeiten : 
-		  Montag- Donnerstag ( 08:00 - 16:30 ) Freitag (08:00 - 15:00) </a>
+			<h3>our locations</h3>
+			<a href="#"> <i class="fas fa-map-marker-alt"></i>  RDA Bulk Packaging Ltd
+		Severn Business Park
+		Burma Road Sharpness Berkeley Gloucestershire GL13 9UQ, UK </a>
+		<a href="#"> <i class="fas fa-clock"></i>Working : Mon-Fri (08:30 - 17:00) </a>
 		
 			
 		</div>
   
 		<div class="box">
-			<h3>Über uns Us</h3>
-			<a href="index.html"> <i class="fas fa-arrow-right"></i>Startseite</a>
-			<a href="about.html"> <i class="fas fa-arrow-right"></i>Über uns</a>
-			<a href="SERVICES (2).html"> <i class="fas fa-arrow-right"></i>Leistungen</a>
-			<a href="contact us.html"> <i class="fas fa-arrow-right"></i>Kontakt</a>
+			<h3>quick links</h3>
+			<a href="index.html"> <i class="fas fa-arrow-right"></i>home</a>
+			<a href="about.html"> <i class="fas fa-arrow-right"></i>about</a>
+			<a href="SERVICES (2).html"> <i class="fas fa-arrow-right"></i>services</a>
+			<a href="All Products page.html"> <i class="fas fa-arrow-right"></i>products</a>
+			<a href="contact us.html"> <i class="fas fa-arrow-right"></i>contact</a>
 		</div>
   
 		<div class="box">
-			<h3>Unternehmen</h3>
+			<h3>extra links</h3>
 		   
-			<a href="#"> <i class="fas fa-arrow-right"></i>Daten¬schutz¬erklärung</a>
-			<a href="#"> <i class="fas fa-arrow-right"></i>Cookie- richtlinie</a>
-			<a href="#"> <i class="fas fa-arrow-right"></i>Brochüren</a>
+			<a href="#"> <i class="fas fa-arrow-right"></i>privacy policy</a>
 		   
-			<a href="https://www.conbag.de/faq/"> <i class="fas fa-arrow-right"></i> FAQ's </a>
+			<a href="#"> <i class="fas fa-arrow-right"></i> our serivces </a>
    
   
   </div>
   <div class="box">
-			<h3>Kontaktiere Uns</h3>
-			<a href="contact us.html"> <i class="fas fa-phone"></i> Tel: +49(0)2774-92424-0</a>
+			<h3>contact info</h3>
+			<a href="#"> <i class="fas fa-phone"></i> Tel: +44 (0) 1453 511222</a>
 	  
-			<a href="contact us.html"> <i class="fas fa-envelope"></i> Email:   info@conbag.de</a>
-	  <a href="contact us.html">  Registernummer :  HRA 7771</a>
+			<a href="#"> <i class="fas fa-envelope"></i>  Email: Info@Rdapackaging.Com</a>
+	  <a href="#">   Registered Number: 03836432</a>
 			
 		
 	</div>
@@ -1535,24 +1525,31 @@
   
 	<div class="share">
 		   <a href="https://www.linkedin.com/company/69201484/admin/feed/posts/" class="fab fa-linkedin"></a>
-		<a href="https://www.facebook.com/ConbagBulkPackagingLtd/" class="fab fa-facebook-f"></a>
+		<a href="https://www.facebook.com/RDABulkPackagingLtd/" class="fab fa-facebook-f"></a>
 		<a href="https://twitter.com/RdaLtd" class="fab fa-twitter"></a>
 		<a href="https://www.instagram.com/rdabulkpackaging/?next=%2F" class="fab fa-instagram"></a>
   
 	 
 	</div>
   </div>
-	<div class="credit"> Created by <span>  Erstellt von 2025 Conbag International Packaging Gmbh & Co.KG aus Deutschland </span>| alle Rechte vorbehalten!</div>
+	<div class="credit"> Created by <span> 2024 RDA Bulk Packaging Private Limited</span> | all rights reserved! </div>
   
   </section>
   
   <!-- footer section ends -->
-  
+
+
+
+
+
+
+
+
 
 <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 
 <!-- custom js file link  -->
-<script src="main.js/script.js"></script>
+<script src="js/script.js"></script>
 
 </body>
 </html>

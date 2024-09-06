@@ -8,7 +8,7 @@
 		@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
 	
 		:root{
-			--green:#101111fc;
+			--green:#18355e;
 			--dark-color:rgb(33, 145, 80)35
 			--black:#444;
 			--light-color:#666;
@@ -23,7 +23,7 @@
 			box-sizing: border-box;
 			outline: none; border:none;
 			text-decoration: none;
-		
+			text-transform: lowercase;
 			transition:all .2s linear;
 			transition:width none;
 		}
@@ -151,9 +151,8 @@
 			background: #fff;
 			border:var(--border);
 		}
-		
-		
-.btn{
+
+		.btn{
   margin-top: 1rem;
   display:inline-block;
   padding:.9rem 3rem;
@@ -165,7 +164,6 @@
   cursor: pointer;
   font-weight: 500;
 }
-
 		
 		.btn:hover{
 			background:var(--dark-color);
@@ -181,7 +179,7 @@
 		
 		.navbar {
 			overflow: hidden;
-			background: #101111fc;
+			background: #18355e;
 		}
 		.navbar a {
 			float: left;
@@ -190,7 +188,7 @@
 			text-align: center;
 			padding: 10px 12px;
 			text-decoration:none;
-		
+			text-transform: uppercase;
 		}
 		.d {
 			float: left;
@@ -203,7 +201,7 @@
 			color: #fff;
 			padding: 10px 12px;
 			background: inherit;
-	
+			text-transform: uppercase;
 		}
 		.navbar a:hover, .d:hover .d-btn {
 			background: #5F5F5F;
@@ -351,7 +349,7 @@
 		
 		.login-form-container form h3{
 			font-size: 2.5rem;
-		
+			text-transform: uppercase;
 			color:var(--black);
 			text-align: center;
 		}
@@ -450,7 +448,7 @@
 		}
 		
 		.home .row .content h3{
-			color:#101111fc;
+			color:#fff;
 		   
 			font-size: 6.2rem;
 			font-weight:bolder;
@@ -468,14 +466,14 @@
 		}
 		
 		.Hcard {
-		   background-color:#abb3ab70;
+		   background-color:#abb3abc3;
 			border-radius: 110px;
 			box-shadow: 0px 5px 15px rgba(12, 12, 12, 0.2);
 			justify-content: space-around; /* Adjust the spacing between cards */
 			margin: 2px;
-			max-width: 350px;
+			max-width: 400px;
 			padding: 50px;
-			text-align:center;
+			text-align:start;
 			transition: transform 0.2s ease-in-out;
 		}
 		
@@ -484,7 +482,7 @@
 			z-index: 99;
 			width: 100%;
 			
-			background: #101111fc;
+			background: #18355e;
 		  }
 		  nav .wrapper{
 			position: relative;
@@ -514,14 +512,14 @@
 			transition: all 0.3s ease;
 		  }
 		  .nav-links li a:hover{
-			background: #3a3b3c50;
+			background: #3A3B3C;
 		  }
 		  .nav-links .mobile-item{
 			display: none;
 		  }
 		  .nav-links .drop-menu{
 			position: absolute;
-			background: #24242577;
+			background: #242526;
 			width: 180px;
 			line-height: 45px;
 			top: 85px;
@@ -553,7 +551,7 @@
 			visibility: hidden;
 		  }
 		  .mega-box .content{
-			background: #242526cd;
+			background: #242526;
 			padding: 25px 20px;
 			display: flex;
 			width: 100%;
@@ -739,7 +737,7 @@
 		}
 		
 		.newsletter{
-			background:url(images/mainbg.jpeg) no-repeat;
+			background:url(image/Green\ landscape.jpg) no-repeat;
 			background-size: cover;
 			background-position: center;
 			background-attachment: fixed;
@@ -1102,29 +1100,27 @@
 </head>
 <body>
     
+   
 <!-- header section starts  -->
 
 <header class="header">
 
     <div class="header-0">
        
-      <a href="index.html" class="logo"><img src="images/conbag-header.png" alt=""; height="90"; width="280"></a>
-      
-     
-      <div class="header-1">
-            <a href="https://www.conbag.de/"  class="btn"><i class="fa fa-shopping-basket" aria-hidden="true">OnlineShop</i></a>
-         
-         
+        <a href="index.html" class="logo"><img src="image/RDA New Logo.jpg" alt=""></a>
+        <div class="header-1">
+        <form action="" class="search-form">
+            <input type="search" name="" placeholder="search here..." id="search-box">
+            <label for="search-box" class="fas fa-search"></label>
+        </form>
 
         <div class="icons">
-            <div id="search-btn" class="fas"></div>
+            <div id="search-btn" class="fas fa-search"></div>
 
             <div id="login-btn" class="fas fa-user"></div>
-           
         </div>
         </div>
- 
-         
+           <a href="Shop page.html"  class="btn"><i class="fa fa-shopping-basket" aria-hidden="true">OnlineShop</i></a>
            
         </div>
         
@@ -1135,21 +1131,22 @@
         <nav>
         <div class="wrapper">
          
-          
+          <input type="radio" name="slider" id="menu-btn">
+          <input type="radio" name="slider" id="close-btn">
           <ul class="nav-links">
             <label for="close-btn" class="btn close-btn"><i class="fas fa-times"></i></label>
-            <li><a href="index.html">Startseite</a></li>
+            <li><a href="index.html">Home</a></li>
             <li>
-                <a href="about.html" class="desktop-item">Über uns</a>
+                <a href="about.html" class="desktop-item">About</a>
                 <input type="checkbox" id="showDrop">
                 <label for="showDrop" class="mobile-item">Dropdown Menu</label>
                
              <ul class="drop-menu">
-                          
-                          <li><a href="SERVICES (2).html">Dienstleistungen</a></li>
+                          <li><a href="about.html">About Company</a></li>
+                          <li><a href="SERVICES (2).html">Services</a></li>
                           <li><a href="RPP.html">100% RPP</a></li>
-                          <li><a href="sustainability.html">Nachhaltigkeit</a></li>
-                          <li><a href="circular.html"> Kreislaufwirtshaft</a></li>
+                          <li><a href="sustainability.html">Sustainability</a></li>
+                          <li><a href="circular.html">Circular Economy</a></li>
                         </ul>
                    
               </li>
@@ -1157,95 +1154,87 @@
             
            <li>
             <li>
-              <a href="Industries.html" class="desktop-item">Industrien</a>
+              <a href="Industries.html" class="desktop-item">Industries</a>
               <input type="checkbox" id="showMega">
               <label for="showMega" class="mobile-item">Mega Menu</label>
               <div class="mega-box">
                 <div class="content">
                   <div class="row">
-                    <img src="img/all indus.png" alt="">
+                    <img src="image/cc.png" alt="">
                   </div>
                   <div class="row">
                   
                     <ul class="mega-links">
-                      <li><a href="food grade bags.html">LebensmittelIndustrie</a></li>
-                      <li><a href="Feed Grade.html">FuttermittelIndustrie</a></li>
-                      <li><a href="Skip Industry.html">AbfallIindustrie</a></li>
-                      <li><a href="Pharma industry.html">Pharmaindustrie</a></li>
-                     
+                      <li><a href="food grade bags.html">Food Grade</a></li>
+                      <li><a href="Feed Grade.html">Feed Grade</a></li>
+                      <li><a href="Skip Industry.html">Skip Industry</a></li>
+                      <li><a href="Pharma industry.html">Pharma Grade</a></li>
                     </ul>
                   </div>
                   <div class="row">
                     
                     <ul class="mega-links">
-                        <li><a href="Chemical.html">Chemieindustrie</a></li>
-                        <li><a href="rindustry.html">Kunststoffrecycling</a></li>
-                        <li><a href="land industry.html">Erde Sand</a></li>
-                        <li><a href="Agriculture.html">Landwirtschaft</a></li>
-                        
+                        <li><a href="Chemical.html">Chemical Industry</a></li>
+                        <li><a href="rindustry.html">Recycling Industry</a></li>
+                        <li><a href="land industry.html">Landscaping & Horti</a></li>
+                        <li><a href="Agriculture.html">Agriculture & seeds</a></li>
                      
                     </ul>
                   </div>
                   <div class="row">
                    <ul class="mega-links">
-                      <li><a href="Mining and Quarrying.html">Bergbau/Untertage</a></li>
-                      <li><a href="Building & Construction.html">Bauwesen</a></li>
-                      <li><a href="Forestry and Timber.html">Forstwirtschaft und Holz</a></li>
-                      <li><a href="Ceramics & Glass.html">Keramik-/Glasindustrie</a></li>
-                      <li><a href="Industries.html">viele weitere..</a></li>
+                      <li><a href="Mining and Quarrying.html">Mining and quarrying</a></li>
+                      <li><a href="Building & Construction.html">Building and Construction</a></li>
+                      <li><a href="Forestry and Timber.html">Forestry and Timber</a></li>
+                      <li><a href="Industries.html">And Many More..</a></li>
                     </ul>
                   </div>
                   </div>
               </div>
               </li>
               <li>
-              <a href="All Products page.html" class="desktop-item">Alle Produkte</a>
+              <a href="All Products page.html" class="desktop-item">All Products</a>
               <input type="checkbox" id="showMega">
               <label for="showMega" class="mobile-item">Mega Menu</label>
               <div class="mega-box">
                 <div class="content">
                   <div class="row">
-                    <img src="img/about1.jpg" alt="">
+                    <img src="image/Agricutural.png" alt="">
                   </div>
                   <div class="row">
-                    <header>Big Bags</header>
+                    <header>Bulk Bags</header>
                     <ul class="mega-links">
-                      <li><a href="Standard bulk bags.html">Standard Big Bags</a></li>
-                      <li><a href="Fertilizer bags.html">Düngemittelbags</a></li>
-                      <li><a href="tunnel lift bulk bags.html">Tunnel-loop Big Bags</a></li>
-                      <li><a href="Top attachement.html">Konstruktionen Oberseite</a></li>
-                      <li><a href="bottom attachement.html">Bodenkonstruktionen</a></li>
-                      <li><a href="Safty tools Page.html">Sicherheitswerkzeuge</a></li>
-                      <li><a href="Mineral wolle.html">Mineralwolle</a></li>
+                      <li><a href="Standard bulk bags.html">STANDARD BULK BAG</a></li>
+                      <li><a href="Fertilizer bags.html">FERTILIZER BAGS</a></li>
+                      <li><a href="tunnel lift bulk bags.html">TUNNEL LIFT BULK BAGS</a></li>
+                      <li><a href="Top attachement.html">TOP ATTACHMENTS</a></li>
+                      <li><a href="bottom attachement.html">BOTTOM ATTACHMENTS</a></li>
                       </ul>
                   </div>
                   <div class="row">
-                    <header>besondere Big Bags</header>
+                    <header>SPECIAL BULK BAGS</header>
                     <ul class="mega-links">
-                      <li><a href="bags and baffle bags.html">Formstabil Big Bags</a></li>
-                      <li><a href="type D bulk bags.html">Typ D Big Bags</a></li>
-                      <li><a href="type c bulk bags.html">Typ C Big Bags</a></li>
-                      <li><a href="Asbestos bags.html">Big Bags für Asbest</a></li>
-                      <li><a href="Un approved bags.html">UN zertifiziert Big Bags</a></li>
-                      <li><a href="tarpaulin page.html">Planenseite</a></li>
+                      <li><a href="bags and baffle bags.html"> BAFFLE BAGS</a></li>
+                      <li><a href="type D bulk bags.html">TYPE D BAGS</a></li>
+                      <li><a href="type c bulk bags.html">TYPE C BAGS</a></li>
+                      <li><a href="Asbestos bags.html">ASBESTOS BAGS</a></li>
+                      <li><a href="Un approved bags.html">UN APPROVED BAGS</a></li>
                 </ul>
                   </div>
                   <div class="row">
-                    <header>SmallBags/Containers</header>
+                    <header>SACKS AND SMALL BAGS</header>
                     <ul class="mega-links">
-                        <li><a href="Containers Liners.html">Conatiners liners</a></li>
-                      <li><a href="top hemmed bulk bags.html">Flachsäcke</a></li>
-                      <li><a href="Bopp Bulk Bags.html">BOPP Big Bags</a></li>
-                      <li><a href="Borrow Bulk Bags.html"> Schüttgut Big Bags</a></li>
-                      <li><a href="mesh  Leno Bulk Bags.html">LENO Netzsäcke</a></li>
-                      <li><a href="Container Page.html">Containers</a></li>
+                      <li><a href="top hemmed bulk bags.html">PPWOVEN SACKS</a></li>
+                      <li><a href="Bopp Bulk Bags.html">BOPP BAGS</a></li>
+                      <li><a href="Borrow Bulk Bags.html">BORROW BAGS</a></li>
+                      <li><a href="AD star bags.html">AD STAR BAGS </a></li>
+                      <li><a href="mesh  Leno Bulk Bags.html"> LENO MESH BULK BAGS</a></li>
                    </ul>
                   </div>
                </li>
           
-            <li><a href="#">
-                Broschüren</a></li>
-            <li><a href="contact us.html">Kontaktiere uns</a></li>
+            <li><a href="#">Brochures</a></li>
+            <li><a href="contact us.html">Contact Us</a></li>
           </ul>
           <label for="menu-btn" class="btn menu-btn"><i class="fas fa-bars"></i></label>
         </div>
@@ -1260,13 +1249,12 @@
 <!-- bottom navbar  -->
 
 <nav class="bottom-navbar">
-    <a href="index.html" class="fas fa-home"></a>
-    <a href="about.html" class="fas fa-list"></a>
-    <a href="services.html" class="fas fa-list"></a>
-    <a href="Shop page.html" class="fas fa-comments"></a>
-    <a href="contact us.html" class="fas fa-blog"></a>
+    <a href="#home" class="fas fa-home"></a>
+    <a href="#about" class="fas fa-list"></a>
+    <a href="#services" class="fas fa-list"></a>
+    <a href="#shop" class="fas fa-comments"></a>
+    <a href="#contact" class="fas fa-blog"></a>
 </nav>
-
 
 <!-- login form  -->
 
@@ -1275,18 +1263,18 @@
     <div id="close-login-btn" class="fas fa-times"></div>
 
     <form action="">
-        <h3>Anmelden</h3>
-        <span>Benutzername</span>
-        <input type="email" name="" class="box" placeholder="eben Sie Ihre E-Mail ein" id="">
-        <span>Passwort </span>
-        <input type="password" name="" class="box" placeholder="Geben Sie Ihr Passwort ein" id="">
+        <h3>sign in</h3>
+        <span>username</span>
+        <input type="email" name="" class="box" placeholder="enter your email" id="">
+        <span>password</span>
+        <input type="password" name="" class="box" placeholder="enter your password" id="">
         <div class="checkbox">
             <input type="checkbox" name="" id="remember-me">
-            <label for="remember-me">erinnere dich an mich</label>
+            <label for="remember-me"> remember me</label>
         </div>
-        <input type="submit" value="Anmelden" class="btn">
-        <p>Passwort vergessen ? <a href="#">Klicken Sie hier</a></p>
-        <p>Sie Haben Noch Kein Konto? <a href="#">Erstellen Sie Eins </a></p>
+        <input type="submit" value="sign in" class="btn">
+        <p>forget password ? <a href="#">click here</a></p>
+        <p>don't have an account ? <a href="#">create one</a></p>
     </form>
 
 </div>
@@ -1300,13 +1288,13 @@
         
         <div class="Hcard">
         <div class="content">
-        <h3>Asbest Big Bags</h3>
+        <h3>Asbestos Bags</h3>
                 
                  
-            <p> 
-				Ihr Verpackungspartner, der sich verpflichtet hat, Ihnen das Beste zu liefern.
-				</p>
-				<a href="Industries.html" class="btn">Erkunden</a>
+            <p>Your packaging partner committed to supplying 
+              
+                 you with the best</p>
+            <a href="#" class="btn">Explore</a>
         </div>
         </div>
      </div>   
@@ -1320,10 +1308,12 @@
 
     <div class="content">
        
-        <h1>Conbag International Packaging GmbH & Co. KG </h1>
-		<h3>Asbest Big Bags</h3>
-        <p>Conbag International Packaging GmbH & Co. KG legt großen Wert auf Sicherheit und Konformität. Wir sind stolz darauf, Asbest Big Bags sowie Flachsäcke anbieten zu können, die speziell für die sichere Handhabung und Entsorgung gefährlicher Asbestmaterialien entwickelt wurden. Asbest birgt ernsthafte Gesundheitsrisiken. Unsere speziell entwickelten Bags / Säcke gewährleisten, dass asbesthaltige Materialien mit höchster Sicherheit sowie in Übereinstimmung mit den gesetzlichen Vorschriften transportiert und entsorgt werden können.</p>
-			<a href="index.html" class="btn">Mehr Über Uns</a>
+        <h1>RDA Bulk Packaging</h1>
+		<h3>
+			Asbestos Bags</h3>
+        <p>
+			RDA Bulk Packaging Is Committed To Safety And Compliance, And We Proudly Offer Asbestos Bulk Bags And Sacks Specifically Designed For The Safe Handling And Disposal Of Hazardous Asbestos Materials. Asbestos Poses Serious Health Risks, And Our Specially Designed Bags And Sacks Ensure That Asbestos-Containing Materials Can Be Transported And Disposed Of With The Utmost Safety And In Accordance With Regulatory Requirements.</p>
+        <a href="index.html" class="btn">More About Us</a>
     </div>
 </section>
 
@@ -1334,14 +1324,14 @@
 
    
     <div class="content">
-        <h1>Hauptmerkmale</h1>
+        <h1>
+			Key Features</h1>
        
-        <p>
-			• Asbestspezifisches Design: Unsere Asbest-Großbeutel und –Säcke sind speziell für den Umgang mit asbesthaltigen Materialien konzipiert. Sie werden aus hochwertigen, langlebigen Materialien mit verstärkten Nähten hergestellt und bieten die notwendige Festigkeit und Eindämmung für den sicheren Transport von gefährlichem Asbest.
-			<br>• Barriereeigenschaften: Die Big Bags und Säcke haben ausgezeichnete Barriereeigenschaften und verhindern die Freisetzung von Asbestfasern während des Transports. Dies trägt dazu bei, Arbeitnehmer und Umwelt vor einer möglichen Asbestbelastung zu schützen.
-			<br>• Einhaltung von Vorschriften: Unsere Asbestbeutel entsprechen allen relevanten Vorschriften und Richtlinien für die ordnungsgemäße Handhabung, den Transport und die Entsorgung von asbesthaltigen Materialien. Ihr Design stellt sicher, dass Sie die strengsten Sicherheitsstandards einhalten.
-			<br>• Maßgeschneiderte Lösungen: Wir bieten verschiedene Ausmaßen und Ladeoptionen für unterschiedliche Mengen an Asbestmaterialien. Darüber hinaus können Unsere Big Bags und Säcke mit spezifischen Markierungen und Beschriftungen angepasst werden, um die Ordnungsgemäße Identifizierung und Handhabung zu erleichtern.
-</p>			
+        <p>• Asbestos-Specific Design: Our Asbestos Bulk Bags And Sacks Are Purpose-Built To Handle Asbestos-Containing Materials. They Are Fabricated From High-Quality, Durable Materials With Reinforced Stitching, Providing The Necessary Strength And Containment To Safely Transport Hazardous Asbestos.
+			<br>• Barrier Properties: The Bags And Sacks Have Excellent Barrier Properties, Preventing The Release Of Asbestos Fibres During Transportation. This Helps Safeguard Workers And The Environment From Potential Exposure To Asbestos.
+			<br>• Compliance With Regulations: Our Asbestos Bags Adhere To All Relevant Regulations And Guidelines For The Proper Handling, Transportation, And Disposal Of Asbestos-Containing Materials. Their Design Ensures That You Stay Compliant With The Strictest Safety Standards.
+			<br>• Customized Solutions: We Offer Various Sizes And Loading Options To Accommodate Different Quantities Of Asbestos Materials. Additionally, Our Bags And Sacks Can Be Customized With Specific Markings And Labelling To Facilitate Proper Identification And Handling.
+			
        
     </div>
 
@@ -1360,14 +1350,14 @@
     </div>
    
     <div class="content">
-        <h1>Vorteile</h1>
+        <h1>
+			Advantages</h1>
        
-        <p>
-			• Arbeitssicherheit: Asbestbeutel sind so konzipiert, dass das Risiko einer Asbestexposition minimiert wird. Dadurch wird die Sicherheit der Arbeiter und aller Personen gewährleistet, die mit der Handhabung und Entsorgung gefährlicher Asbestmaterialien zu tun haben.
-			<br>• Umweltschutz: Die Barriereeigenschaften der Beutel verhindern die Freisetzung von Asbestfasern, bewahren die Umwelt vor möglicher Kontamination und gewährleisten Eine verantwortungsvolle Entsorgung.
-			<br>• Einhaltung gesetzlicher Vorschriften: Unsere Asbestbeutel entsprechen allen relevanten Vorschriften und Sicherheitsnormen für die Handhabung asbesthaltiger Materialien. So können Sie Transport und Entsorgung beruhigt durchführen.
-			<br>• Effiziente Entsorgung: Die Big Bags und Säcke vereinfachen den Prozess der Asbestabfallentsorgung und ermöglichen eine effiziente Beladung und einen effizienten Transport zu dafür vorgesehenen Entsorgungseinrichtungen.
-			<br>• Professionelle Unterstützung: Bei Conbag International Packaging GmbH & Co. KG können unsere Experten Sie bei der Auswahl der richtigen Asbestbeutel und -Säcke für Ihren speziellen Anwendungsbereich unterstützen und so für eine ordensgemäße Eindämmung und Sicherheit Sorgen.
+        <p>• Worker Safety: Asbestos Bags Are Designed To Minimize The Risk Of Asbestos Exposure, Ensuring The Safety Of Workers And Anyone Involved In The Handling And Disposal Of Hazardous Asbestos Materials.
+			<br>• Environmental Protection: The Bags’ Barrier Properties Prevent The Release Of Asbestos Fibres, Safeguarding The Environment From Potential Contamination And Ensuring Responsible Disposal.
+			<br>• Regulatory Compliance: Our Asbestos Bags Are Compliant With All Relevant Regulations And Safety Standards For Handling Asbestos-Containing Materials, Giving You Peace Of Mind During Transportation And Disposal.
+			<br>• Efficient Disposal: The Bags And Sacks Streamline The Process Of Asbestos Waste Disposal, Allowing For Efficient Loading And Transport To Designated Disposal Facilities.
+			<br>• Professional Assistance: At RDA Bulk Packaging, Our Experts Can Guide You In Selecting The Right Asbestos Bulk Bags And Sacks For Your Specific Application, Ensuring Proper Containment And Safety.
 			
     </div>
 
@@ -1380,7 +1370,7 @@
 <section class="newsletter">
 
     <form action="">
-        <h3>Abonnieren Sie die neuesten Updates</h3>
+        <h3>subscribe for latest updates</h3>
         <input type="email" name="" placeholder="enter your email" id="" class="box">
         <input type="submit" value="subscribe" class="btn">
         
@@ -1391,11 +1381,15 @@
 
 <!-- newsletter section ends -->
 
- <!-- reviews section starts  -->
+
+
+
+
+<!-- reviews section starts  -->
 
 <section class="reviews" id="reviews">
 
-    <h1 class="heading"> <span>Einrichtungen und Partnerschaften</span> </h1>
+    <h1 class="heading"> <span>Facilities And Partnerships</span> </h1>
 
     <div class="swiper reviews-slider">
 
@@ -1405,9 +1399,9 @@
             <div class="card">
                 <i class="fas fa-hotel"></i>
                 <div class="card-body">
-                <h3>Herstellung</h3>
-                <p>Conbag International Packaging nutzt mehrere Produktionsstätten in Indien, die jeweils über ein gültiges Zertifikat für die Herstellung von Big Bags vom Indian Institute of Packaging, Cotecna in Indien, Labordata
-                     in Deutschland und mehreren anderen international anerkannten Prüfzentren verfügen.</p>
+                <h3>manufacturing</h3>
+                <p>RDA utilise a number of manufacturing facilities in UK. Each of which holds a
+                     valid certificate for the manufacture of bulk bags from the ISO.</p>
                
             </div>
 
@@ -1418,10 +1412,9 @@
                 <div class="card">
                     <i class="fas fa-cubes"></i>
                     <div class="card-body">
-                <h3>Vertrieb und Lieferung</h3>
-                <p>Conbag International Packaging ist von Büros in Frankfurt, Deutschland, und Indore, Indien, 
-                    aus tätig und vertreibt über Lagerstätten in Dietzhölztal, Deutschland. Cotecna in Indien, Labordata
-                    in Deutschland und mehreren anderen international anerkannten Prüfzentren verfügen Big Bags vom of Packaging</p>
+                <h3>Distribution</h3>
+                <p>RDA operates from warehousing facilities based in Co.
+                     Meath, Republic of Europe.It involves activities such as transportation, warehousing, logistics, and retailing.</p>
                 </div>
 
             </div>
@@ -1431,20 +1424,35 @@
                 <div class="card">
                     <i class="fas fa-handshake"></i>
                     <div class="card-body">
-                <h3>Verbundene Partnerfirma</h3>
-                <p>Conbag International Packaging arbeitet eng mit seinen Spediteuren zusammen, um einen hervorragenden Lieferservice aufrechtzuerhalten, 
-                    der es uns ermöglicht, weltweit Lieferungen anzubieten,Big Bags vom of Packaging</p>
-				
+                <h3>Partner Company</h3>
+                <p>RDA works closely with its freight forward companies to help maintain an excellent delivery service which allows us to offer deliveries across the Europe.</p>
                 </div>
 
             </div>
             </div>
-			</div>
-			</div>
-		
             
+                </div>
+
+            </div>
+            </div>
+
+            
+                </div>
+
+            </div>
+            </div>
+
+            
+            </div>
+
+        </div>
+
+    </div>
     
 </section>
+
+
+
 <!-- reviews section ends -->
 
 <!-- deal section starts  -->
@@ -1452,27 +1460,15 @@
 <section class="deal">
 
     <div class="content">
-		<h1>Seine Anwendung</h1>
-		<h3>Asbest Big Bags sind für den sicheren Transport und die Entsorgung verschiedener asbesthaltiger Materialien unerlässlich.</h3>
-		 <p>Asbest Big Bags: Der Klassiker! Wird zur TRGS-519-Konformen Verpackung von Asbest und Asbestbruch verwendet.
-Asbest Mini Big Bags: Schmale Gänge und Türen sind nun kein Problem mehr! Diese Big Bags passen leicht hindurch.
-			Asbest Plattenbags: Mit einer Länge von 260cm oder 320cm sind sie die ideale Entsorgungslösung für viele Arten von asbesthaltigen Dach- sowie Fassadenplatten.
-			Asbest Containerbags: Die Nummer Größer als Auskleidung für Ihre Absetz- und Abrollcontainer.
-			Asbest Flachsäcke: Sie sind bei kleinen Mengen, weinigen Asbeststücken oder für kleine Sanitärrohe bestens geeignet.
-			<br>Nach Materialprobe und einhergehender Analyse, werden folgende Erzeugnisse in Big Bags für Asbest entsorgt:
-			<br>1.	Dach und Außeneinrichtungen: Dach und Bedachungselemente; Wandverkleidungen und -beschichtungen; Fassadenplatten und Fassadenelemente; Schornsteinrohre; Fensterkitt; Spachtelmasse; Dichtungen und Dämmplatten, Putz und asbesthaltiger Estriche
-			<br>2.	Inneneinrichtung: Trennwände; Platten in Elektrogeräten; Innenverkleidungen von Fahrstühlen; Zugangsplatten bei Steigleitungen; strukturierte Beschichtungen, Plattentüren; Fußbodenbeläge wie Linoleum oder Flex Platten sowie Fliesenkleber
-			<br>3.	Heizung/ Elektroinstallationen: Heizkörper und Rohre samt Boiler, Dichtungen und Dämmung; elektronische Schalt- und Heizgeräte (Nachtspeicheröfen)
-			<br>4.	Weitere: Abwasserrohre aus Asbest, Wassertanks und Zementtreppen.
-			<br>Große Auswahl an Big Bags nach entsprechender Vorschrift: (von Klein nach Groß)
-			<br>•	Asbest Bigbag 70x70x90 cm (Volumen: 0,44 m3) mit einer Traglast von 800kg
-			<br>•	Asbest Big-Bag 90x90x110 cm (Volumen: 0,89 m³) mit einer Traglast von 1000kg
-			<br>•	Asbest Big-Bag 90x90x110 cm (Volumen: 0,89 m³) mit einer Traglast von 1250kg
-			<br>•	Asbest Big-Bag mit den Maßen 110x110x115 cm (Volumen: 1,39 m³) befüllt bis zu 1500 kg
-			</p>
-		
-	 </div>
- 
+       <h1>It's Application</h1>
+	   <h3>Asbestos Bags Are Essential For Safely Transporting And Disposing 
+		Of Various Asbestos-Containing Materials, Including, But Not Limited To:</h3>
+        <p>• Asbestos Sheets And Tiles
+			<br>• Asbestos Insulation
+			<br>• Asbestos Roofing Materials
+			<br>• Asbestos Waste And Debris</p>
+       
+    </div>
 
     <div class="image">
         <img src="images/Extrusion-Machine-1.jpg" alt="">
@@ -1482,16 +1478,6 @@ Asbest Mini Big Bags: Schmale Gänge und Türen sind nun kein Problem mehr! Dies
 
 <!-- deal section ends -->
 
-<section class="deal">
-
-    <div class="content">
-      <div class="image">
-        <img src="img/Conbag signature.png" alt="">
-    </div>
-     
-    </div>
-    </section>
-
 <!-- footer section starts  -->
 
 <section class="footer">
@@ -1499,39 +1485,39 @@ Asbest Mini Big Bags: Schmale Gänge und Türen sind nun kein Problem mehr! Dies
 	<div class="box-container">
   
 		<div class="box">
-		  <a href="index.html" class="logo"><img src="images/conbag-header.png" alt=""; height="90"; width="280"></a>
-			<a href="#"> <i class="fas fa-map-marker-alt"></i>  Hauptstrasse 79, 35716 Dietzhölztal, Germany, Germany  </a>
-		<a href="#"> <i class="fas fa-clock"></i>Arbeitszeiten : 
-		  Montag- Donnerstag ( 08:00 - 16:30 ) Freitag (08:00 - 15:00) </a>
+			<h3>our locations</h3>
+			<a href="#"> <i class="fas fa-map-marker-alt"></i>  RDA Bulk Packaging Ltd
+		Severn Business Park
+		Burma Road Sharpness Berkeley Gloucestershire GL13 9UQ, UK </a>
+		<a href="#"> <i class="fas fa-clock"></i>Working : Mon-Fri (08:30 - 17:00) </a>
 		
 			
 		</div>
   
 		<div class="box">
-			<h3>Über uns Us</h3>
-			<a href="index.html"> <i class="fas fa-arrow-right"></i>Startseite</a>
-			<a href="about.html"> <i class="fas fa-arrow-right"></i>Über uns</a>
-			<a href="SERVICES (2).html"> <i class="fas fa-arrow-right"></i>Leistungen</a>
-			<a href="contact us.html"> <i class="fas fa-arrow-right"></i>Kontakt</a>
+			<h3>quick links</h3>
+			<a href="index.html"> <i class="fas fa-arrow-right"></i>home</a>
+			<a href="about.html"> <i class="fas fa-arrow-right"></i>about</a>
+			<a href="SERVICES (2).html"> <i class="fas fa-arrow-right"></i>services</a>
+			<a href="All Products page.html"> <i class="fas fa-arrow-right"></i>products</a>
+			<a href="contact us.html"> <i class="fas fa-arrow-right"></i>contact</a>
 		</div>
   
 		<div class="box">
-			<h3>Unternehmen</h3>
+			<h3>extra links</h3>
 		   
-			<a href="#"> <i class="fas fa-arrow-right"></i>Daten¬schutz¬erklärung</a>
-			<a href="#"> <i class="fas fa-arrow-right"></i>Cookie- richtlinie</a>
-			<a href="#"> <i class="fas fa-arrow-right"></i>Brochüren</a>
+			<a href="#"> <i class="fas fa-arrow-right"></i>privacy policy</a>
 		   
-			<a href="https://www.conbag.de/faq/"> <i class="fas fa-arrow-right"></i> FAQ's </a>
+			<a href="#"> <i class="fas fa-arrow-right"></i> our serivces </a>
    
   
   </div>
   <div class="box">
-			<h3>Kontaktiere Uns</h3>
-			<a href="contact us.html"> <i class="fas fa-phone"></i> Tel: +49(0)2774-92424-0</a>
+			<h3>contact info</h3>
+			<a href="#"> <i class="fas fa-phone"></i> Tel: +44 (0) 1453 511222</a>
 	  
-			<a href="contact us.html"> <i class="fas fa-envelope"></i> Email:   info@conbag.de</a>
-	  <a href="contact us.html">  Registernummer :  HRA 7771</a>
+			<a href="#"> <i class="fas fa-envelope"></i>  Email: Info@Rdapackaging.Com</a>
+	  <a href="#">   Registered Number: 03836432</a>
 			
 		
 	</div>
@@ -1539,24 +1525,23 @@ Asbest Mini Big Bags: Schmale Gänge und Türen sind nun kein Problem mehr! Dies
   
 	<div class="share">
 		   <a href="https://www.linkedin.com/company/69201484/admin/feed/posts/" class="fab fa-linkedin"></a>
-		<a href="https://www.facebook.com/ConbagBulkPackagingLtd/" class="fab fa-facebook-f"></a>
+		<a href="https://www.facebook.com/RDABulkPackagingLtd/" class="fab fa-facebook-f"></a>
 		<a href="https://twitter.com/RdaLtd" class="fab fa-twitter"></a>
 		<a href="https://www.instagram.com/rdabulkpackaging/?next=%2F" class="fab fa-instagram"></a>
   
 	 
 	</div>
   </div>
-	<div class="credit"> Created by <span>  Erstellt von 2025 Conbag International Packaging GmbH & Co. aus Deutschland </span>| alle Rechte vorbehalten!</div>
+	<div class="credit"> Created by <span> 2024 RDA Bulk Packaging Private Limited</span> | all rights reserved! </div>
   
   </section>
   
   <!-- footer section ends -->
 
-
 <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 
 <!-- custom js file link  -->
-<script src="main.js/script.js"></script>
+<script src="js/script.js"></script>
 
 </body>
 </html>

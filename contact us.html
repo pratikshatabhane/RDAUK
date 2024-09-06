@@ -9,7 +9,7 @@
     <style>@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
 
         :root{
-            --green:#101111fc;
+            --green:#18355e;
             --dark-color:rgb(33, 145, 80)35
             --black:#444;
             --light-color:#666;
@@ -24,7 +24,7 @@
             box-sizing: border-box;
             outline: none; border:none;
             text-decoration: none;
-          
+            
             transition:all .2s linear;
             transition:width none;
         }
@@ -153,19 +153,18 @@
             border:var(--border);
         }
         
-       
-.btn{
-  margin-top: 1rem;
-  display:inline-block;
-  padding:.9rem 3rem;
-  justify-content: space-between;
-  border-radius: 1.7rem;
-  color:#e2e832;
-  background:var(--green);
-  font-size: 2.5rem;
-  cursor: pointer;
-  font-weight: 500;
-}
+        .btn{
+            margin-top: 1rem;
+            display:inline-block;
+            padding:.9rem 3rem;
+            justify-content: space-between;
+            border-radius: 1.7rem;
+            color:#e2e832;
+            background:var(--green);
+            font-size: 2.5rem;
+            cursor: pointer;
+            font-weight: 500;
+     }
         
         .btn:hover{
             background:var(--dark-color);
@@ -181,7 +180,7 @@
         
         .navbar {
             overflow: hidden;
-            background: #101111fc;
+            background: #18355e;
         }
         .navbar a {
             float: left;
@@ -190,7 +189,7 @@
             text-align: center;
             padding: 10px 12px;
             text-decoration:none;
-        
+            text-transform: uppercase;
         }
         .d {
             float: left;
@@ -203,7 +202,7 @@
             color: #fff;
             padding: 10px 12px;
             background: inherit;
-        
+            text-transform: uppercase;
         }
         .navbar a:hover, .d:hover .d-btn {
             background: #5F5F5F;
@@ -305,43 +304,6 @@
         }
         
        
-.deal{
-    background:#f3f3f3;
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    gap:1.5rem;
-}
-
-.deal .content{
-    flex:1 1 42rem;
-}
-
-.deal .image{
-    flex:1 1 42rem;
-}
-
-.deal .image img{
-    width: 100%;
-}
-
-.deal .content h3{
-    color:var(--green);
-    font-size: 2.5rem;
-    padding-bottom: .5rem;
-}
-
-.deal .content h1{
-    color:var(--black);
-    font-size: 4rem;
-}
-
-.deal .content p{
-    padding:1rem 0;
-    color:var(--light-color);
-    font-size: 1.4rem;
-    line-height: 2;
-}
         
         .login-form-container{
             display: flex;
@@ -371,7 +333,7 @@
         
         .login-form-container form h3{
             font-size: 2.5rem;
-        
+            text-transform: uppercase;
             color:var(--black);
             text-align: center;
         }
@@ -503,7 +465,7 @@
             position:sticky;
             z-index: 99;
             width: 100%;
-           background: #101111fc;
+           background: #18355e;
           }
           nav .wrapper{
             position: relative;
@@ -856,13 +818,13 @@
 .contactForm .inputBox input:valid ~ span,
 .contactForm .inputBox textarea:focus ~ span,
 .contactForm .inputBox textarea:valid ~ span{
-    color: #101111fc;
+    color: #0f20e2;
     font-size: 12px;
     transform: translateY(-20px);
 }
 .contactForm .inputBox input[type="submit"]{
     width: 100px;
-    background: #101111fc;
+    background: #18355e;
     color: #fff;
     border: none;
     cursor: pointer;
@@ -1065,152 +1027,135 @@
 </head>
 <body>
     
-   
-   
+    
 <!-- header section starts  -->
 
 <header class="header">
 
     <div class="header-0">
        
-      <a href="index.html" class="logo"><img src="images/conbag-header.png" alt=""; height="90"; width="280"></a>
-      
-     
-      <div class="header-1">
-            <a href="https://www.conbag.de/"  class="btn"><i class="fa fa-shopping-basket" aria-hidden="true">OnlineShop</i></a>
-         
-         
+        <a href="index.html" class="logo"><img src="image/RDA New Logo.jpg" alt=""></a>
+        <div class="header-1">
+        <form action="" class="search-form">
+            <input type="search" name="" placeholder="search here..." id="search-box">
+            <label for="search-box" class="fas fa-search"></label>
+        </form>
 
         <div class="icons">
-            <div id="search-btn" class="fas"></div>
+            <div id="search-btn" class="fas fa-search"></div>
 
             <div id="login-btn" class="fas fa-user"></div>
-           
         </div>
-        </div>
- 
-         
-           
-        </div>
-        
     </div>
-    
 </div>
    <div class="header-2">
         <nav>
         <div class="wrapper">
          
-          
+          <input type="radio" name="slider" id="menu-btn">
+          <input type="radio" name="slider" id="close-btn">
           <ul class="nav-links">
             <label for="close-btn" class="btn close-btn"><i class="fas fa-times"></i></label>
-            <li><a href="index.html">Startseite</a></li>
+            <li><a href="index.html">Home</a></li>
             <li>
-                <a href="about.html" class="desktop-item">Über uns</a>
+                <a href="about.html" class="desktop-item">About</a>
                 <input type="checkbox" id="showDrop">
                 <label for="showDrop" class="mobile-item">Dropdown Menu</label>
                
              <ul class="drop-menu">
-                          
-                          <li><a href="SERVICES (2).html">Dienstleistungen</a></li>
+                          <li><a href="about.html">About Company</a></li>
                           <li><a href="RPP.html">100% RPP</a></li>
-                          <li><a href="sustainability.html">Nachhaltigkeit</a></li>
-                          <li><a href="circular.html"> Kreislaufwirtshaft</a></li>
+                          <li><a href="sustainability.html">Sustainability</a></li>
+                          <li><a href="circular.html">Circular Economy</a></li>
                         </ul>
                    
               </li>
-            
+         
             
            <li>
             <li>
-              <a href="Industries.html" class="desktop-item">Industrien</a>
+              <a href="Industries.html" class="desktop-item">Industries</a>
               <input type="checkbox" id="showMega">
               <label for="showMega" class="mobile-item">Mega Menu</label>
               <div class="mega-box">
                 <div class="content">
                   <div class="row">
-                    <img src="img/all indus.png" alt="">
+                    <img src="image/cc.png" alt="">
                   </div>
                   <div class="row">
                   
                     <ul class="mega-links">
-                      <li><a href="food grade bags.html">LebensmittelIndustrie</a></li>
-                      <li><a href="Feed Grade.html">FuttermittelIndustrie</a></li>
-                      <li><a href="Skip Industry.html">AbfallIindustrie</a></li>
-                      <li><a href="Pharma industry.html">Pharmaindustrie</a></li>
-                     
+                      <li><a href="food grade bags.html">Food Grade</a></li>
+                      <li><a href="Feed Grade.html">Feed Grade</a></li>
+                      <li><a href="Skip Industry.html">Skip Industry</a></li>
+                      <li><a href="Pharma industry.html">Pharma Grade</a></li>
                     </ul>
                   </div>
                   <div class="row">
                     
                     <ul class="mega-links">
-                        <li><a href="Chemical.html">Chemieindustrie</a></li>
-                        <li><a href="rindustry.html">Kunststoffrecycling</a></li>
-                        <li><a href="land industry.html">Erde Sand</a></li>
-                        <li><a href="Agriculture.html">Landwirtschaft</a></li>
-                        
+                        <li><a href="Chemical.html">Chemical Industry</a></li>
+                        <li><a href="rindustry.html">Recycling Industry</a></li>
+                        <li><a href="land industry.html">Landscaping & Horti</a></li>
+                        <li><a href="Agriculture.html">Agriculture & seeds</a></li>
                      
                     </ul>
                   </div>
                   <div class="row">
                    <ul class="mega-links">
-                      <li><a href="Mining and Quarrying.html">Bergbau/Untertage</a></li>
-                      <li><a href="Building & Construction.html">Bauwesen</a></li>
-                      <li><a href="Forestry and Timber.html">Forstwirtschaft und Holz</a></li>
-                      <li><a href="Ceramics & Glass.html">Keramik-/Glasindustrie</a></li>
-                      <li><a href="Industries.html">viele weitere..</a></li>
+                      <li><a href="Mining and Quarrying.html">Mining and quarrying</a></li>
+                      <li><a href="Building & Construction.html">Building and Construction</a></li>
+                      <li><a href="Forestry and Timber.html">Forestry and Timber</a></li>
+                      <li><a href="Industries.html">And Many More..</a></li>
                     </ul>
                   </div>
                   </div>
               </div>
               </li>
               <li>
-              <a href="All Products page.html" class="desktop-item">Alle Produkte</a>
+              <a href="All Products page.html" class="desktop-item">All Products</a>
               <input type="checkbox" id="showMega">
               <label for="showMega" class="mobile-item">Mega Menu</label>
               <div class="mega-box">
                 <div class="content">
                   <div class="row">
-                    <img src="img/about1.jpg" alt="">
+                    <img src="image/Agricutural.png" alt="">
                   </div>
                   <div class="row">
-                    <header>Big Bags</header>
+                    <header>Bulk Bags</header>
                     <ul class="mega-links">
-                      <li><a href="Standard bulk bags.html">Standard Big Bags</a></li>
-                      <li><a href="Fertilizer bags.html">Düngemittelbags</a></li>
-                      <li><a href="tunnel lift bulk bags.html">Tunnel-loop Big Bags</a></li>
-                      <li><a href="Top attachement.html">Konstruktionen Oberseite</a></li>
-                      <li><a href="bottom attachement.html">Bodenkonstruktionen</a></li>
-                      <li><a href="Safty tools Page.html">Sicherheitswerkzeuge</a></li>
-                      <li><a href="Mineral wolle.html">Mineralwolle</a></li>
+                      <li><a href="Standard bulk bags.html"> STANDARD BULK BAG</a></li>
+                      <li><a href="Fertilizer bags.html">FERTILIZER BAGS</a></li>
+                      <li><a href="tunnel lift bulk bags.html">TUNNEL LIFT BULK BAGS</a></li>
+                      <li><a href="Top attachement.html">TOP ATTACHMENTS</a></li>
+                      <li><a href="bottom attachement.html">BOTTOM ATTACHMENTS</a></li>
                       </ul>
                   </div>
                   <div class="row">
-                    <header>besondere Big Bags</header>
+                    <header>SPECIAL BULK BAGS</header>
                     <ul class="mega-links">
-                      <li><a href="bags and baffle bags.html">Formstabil Big Bags</a></li>
-                      <li><a href="type D bulk bags.html">Typ D Big Bags</a></li>
-                      <li><a href="type c bulk bags.html">Typ C Big Bags</a></li>
-                      <li><a href="Asbestos bags.html">Big Bags für Asbest</a></li>
-                      <li><a href="Un approved bags.html">UN zertifiziert Big Bags</a></li>
-                      <li><a href="tarpaulin page.html">Planenseite</a></li>
+                      <li><a href="bags and baffle bags.html"> BAFFLE BAGS</a></li>
+                      <li><a href="type D bulk bags.html">TYPE D BAGS</a></li>
+                      <li><a href="type c bulk bags.html">TYPE C BAGS</a></li>
+                      <li><a href="Asbestos bags.html">ASBESTOS BAGS</a></li>
+                      <li><a href="Un approved bags.html">UN APPROVED BAGS</a></li>
                 </ul>
                   </div>
                   <div class="row">
-                    <header>SmallBags/Containers</header>
+                    <header>SACKS AND SMALL BAGS</header>
                     <ul class="mega-links">
-                        <li><a href="Containers Liners.html">Conatiners liners</a></li>
-                      <li><a href="top hemmed bulk bags.html">Flachsäcke</a></li>
-                      <li><a href="Bopp Bulk Bags.html">BOPP Big Bags</a></li>
-                      <li><a href="Borrow Bulk Bags.html"> Schüttgut Big Bags</a></li>
-                      <li><a href="mesh  Leno Bulk Bags.html">LENO Netzsäcke</a></li>
-                      <li><a href="Container Page.html">Containers</a></li>
+                      <li><a href="top hemmed bulk bags.html">PPWOVEN SACKS</a></li>
+                      <li><a href="Bopp Bulk Bags.html">BOPP BAGS</a></li>
+                      <li><a href="Borrow Bulk Bags.html">BORROW BAGS</a></li>
+                      <li><a href="AD star bags.html">AD STAR BAGS </a></li>
+                      <li><a href="mesh  Leno Bulk Bags.html"> LENO MESH BULK BAGS</a></li>
                    </ul>
                   </div>
-               </li>
+              
+            </li>
           
-            <li><a href="#">
-                Broschüren</a></li>
-            <li><a href="contact us.html">Kontaktiere uns</a></li>
+            <li><a href="contact us.html">Brochers</a></li>
+            <li><a href="contact us.html">Contact Us</a></li>
           </ul>
           <label for="menu-btn" class="btn menu-btn"><i class="fas fa-bars"></i></label>
         </div>
@@ -1231,19 +1176,18 @@
     <div id="close-login-btn" class="fas fa-times"></div>
 
     <form action="">
-        <h3>Anmelden</h3>
-        <span>Benutzername </span>
-        
-        <input type="email" name="" class="box" placeholder="Geben Sie Ihre E-Mail ein" id="">
-        <span>Passwort </span>
-        <input type="password" name="" class="box" placeholder="Geben Sie Ihr Passwort ein" id="">
+        <h3>sign in</h3>
+        <span>username</span>
+        <input type="email" name="" class="box" placeholder="enter your email" id="">
+        <span>password</span>
+        <input type="password" name="" class="box" placeholder="enter your password" id="">
         <div class="checkbox">
             <input type="checkbox" name="" id="remember-me">
-            <label for="remember-me">Merken Sie sich mich auf diesem Gerät</label>
+            <label for="remember-me"> remember me</label>
         </div>
-        <input type="submit" value="Anmelden" class="btn">
-        <p>Passwort vergessen ? <a href="#">Klicken Sie hier</a></p>
-        <p>Sie Haben Noch Kein Konto? <a href="#">Erstellen Sie Eins </a></p>
+        <input type="submit" value="sign in" class="btn">
+        <p>forget password ? <a href="#">click here</a></p>
+        <p>don't have an account ? <a href="#">create one</a></p>
     </form>
 
 </div>
@@ -1257,9 +1201,9 @@
         
         <div class="Hcard">
         <div class="content">
-        <h3>Kontaktieren Sie uns</h3>
-          <p><a href="#"> <i class="fas fa-phone"></i>+49(0)2774-92424-0</a>
-           <br><a href="#"><i class="fas fa-envelope"></i>info@conbag.de  </a>
+        <h3>Conatact Us</h3>
+          <p><a href="#"> <i class="fas fa-phone"></i> Tel: +44 (0) 1453 511222 </a>
+           <br><a href="#"><i class="fas fa-envelope"></i>Email:info@rdapackaging.com</a>
         </p>
       
         </div>
@@ -1272,11 +1216,11 @@
 
     <div class="content">
        
-        <h2>Willkommen bei Conbag International Packaging GmbH & Co. KG</h2>
-        <p>
-            Seit 2020 stehen wir für Qualität und Kundenzufriedenheit – nicht nur in Deutschland, sondern inzwischen weltweit. Zu unserer großen Freude dürfen wir seit 2024 nun auch Teil der RDA -Familie sein. RDA Bulk Packaging Ltd. ist ein bereits seit 25 Jahren bestehendes Unternehmen mit Sitzen in Großbritannien, Irland und Indien. Durch den Zusammenschluss unserer Teams mit Ihrem Fachwissen und der langjährigen Erfahrung ist es uns möglich, unseren Kunden noch mehr individuelle, auf ihre jeweiligen Bedürfnisse abgestimmte Verpackungslösungen, anzubieten. Natürlich mit einem unvergleichlich hohen Anspruch an Qualität und Service. Conbag bleibt jedoch weiter lokal – während wir unseren Kunden eine globale Reichweite bieten können, sind unsere Mitarbeiter weiterhin vor Ort, um Ihnen bei all Ihren Anforderungen zu helfen sowie zu unterstützen. Sie und Ihr Unternehmen zu unterstützen ist unser Hauptziel bei Conbag International Packaging GmbH & Co. KG und RDA Bulk Packaging Ltd. Wir liefern zuverlässige Produkte und steigern dabei die Kosteneffizienz unserer Kunden. Eines unserer Ziele ist es, bestehende und neue Produkte als auch Märkte kontinuierlich zu verbessern und weiterzuentwickeln.
-        </p>
-            <a href="about.html" class="btn"> Mehr über uns</a>
+        <h2>Welcome to RDA Bulk Packaging Ltd.</h2>
+        <p>RDA Bulk Packaging Ltd. has all the experience from RDA Bulk Packaging Ltd., who have been successfully supplying a comprehensive range of FIBC’s (Flexible Intermediate Bulk Containers), also known as Bulk Bags to many different sectors across the UK, for over 24 years and more recently in Europe and other countries worldwide. Our teams are dedicated to supplying you with the best packaging solution for your business.
+          
+            Along with Bulk bags we also supply many other products such as; woven polypropylene sacks, sandbags, garden waste/kerbside collection bags, polythene bags, liners and many more. We hold stocks in our Irish warehouses for both immediate delivery, and also those products that have been manufactured to specific requirements for our existing customers that we have contracted with them to stock on their behalf.</p>
+        <a href="about.html" class="btn">More About Us</a>
     </div>
 </section>
 <!-- home section end -->
@@ -1285,14 +1229,13 @@
 <section class="contact">
         <div class="contactForm">
             <form>
-                <h2>Nachricht senden</h2>
+                <h2>Send Message</h2>
                 <br>
                 <br>
 
                 <div class="inputBox">
                     <input type="text" required="required">
-                    <span>
-                        Vollständiger Name</span>
+                    <span>Full Name</span>
                 </div>
                 <br>
                 <br>
@@ -1304,98 +1247,88 @@
                 <br>
                 <div class="inputBox">
                     <textarea name="" id="" required="required"></textarea>
-                    <span>Geben Sie Ihre Nachricht ein...</span>
+                    <span>Type your Message...</span>
                 </div>
                 <div class="inputBox">
-                    <input type="submit" value="schicken">
+                    <input type="submit" value="Send">
                 </div>
             </form>
         </div>
     </div>
 </section>
 
-<section class="deal">
-
-    <div class="content">
-      <div class="image">
-        <img src="img/Conbag signature.png" alt="">
-    </div>
-     
-    </div>
-    </section>
-
 
 <!-- footer section starts  -->
 
 <section class="footer">
 
-    <div class="box-container">
+	<div class="box-container">
   
-        <div class="box">
-          <a href="index.html" class="logo"><img src="images/conbag-header.png" alt=""; height="90"; width="280"></a>
-            <a href="#"> <i class="fas fa-map-marker-alt"></i>  Hauptstrasse 79, 35716 Dietzhölztal, Germany, Germany  </a>
-        <a href="#"> <i class="fas fa-clock"></i>Arbeitszeiten : 
-          Montag- Donnerstag ( 08:00 - 16:30 ) Freitag (08:00 - 15:00) </a>
-        
-            
-        </div>
+		<div class="box">
+			<h3>our locations</h3>
+			<a href="#"> <i class="fas fa-map-marker-alt"></i>  RDA Bulk Packaging Ltd
+		Severn Business Park
+		Burma Road Sharpness Berkeley Gloucestershire GL13 9UQ, UK </a>
+		<a href="#"> <i class="fas fa-clock"></i>Working : Mon-Fri (08:30 - 17:00) </a>
+		
+			
+		</div>
   
-        <div class="box">
-            <h3>Über uns Us</h3>
-            <a href="index.html"> <i class="fas fa-arrow-right"></i>Startseite</a>
-            <a href="about.html"> <i class="fas fa-arrow-right"></i>Über uns</a>
-            <a href="SERVICES (2).html"> <i class="fas fa-arrow-right"></i>Leistungen</a>
-            <a href="contact us.html"> <i class="fas fa-arrow-right"></i>Kontakt</a>
-        </div>
+		<div class="box">
+			<h3>quick links</h3>
+			<a href="index.html"> <i class="fas fa-arrow-right"></i>home</a>
+			<a href="about.html"> <i class="fas fa-arrow-right"></i>about</a>
+			<a href="SERVICES (2).html"> <i class="fas fa-arrow-right"></i>services</a>
+			<a href="All Products page.html"> <i class="fas fa-arrow-right"></i>products</a>
+			<a href="contact us.html"> <i class="fas fa-arrow-right"></i>contact</a>
+		</div>
   
-        <div class="box">
-            <h3>Unternehmen</h3>
-           
-            <a href="#"> <i class="fas fa-arrow-right"></i>Daten¬schutz¬erklärung</a>
-            <a href="#"> <i class="fas fa-arrow-right"></i>Cookie- richtlinie</a>
-            <a href="#"> <i class="fas fa-arrow-right"></i>Brochüren</a>
-           
-            <a href="https://www.conbag.de/faq/"> <i class="fas fa-arrow-right"></i> FAQ's </a>
+		<div class="box">
+			<h3>extra links</h3>
+		   
+			<a href="#"> <i class="fas fa-arrow-right"></i>privacy policy</a>
+		   
+			<a href="#"> <i class="fas fa-arrow-right"></i> our serivces </a>
    
   
   </div>
   <div class="box">
-            <h3>Kontaktiere Uns</h3>
-            <a href="contact us.html"> <i class="fas fa-phone"></i> Tel: +49(0)2774-92424-0</a>
-      
-            <a href="contact us.html"> <i class="fas fa-envelope"></i> Email:   info@conbag.de</a>
-      <a href="contact us.html">  Registernummer :  HRA 7771</a>
-            
-        
-    </div>
+			<h3>contact info</h3>
+			<a href="#"> <i class="fas fa-phone"></i> Tel: +44 (0) 1453 511222</a>
+	  
+			<a href="#"> <i class="fas fa-envelope"></i>  Email: Info@Rdapackaging.Com</a>
+	  <a href="#">   Registered Number: 03836432</a>
+			
+		
+	</div>
   
   
-    <div class="share">
-           <a href="https://www.linkedin.com/company/69201484/admin/feed/posts/" class="fab fa-linkedin"></a>
-        <a href="https://www.facebook.com/ConbagBulkPackagingLtd/" class="fab fa-facebook-f"></a>
-        <a href="https://twitter.com/RdaLtd" class="fab fa-twitter"></a>
-        <a href="https://www.instagram.com/rdabulkpackaging/?next=%2F" class="fab fa-instagram"></a>
+	<div class="share">
+		   <a href="https://www.linkedin.com/company/69201484/admin/feed/posts/" class="fab fa-linkedin"></a>
+		<a href="https://www.facebook.com/RDABulkPackagingLtd/" class="fab fa-facebook-f"></a>
+		<a href="https://twitter.com/RdaLtd" class="fab fa-twitter"></a>
+		<a href="https://www.instagram.com/rdabulkpackaging/?next=%2F" class="fab fa-instagram"></a>
   
-     
-    </div>
+	 
+	</div>
   </div>
-    <div class="credit"> Created by <span>  Erstellt von 2025 Conbag International Packaging GmbH & Co.KG aus Deutschland </span>| alle Rechte vorbehalten!</div>
+	<div class="credit"> Created by <span> 2024 RDA Bulk Packaging Private Limited</span> | all rights reserved! </div>
   
   </section>
   
   <!-- footer section ends -->
   
-  <!-- loader  -->
-  
-  <div class="loader-container">
-    <video src="images/Comp 1_1.mp4" autoplay muted loop> </video>
+<!-- loader  -->
+ 
+<div class="loader-container">
+    <video src="image/RDA Project updated.mp4" autoplay muted loop> </video>
   </div>
   <!--loader-->
   
   <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
   
   <!-- custom js file link  -->
-  <script src="main.js/script.js"></script>
+  <script src="js/script.js"></script>
   
   </body>
   </html>
