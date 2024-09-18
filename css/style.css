@@ -1511,7 +1511,7 @@ nav{
 }
 
 .deal{
-    background:#f3f3f3;
+    background:#fff;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
@@ -1551,7 +1551,7 @@ nav{
 
 .footer .box-container{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
     gap:1.5rem;
 }
 
